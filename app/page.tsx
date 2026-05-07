@@ -5,6 +5,24 @@ import { useState } from 'react';
 
 export default function Home() {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  const [selectedIndustry, setSelectedIndustry] = useState<string>('전체');
+
+  const cases = [
+    { company: '트랜스링크', industry: '물류', task: '배송 현황 리포트', effect: '월 20시간 단축' },
+    { company: '체인로지스', industry: '물류·마케팅', task: '고객사 공지사항 분류', effect: '월 40시간 단축' },
+    { company: '핀테크스타트업', industry: '금융·VC', task: '거래처 실사 요청 정리', effect: '월 30시간 단축' },
+    { company: '병원', industry: '헬스케어', task: '환자 상담 기록 정리', effect: '월 25시간 단축' },
+    { company: '세무·회계 법인', industry: '회계', task: '월말 정산서 생성', effect: '월 50시간 단축' },
+    { company: '보험사', industry: '금융', task: '청구 서류 심사', effect: '월 35시간 단축' },
+    { company: '식품 유통사', industry: '유통·마케팅', task: '주간 판매 현황 분석', effect: '월 15시간 단축' },
+    { company: '건설사', industry: '건설', task: '공정 보고서 작성', effect: '월 45시간 단축' },
+    { company: '에너지 회사', industry: '에너지', task: '사용량 청구서 처리', effect: '월 60시간 단축' },
+  ];
+
+  const industries = ['전체', '물류', '물류·마케팅', '금융·VC', '금융', '헬스케어', '회계', '유통·마케팅', '건설', '에너지'];
+  const filteredCases = selectedIndustry === '전체'
+    ? cases
+    : cases.filter(c => c.industry === selectedIndustry);
 
   return (
     <main>
@@ -38,19 +56,19 @@ export default function Home() {
             <p className="text-sm text-gray-600 mt-2">프로젝트 중단 또는 미활용</p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-4 items-center">
-          <div className="bg-accent-before bg-opacity-10 p-6 rounded-lg border-2 border-accent-before text-center">
+        <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
+          <div className="w-full md:w-96 bg-accent-before bg-opacity-10 p-6 rounded-lg border-2 border-accent-before text-center">
             <p className="text-xs font-bold text-accent-before uppercase tracking-widest mb-2">Before</p>
             <p className="text-xs text-gray-600 font-semibold mb-3">예상 효율</p>
-            <p className="text-4xl md:text-5xl font-black text-accent-before mb-2">1.7%</p>
-            <p className="text-xs text-gray-700 font-semibold">기대만 높고 실행 미흡</p>
+            <p className="text-5xl font-black text-accent-before mb-2">1.7%</p>
+            <p className="text-xs text-gray-700 font-semibold">기대만 높고<br/>실행 미흡</p>
           </div>
-          <div className="hidden md:flex items-center justify-center text-3xl font-black text-gray-300">→</div>
-          <div className="bg-accent-after bg-opacity-10 p-6 rounded-lg border-2 border-accent-after text-center">
+          <div className="hidden md:flex items-center text-3xl font-black text-gray-300">→</div>
+          <div className="w-full md:w-96 bg-accent-after bg-opacity-10 p-6 rounded-lg border-2 border-accent-after text-center">
             <p className="text-xs font-bold text-accent-after uppercase tracking-widest mb-2">After</p>
             <p className="text-xs text-gray-600 font-semibold mb-3">실제 효율</p>
-            <p className="text-4xl md:text-5xl font-black text-accent-after mb-2">4.0%</p>
-            <p className="text-xs text-gray-700 font-semibold">AXMOS로 2배 이상 개선</p>
+            <p className="text-5xl font-black text-accent-after mb-2">4.0%</p>
+            <p className="text-xs text-gray-700 font-semibold">AXMOS로<br/>2배 이상 개선</p>
           </div>
         </div>
       </section>
@@ -59,10 +77,29 @@ export default function Home() {
       <section className="bg-bg-light py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="section-title text-center mb-12">검증된 성과</h2>
+
+          {/* 필터 */}
+          <div className="flex flex-wrap gap-2 justify-center mb-8">
+            {industries.map((ind) => (
+              <button
+                key={ind}
+                onClick={() => setSelectedIndustry(ind)}
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition ${
+                  selectedIndustry === ind
+                    ? 'bg-brand text-white'
+                    : 'bg-white border border-gray-300 text-gray-700 hover:border-brand'
+                }`}
+              >
+                {ind}
+              </button>
+            ))}
+          </div>
+
+          {/* 테이블 */}
           <div className="overflow-x-auto">
-            <table className="w-full text-sm">
+            <table className="w-full text-sm bg-white rounded-lg overflow-hidden">
               <thead>
-                <tr className="border-b-2 border-brand">
+                <tr className="border-b-2 border-brand bg-gray-50">
                   <th className="text-left py-4 px-4 font-bold text-gray-900">회사명</th>
                   <th className="text-left py-4 px-4 font-bold text-gray-900">산업</th>
                   <th className="text-left py-4 px-4 font-bold text-gray-900">자동화 업무</th>
@@ -70,60 +107,14 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-gray-300">
-                  <td className="py-4 px-4">트랜스링크</td>
-                  <td className="py-4 px-4">물류</td>
-                  <td className="py-4 px-4">배송 현황 리포트</td>
-                  <td className="py-4 px-4 text-center"><span className="badge">월 20시간 단축</span></td>
-                </tr>
-                <tr className="border-b border-gray-300">
-                  <td className="py-4 px-4">체인로지스</td>
-                  <td className="py-4 px-4">물류·마케팅</td>
-                  <td className="py-4 px-4">고객사 공지사항 분류</td>
-                  <td className="py-4 px-4 text-center"><span className="badge">월 40시간 단축</span></td>
-                </tr>
-                <tr className="border-b border-gray-300">
-                  <td className="py-4 px-4">핀테크스타트업</td>
-                  <td className="py-4 px-4">금융·VC</td>
-                  <td className="py-4 px-4">거래처 실사 요청 정리</td>
-                  <td className="py-4 px-4 text-center"><span className="badge">월 30시간 단축</span></td>
-                </tr>
-                <tr className="border-b border-gray-300">
-                  <td className="py-4 px-4">병원</td>
-                  <td className="py-4 px-4">헬스케어</td>
-                  <td className="py-4 px-4">환자 상담 기록 정리</td>
-                  <td className="py-4 px-4 text-center"><span className="badge">월 25시간 단축</span></td>
-                </tr>
-                <tr className="border-b border-gray-300">
-                  <td className="py-4 px-4">세무·회계 법인</td>
-                  <td className="py-4 px-4">회계</td>
-                  <td className="py-4 px-4">월말 정산서 생성</td>
-                  <td className="py-4 px-4 text-center"><span className="badge">월 50시간 단축</span></td>
-                </tr>
-                <tr className="border-b border-gray-300">
-                  <td className="py-4 px-4">보험사</td>
-                  <td className="py-4 px-4">금융</td>
-                  <td className="py-4 px-4">청구 서류 심사</td>
-                  <td className="py-4 px-4 text-center"><span className="badge">월 35시간 단축</span></td>
-                </tr>
-                <tr className="border-b border-gray-300">
-                  <td className="py-4 px-4">식품 유통사</td>
-                  <td className="py-4 px-4">유통·마케팅</td>
-                  <td className="py-4 px-4">주간 판매 현황 분석</td>
-                  <td className="py-4 px-4 text-center"><span className="badge">월 15시간 단축</span></td>
-                </tr>
-                <tr className="border-b border-gray-300">
-                  <td className="py-4 px-4">건설사</td>
-                  <td className="py-4 px-4">건설</td>
-                  <td className="py-4 px-4">공정 보고서 작성</td>
-                  <td className="py-4 px-4 text-center"><span className="badge">월 45시간 단축</span></td>
-                </tr>
-                <tr>
-                  <td className="py-4 px-4">에너지 회사</td>
-                  <td className="py-4 px-4">에너지</td>
-                  <td className="py-4 px-4">사용량 청구서 처리</td>
-                  <td className="py-4 px-4 text-center"><span className="badge">월 60시간 단축</span></td>
-                </tr>
+                {filteredCases.map((c, i) => (
+                  <tr key={i} className="border-b border-gray-300 hover:bg-blue-50 transition">
+                    <td className="py-4 px-4 font-semibold text-gray-900">{c.company}</td>
+                    <td className="py-4 px-4 text-gray-700">{c.industry}</td>
+                    <td className="py-4 px-4 text-gray-700">{c.task}</td>
+                    <td className="py-4 px-4 text-center"><span className="badge">{c.effect}</span></td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
