@@ -355,36 +355,44 @@ export default function Home() {
       {/* FAQ */}
       <section className="bg-bg-light py-20">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="section-title text-center mb-12">자주 묻는 질문</h2>
+          <h2 className="section-title text-center mb-12 animate-slideUp">자주 묻는 질문</h2>
           <div className="space-y-4">
             {[
               {
                 q: '우리 회사 업무도 자동화 가능한가요?',
-                a: '대부분 가능합니다. 예측 가능한 패턴이 있고 반복되는 업무라면 AI로 자동화할 수 있습니다. 상담을 통해 정확히 판단하겠습니다.'
+                a: '대부분 가능합니다. 예측 가능한 패턴이 있고 반복되는 업무라면 AI로 자동화할 수 있습니다. 상담을 통해 정확히 판단하겠습니다. 매출 정산, 이메일 응답, 데이터 처리 등 다양한 업무가 자동화되고 있습니다.'
               },
               {
                 q: '개발 인력이 없어도 되나요?',
-                a: '네, AX Build는 저희가 모두 구축해드립니다. AX Grow를 선택하시면 당신 팀이 배우면서 함께 만들 수 있습니다.'
+                a: '네, AX Build는 저희가 모두 구축해드립니다. AX Grow를 선택하시면 당신 팀이 배우면서 함께 만들 수 있습니다. 기술팀이 없어도 걱정하지 마세요. 우리 전문가들이 처음부터 끝까지 함께합니다.'
               },
               {
                 q: '비용은 얼마나 되나요?',
-                a: '상담을 통해 요구사항과 복잡도를 파악한 후 맞춤 견적을 제시합니다. 무료 상담 신청 후 논의하겠습니다.'
+                a: '상담을 통해 요구사항과 복잡도를 파악한 후 맞춤 견적을 제시합니다. 무료 상담 신청 후 논의하겠습니다. 일반적으로 3주 구축 기간 동안 발생하는 비용이 전부이며, 추가 비용이 발생하지 않습니다.'
               },
               {
                 q: '구축 후 유지보수는?',
-                a: '3개월간 무료 유지보수를 제공합니다. 이후 연장은 별도 계약으로 진행됩니다.'
+                a: '3개월간 무료 유지보수를 제공합니다. 이후 연장은 별도 계약으로 진행됩니다. 버그 수정, 시스템 개선, 사용자 교육까지 모두 포함됩니다.'
+              },
+              {
+                q: 'AI Agent를 직접 운영할 수 있나요?',
+                a: '네, 운영 매뉴얼과 함께 기본 사용법을 교육해드립니다. 간단한 수정이나 운영은 충분히 가능합니다. 복잡한 변경이 필요하면 별도 지원을 받을 수 있습니다.'
+              },
+              {
+                q: 'AX Build와 AX Grow는 어떻게 다른가요?',
+                a: 'AX Build는 3주 내에 우리 팀이 완전히 구축해드리므로 빠른 시작이 가능합니다. AX Grow는 16일 동안 당신 팀과 함께 진행하므로 팀의 AI 역량 강화에 효과적입니다. 기술팀의 역량과 내재화 필요성에 따라 선택하세요.'
               }
             ].map((faq, i) => (
-              <div key={i} className="bg-white rounded-lg border border-gray-300">
+              <div key={i} className="bg-white rounded-lg border border-gray-300 overflow-hidden hover:shadow-md transition">
                 <button
                   onClick={() => setOpenFAQ(openFAQ === i ? null : i)}
                   className="w-full px-6 py-4 text-left font-bold text-gray-900 flex justify-between items-center hover:bg-gray-50 transition"
                 >
                   {faq.q}
-                  <span className="text-brand text-xl">{openFAQ === i ? '−' : '+'}</span>
+                  <span className={`text-brand text-xl transition-transform duration-300 ${openFAQ === i ? 'rotate-45' : ''}`}>+</span>
                 </button>
                 {openFAQ === i && (
-                  <div className="px-6 py-4 bg-blue-50 border-t border-gray-300 text-gray-700">
+                  <div className="px-6 py-4 bg-blue-50 border-t border-gray-300 text-gray-700 animate-slideUp">
                     {faq.a}
                   </div>
                 )}

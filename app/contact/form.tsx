@@ -5,12 +5,42 @@ import { useState } from 'react';
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [touched, setTouched] = useState<Record<string, boolean>>({});
+
+  const validateForm = (formData: FormData) => {
+    const newErrors: Record<string, string> = {};
+    const email = formData.get('email') as string;
+    const phone = formData.get('phone') as string;
+
+    if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+      newErrors.email = '올바른 이메일을 입력해주세요';
+    }
+
+    if (phone && !phone.match(/^(\d{2,3}-?\d{3,4}-?\d{4}|\d{10,11})$/)) {
+      newErrors.phone = '올바른 전화번호를 입력해주세요 (예: 010-0000-0000)';
+    }
+
+    return newErrors;
+  };
+
+  const handleBlur = (field: string) => {
+    setTouched({ ...touched, [field]: true });
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
     const formData = new FormData(e.currentTarget);
+    const validationErrors = validateForm(formData);
+
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      setLoading(false);
+      return;
+    }
+
     const data = Object.fromEntries(formData);
 
     try {
@@ -23,6 +53,10 @@ export default function ContactForm() {
       if (response.ok) {
         setSubmitted(true);
         e.currentTarget.reset();
+        setErrors({});
+        setTouched({});
+      } else {
+        alert('제출 중 오류가 발생했습니다. 다시 시도해주세요.');
       }
     } catch (error) {
       console.error('Error:', error);
@@ -87,9 +121,17 @@ export default function ContactForm() {
                 type="email"
                 name="email"
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand"
+                onBlur={() => handleBlur('email')}
+                className={`w-full px-4 py-3 border rounded-lg focus:outline-none transition ${
+                  touched.email && errors.email
+                    ? 'border-red-500 focus:border-red-500'
+                    : 'border-gray-300 focus:border-brand'
+                }`}
                 placeholder="your@email.com"
               />
+              {touched.email && errors.email && (
+                <p className="text-red-500 text-sm mt-2">{errors.email}</p>
+              )}
             </div>
 
             {/* 휴대폰 */}
@@ -98,9 +140,17 @@ export default function ContactForm() {
               <input
                 type="tel"
                 name="phone"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand"
+                onBlur={() => handleBlur('phone')}
+                className={`w-full px-4 py-3 border rounded-lg focus:outline-none transition ${
+                  touched.phone && errors.phone
+                    ? 'border-red-500 focus:border-red-500'
+                    : 'border-gray-300 focus:border-brand'
+                }`}
                 placeholder="010-0000-0000"
               />
+              {touched.phone && errors.phone && (
+                <p className="text-red-500 text-sm mt-2">{errors.phone}</p>
+              )}
             </div>
 
             {/* 관심 트랙 */}
@@ -169,9 +219,16 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-brand text-white font-bold py-4 rounded-lg hover:bg-opacity-90 disabled:opacity-50 transition mt-8"
+              className="w-full bg-brand text-white font-bold py-4 rounded-lg hover:bg-opacity-90 disabled:opacity-50 transition mt-8 flex items-center justify-center gap-2"
             >
-              {loading ? '제출 중...' : '무료 신청하기'}
+              {loading ? (
+                <>
+                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                  제출 중...
+                </>
+              ) : (
+                '무료 신청하기'
+              )}
             </button>
 
             <p className="text-center text-sm text-gray-600">
