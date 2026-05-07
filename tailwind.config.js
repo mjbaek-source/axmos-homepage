@@ -9,12 +9,12 @@ module.exports = {
       colors: {
         brand: '#1F3864',
         'brand-light': '#2E75B6',
-        'accent-before': '#E74C3C',
+        'accent-before': '#E24B4A',
         'accent-after': '#1E88E5',
         'bg-light': '#F8F9FA',
       },
       fontFamily: {
-        sans: ['Noto Sans KR', 'sans-serif'],
+        sans: ['Pretendard Variable', 'Pretendard', 'sans-serif'],
       },
     },
   },

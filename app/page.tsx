@@ -26,7 +26,7 @@ export default function Home() {
       {/* 문제 제기 */}
       <section className="max-w-6xl mx-auto px-6 py-20">
         <h2 className="section-title text-center mb-12">한국 기업의 AI 활용 현황</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand">
             <p className="text-4xl font-black text-brand mb-2">77%</p>
             <p className="text-gray-700 font-semibold">AI 도입 계획 있음</p>
@@ -37,14 +37,18 @@ export default function Home() {
             <p className="text-gray-700 font-semibold">구축 중 실패 경험</p>
             <p className="text-sm text-gray-600 mt-2">프로젝트 중단 또는 미활용</p>
           </div>
-          <div className="bg-red-50 p-8 rounded-lg border-l-4 border-accent-before">
-            <p className="text-sm text-gray-700 font-semibold mb-4">실제 효율성</p>
-            <p className="text-3xl font-black mb-2">
-              <span className="text-brand-light">1.7%</span>
-              <span className="text-gray-700 text-lg"> vs </span>
-              <span className="text-accent-before">4.0%</span>
-            </p>
-            <p className="text-sm text-gray-600">예상 효율 vs 실제 효율</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="bg-accent-before bg-opacity-10 p-8 rounded-lg border-2 border-accent-before text-center">
+            <p className="text-sm text-gray-600 font-semibold mb-3">예상 효율</p>
+            <p className="text-6xl font-black text-accent-before mb-2">1.7%</p>
+            <p className="text-sm text-gray-700 font-semibold">기대만 높고<br/>실행 미흡</p>
+          </div>
+          <div className="hidden md:flex items-center justify-center text-4xl font-black text-gray-400">→</div>
+          <div className="bg-accent-after bg-opacity-10 p-8 rounded-lg border-2 border-accent-after text-center">
+            <p className="text-sm text-gray-600 font-semibold mb-3">실제 효율</p>
+            <p className="text-6xl font-black text-accent-after mb-2">4.0%</p>
+            <p className="text-sm text-gray-700 font-semibold">AXMOS로<br/>2배 이상 개선</p>
           </div>
         </div>
       </section>
@@ -310,23 +314,23 @@ export default function Home() {
       {/* 진행 프로세스 */}
       <section className="max-w-6xl mx-auto px-6 py-20">
         <h2 className="section-title text-center mb-12">진행 프로세스</h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          <div className="bg-brand text-white p-6 rounded-lg text-center">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <div className="bg-accent-before text-white p-6 rounded-lg text-center">
             <p className="text-xl font-bold mb-2">1단계</p>
-            <p className="font-semibold">요청 분석</p>
-            <p className="text-sm text-blue-100 mt-2">당신의 업무 현황 파악</p>
+            <p className="font-semibold text-sm">요청 분석</p>
+            <p className="text-xs mt-2 opacity-90">당신의 업무<br/>현황 파악</p>
           </div>
-          <div className="hidden md:flex items-center justify-center text-3xl text-brand font-bold">→</div>
+          <div className="hidden md:flex items-center justify-center text-3xl text-gray-400 font-bold">→</div>
           <div className="bg-brand-light text-white p-6 rounded-lg text-center">
             <p className="text-xl font-bold mb-2">2단계</p>
-            <p className="font-semibold">설계·개발</p>
-            <p className="text-sm text-blue-100 mt-2">맞춤형 솔루션 개발</p>
+            <p className="font-semibold text-sm">설계·개발</p>
+            <p className="text-xs mt-2 opacity-90">맞춤형<br/>솔루션 개발</p>
           </div>
-          <div className="hidden md:flex items-center justify-center text-3xl text-brand font-bold">→</div>
-          <div className="bg-accent-after text-white p-6 rounded-lg text-center md:col-span-1">
+          <div className="hidden md:flex items-center justify-center text-3xl text-gray-400 font-bold">→</div>
+          <div className="bg-accent-after text-white p-6 rounded-lg text-center">
             <p className="text-xl font-bold mb-2">3단계</p>
-            <p className="font-semibold">테스트·배포</p>
-            <p className="text-sm text-blue-100 mt-2">검증 후 운영 시작</p>
+            <p className="font-semibold text-sm">테스트·배포</p>
+            <p className="text-xs mt-2 opacity-90">검증 후<br/>운영 시작</p>
           </div>
         </div>
       </section>
