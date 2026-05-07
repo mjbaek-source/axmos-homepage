@@ -42,15 +42,4 @@ body {
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:scale-105;
   }
-
-  .scroll-fade {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-
-  .scroll-fade.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }

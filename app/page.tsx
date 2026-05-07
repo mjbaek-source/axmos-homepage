@@ -236,7 +236,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-6 py-20">
         <h2 className="section-title text-center mb-12 animate-slideUp">자동화 가능 영역</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand scroll-fade">
+          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand card-hover">
             <h3 className="text-xl font-bold text-brand mb-4">병원·의료</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li>• 환자 상담 기록 정리</li>
@@ -246,7 +246,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand scroll-fade">
+          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand card-hover">
             <h3 className="text-xl font-bold text-brand mb-4">세무·회계</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li>• 월말 정산서 자동 생성</li>
@@ -256,7 +256,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand scroll-fade">
+          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand card-hover">
             <h3 className="text-xl font-bold text-brand mb-4">물류·CS</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li>• 배송 현황 리포트 자동화</li>
@@ -266,7 +266,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand scroll-fade">
+          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand card-hover">
             <h3 className="text-xl font-bold text-brand mb-4">금융·VC</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li>• 거래처 실사 요청 정리</li>
