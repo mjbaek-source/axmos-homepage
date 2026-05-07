@@ -41,14 +41,14 @@ export default function Header() {
       </div>
 
       {isMenuOpen && (
-        <nav className="md:hidden bg-gray-50 px-6 py-4 space-y-4">
-          <Link href="/ax-build" className="block text-gray-700 hover:text-brand font-semibold">
+        <nav className="md:hidden bg-gray-50 px-6 py-4 space-y-4 animate-slideUp">
+          <Link href="/ax-build" className="block text-gray-700 hover:text-brand font-semibold transition">
             AX Build
           </Link>
-          <Link href="/ax-grow" className="block text-gray-700 hover:text-brand font-semibold">
+          <Link href="/ax-grow" className="block text-gray-700 hover:text-brand font-semibold transition">
             AX Grow
           </Link>
-          <Link href="/contact" className="block bg-brand text-white font-bold py-2 px-6 rounded-lg text-center">
+          <Link href="/contact" className="block bg-brand text-white font-bold py-2 px-6 rounded-lg text-center hover:bg-opacity-90 transition">
             무료 신청
           </Link>
         </nav>

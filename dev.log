@@ -8,3 +8,9 @@
 
  ✓ Starting...
  ✓ Ready in 1894ms
+ ⚠ Found a change in next.config.js. Restarting the server to apply the changes...
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1522ms
