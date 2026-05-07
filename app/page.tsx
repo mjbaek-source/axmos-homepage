@@ -29,13 +29,13 @@ export default function Home() {
       {/* Hero */}
       <section className="bg-gradient-to-r from-brand to-brand-light text-white py-24">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-5xl font-black mb-6 leading-tight">
+          <h1 className="text-5xl font-black mb-6 leading-tight animate-slideUp">
             AI 도입이 아니라,<br />업무를 줄이는 실행을 합니다
           </h1>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-blue-100 mb-8 animate-slideUp" style={{animationDelay: '0.2s'}}>
             3주 안에 AI Agent로 업무 자동화 구현
           </p>
-          <Link href="/contact" className="inline-block bg-white text-brand font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition text-lg">
+          <Link href="/contact" className="inline-block bg-white text-brand font-bold py-4 px-8 rounded-lg hover:bg-gray-100 hover:scale-105 transition text-lg animate-slideUp" style={{animationDelay: '0.4s'}}>
             무료 신청하기 →
           </Link>
         </div>
@@ -129,9 +129,9 @@ export default function Home() {
 
       {/* 대표 사례 */}
       <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="section-title text-center mb-12">대표 사례 3선</h2>
+        <h2 className="section-title text-center mb-12 animate-slideUp">대표 사례 3선</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white border-2 border-brand rounded-lg p-8">
+          <div className="bg-white border-2 border-brand rounded-lg p-8 card-hover">
             <h3 className="text-lg font-bold text-brand mb-2">트랜스링크 인베스트먼트</h3>
             <p className="text-xs text-gray-600 font-semibold mb-4">금융 / VC</p>
             <p className="text-gray-700 mb-4 text-sm">
@@ -148,7 +148,7 @@ export default function Home() {
             <p className="text-sm text-gray-700">✓ 월 30시간 업무 단축<br/>✓ 실수율 0%</p>
           </div>
 
-          <div className="bg-white border-2 border-brand rounded-lg p-8">
+          <div className="bg-white border-2 border-brand rounded-lg p-8 card-hover">
             <h3 className="text-lg font-bold text-brand mb-2">체인로지스 (두발히어로)</h3>
             <p className="text-xs text-gray-600 font-semibold mb-4">물류 / 마케팅</p>
             <p className="text-gray-700 mb-4 text-sm">
@@ -165,7 +165,7 @@ export default function Home() {
             <p className="text-sm text-gray-700">✓ 월 80시간 단축<br/>✓ 발행량 20배↑</p>
           </div>
 
-          <div className="bg-white border-2 border-brand rounded-lg p-8">
+          <div className="bg-white border-2 border-brand rounded-lg p-8 card-hover">
             <h3 className="text-lg font-bold text-brand mb-2">우하컴퍼니</h3>
             <p className="text-xs text-gray-600 font-semibold mb-4">이커머스 / 정산</p>
             <p className="text-gray-700 mb-4 text-sm">
@@ -234,9 +234,9 @@ export default function Home() {
 
       {/* 자동화 가능 영역 */}
       <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="section-title text-center mb-12">자동화 가능 영역</h2>
+        <h2 className="section-title text-center mb-12 animate-slideUp">자동화 가능 영역</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand">
+          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand scroll-fade">
             <h3 className="text-xl font-bold text-brand mb-4">병원·의료</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li>• 환자 상담 기록 정리</li>
@@ -246,7 +246,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand">
+          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand scroll-fade">
             <h3 className="text-xl font-bold text-brand mb-4">세무·회계</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li>• 월말 정산서 자동 생성</li>
@@ -256,7 +256,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand">
+          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand scroll-fade">
             <h3 className="text-xl font-bold text-brand mb-4">물류·CS</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li>• 배송 현황 리포트 자동화</li>
@@ -266,7 +266,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand">
+          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand scroll-fade">
             <h3 className="text-xl font-bold text-brand mb-4">금융·VC</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li>• 거래처 실사 요청 정리</li>
@@ -330,21 +330,21 @@ export default function Home() {
 
       {/* 진행 프로세스 */}
       <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="section-title text-center mb-12">진행 프로세스</h2>
+        <h2 className="section-title text-center mb-12 animate-slideUp">진행 프로세스</h2>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-          <div className="bg-accent-before text-white p-6 rounded-lg text-center">
+          <div className="bg-accent-before text-white p-6 rounded-lg text-center card-hover">
             <p className="text-xl font-bold mb-2">1단계</p>
             <p className="font-semibold text-sm">요청 분석</p>
             <p className="text-xs mt-2 opacity-90">당신의 업무<br/>현황 파악</p>
           </div>
           <div className="hidden md:flex items-center justify-center text-3xl text-gray-400 font-bold">→</div>
-          <div className="bg-brand-light text-white p-6 rounded-lg text-center">
+          <div className="bg-brand-light text-white p-6 rounded-lg text-center card-hover">
             <p className="text-xl font-bold mb-2">2단계</p>
             <p className="font-semibold text-sm">설계·개발</p>
             <p className="text-xs mt-2 opacity-90">맞춤형<br/>솔루션 개발</p>
           </div>
           <div className="hidden md:flex items-center justify-center text-3xl text-gray-400 font-bold">→</div>
-          <div className="bg-accent-after text-white p-6 rounded-lg text-center">
+          <div className="bg-accent-after text-white p-6 rounded-lg text-center card-hover">
             <p className="text-xl font-bold mb-2">3단계</p>
             <p className="font-semibold text-sm">테스트·배포</p>
             <p className="text-xs mt-2 opacity-90">검증 후<br/>운영 시작</p>
