@@ -38,17 +38,19 @@ export default function Home() {
             <p className="text-sm text-gray-600 mt-2">프로젝트 중단 또는 미활용</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="bg-accent-before bg-opacity-10 p-8 rounded-lg border-2 border-accent-before text-center">
-            <p className="text-sm text-gray-600 font-semibold mb-3">예상 효율</p>
-            <p className="text-6xl font-black text-accent-before mb-2">1.7%</p>
-            <p className="text-sm text-gray-700 font-semibold">기대만 높고<br/>실행 미흡</p>
+        <div className="grid grid-cols-2 gap-4 items-center">
+          <div className="bg-accent-before bg-opacity-10 p-6 rounded-lg border-2 border-accent-before text-center">
+            <p className="text-xs font-bold text-accent-before uppercase tracking-widest mb-2">Before</p>
+            <p className="text-xs text-gray-600 font-semibold mb-3">예상 효율</p>
+            <p className="text-4xl md:text-5xl font-black text-accent-before mb-2">1.7%</p>
+            <p className="text-xs text-gray-700 font-semibold">기대만 높고 실행 미흡</p>
           </div>
-          <div className="hidden md:flex items-center justify-center text-4xl font-black text-gray-400">→</div>
-          <div className="bg-accent-after bg-opacity-10 p-8 rounded-lg border-2 border-accent-after text-center">
-            <p className="text-sm text-gray-600 font-semibold mb-3">실제 효율</p>
-            <p className="text-6xl font-black text-accent-after mb-2">4.0%</p>
-            <p className="text-sm text-gray-700 font-semibold">AXMOS로<br/>2배 이상 개선</p>
+          <div className="hidden md:flex items-center justify-center text-3xl font-black text-gray-300">→</div>
+          <div className="bg-accent-after bg-opacity-10 p-6 rounded-lg border-2 border-accent-after text-center">
+            <p className="text-xs font-bold text-accent-after uppercase tracking-widest mb-2">After</p>
+            <p className="text-xs text-gray-600 font-semibold mb-3">실제 효율</p>
+            <p className="text-4xl md:text-5xl font-black text-accent-after mb-2">4.0%</p>
+            <p className="text-xs text-gray-700 font-semibold">AXMOS로 2배 이상 개선</p>
           </div>
         </div>
       </section>
