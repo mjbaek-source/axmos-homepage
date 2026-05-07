@@ -27,15 +27,15 @@ export default function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-gradient-to-r from-brand to-brand-light text-white py-24">
+      <section className="bg-gradient-to-r from-brand to-brand-light text-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-5xl font-black mb-6 leading-tight animate-slideUp">
+          <h1 className="text-3xl md:text-5xl font-black mb-6 leading-tight animate-slideUp">
             AI 도입이 아니라,<br />업무를 줄이는 실행을 합니다
           </h1>
-          <p className="text-xl text-blue-100 mb-8 animate-slideUp" style={{animationDelay: '0.2s'}}>
+          <p className="text-lg md:text-xl text-blue-100 mb-8 animate-slideUp" style={{animationDelay: '0.2s'}}>
             3주 안에 AI Agent로 업무 자동화 구현
           </p>
-          <Link href="/contact" className="inline-block bg-white text-brand font-bold py-4 px-8 rounded-lg hover:bg-gray-100 hover:scale-105 transition text-lg animate-slideUp" style={{animationDelay: '0.4s'}}>
+          <Link href="/contact" className="inline-block bg-white text-brand font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-gray-100 hover:scale-105 transition text-base md:text-lg animate-slideUp" style={{animationDelay: '0.4s'}}>
             무료 신청하기 →
           </Link>
         </div>
@@ -96,8 +96,8 @@ export default function Home() {
           </div>
 
           {/* 테이블 */}
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm bg-white rounded-lg overflow-hidden">
+          <div className="overflow-x-auto -mx-6 px-6 md:overflow-x-visible md:mx-0 md:px-0">
+            <table className="w-full text-xs md:text-sm bg-white rounded-lg overflow-hidden">
               <thead>
                 <tr className="border-b-2 border-brand bg-gray-50">
                   <th className="text-left py-4 px-4 font-bold text-gray-900">회사명</th>

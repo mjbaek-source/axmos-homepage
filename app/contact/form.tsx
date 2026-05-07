@@ -69,10 +69,10 @@ export default function ContactForm() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-brand text-white py-20">
+      <section className="bg-brand text-white py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-4xl font-black mb-4">파트너십 신청</h1>
-          <p className="text-lg text-blue-100">비용 Zero, 리스크 Zero</p>
+          <h1 className="text-3xl md:text-4xl font-black mb-4">파트너십 신청</h1>
+          <p className="text-base md:text-lg text-blue-100">비용 Zero, 리스크 Zero</p>
         </div>
       </section>
 
@@ -92,12 +92,12 @@ export default function ContactForm() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* 회사명 */}
             <div>
-              <label className="block font-bold text-gray-900 mb-2">회사명 *</label>
+              <label className="block font-bold text-gray-900 mb-2 text-sm md:text-base">회사명 *</label>
               <input
                 type="text"
                 name="company"
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand"
+                className="w-full px-4 py-3 md:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-brand text-base md:text-lg"
                 placeholder="예: 코드프레소"
               />
             </div>
@@ -163,7 +163,7 @@ export default function ContactForm() {
                     name="track"
                     value="AX Build"
                     required
-                    className="w-5 h-5"
+                    className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
                   />
                   <span>AX Build (우리가 직접 만들어드림)</span>
                 </label>
@@ -207,7 +207,7 @@ export default function ContactForm() {
                   type="checkbox"
                   name="privacy"
                   required
-                  className="w-5 h-5"
+                  className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
                 />
                 <span className="text-sm text-gray-700">
                   개인정보 수집·이용에 동의합니다 *
