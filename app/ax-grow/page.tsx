@@ -1,6 +1,11 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'AX Grow - 우리 팀이 직접 만드는 AI 업무 자동화',
+  description: '16일 동안 당신의 팀이 AI 역량을 갖추고 직접 AI Agent를 만듭니다. AI 내재화가 필요한 조직을 위한 교육형 솔루션.',
+  keywords: ['AX Grow', 'AI 교육', 'AI 역량 강화', 'AI 내재화', '비즈니스 빌더톤'],
+};
 
 export default function AXGrow() {
   return (

@@ -1,6 +1,11 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'AX Build - 우리가 직접 만드는 AI 업무 자동화',
+  description: '3주 안에 맞춤형 AI Agent를 구축해드립니다. 기술팀이 부족한 기업을 위한 완벽한 솔루션.',
+  keywords: ['AX Build', 'AI 구축', '맞춤형 솔루션', '업무 자동화', 'AI Agent'],
+};
 
 export default function AXBuild() {
   return (
