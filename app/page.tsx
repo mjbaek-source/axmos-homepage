@@ -8,15 +8,15 @@ export default function Home() {
   const [selectedIndustry, setSelectedIndustry] = useState<string>('전체');
 
   const cases = [
-    { company: '트랜스링크', industry: '물류', task: '배송 현황 리포트', effect: '월 20시간 단축' },
-    { company: '체인로지스', industry: '물류·마케팅', task: '고객사 공지사항 분류', effect: '월 40시간 단축' },
-    { company: '핀테크스타트업', industry: '금융·VC', task: '거래처 실사 요청 정리', effect: '월 30시간 단축' },
-    { company: '병원', industry: '헬스케어', task: '환자 상담 기록 정리', effect: '월 25시간 단축' },
-    { company: '세무·회계 법인', industry: '회계', task: '월말 정산서 생성', effect: '월 50시간 단축' },
-    { company: '보험사', industry: '금융', task: '청구 서류 심사', effect: '월 35시간 단축' },
-    { company: '식품 유통사', industry: '유통·마케팅', task: '주간 판매 현황 분석', effect: '월 15시간 단축' },
-    { company: '건설사', industry: '건설', task: '공정 보고서 작성', effect: '월 45시간 단축' },
-    { company: '에너지 회사', industry: '에너지', task: '사용량 청구서 처리', effect: '월 60시간 단축' },
+    { company: '트랜스링크 인베스트먼트', industry: '금융·VC', task: '거래처 실사 요청 정리', before: '3~5일', after: '1시간', reduction: '90~99%', effect: '월 30시간 단축' },
+    { company: '체인로지스', industry: '물류·마케팅', task: '고객사 공지사항 분류', before: '2~4시간', after: '3분', reduction: '97%', effect: '월 40시간 단축' },
+    { company: '체인로지스', industry: '물류·CS', task: '배송 문의 자동 응대', before: '수동 2명', after: 'AI 90%', reduction: '24h 무중단', effect: '24시간 운영' },
+    { company: '동탄퍼스트안과', industry: '헬스케어', task: '환자 상담 자동화', before: '수동 응대', after: 'AI 90%', reduction: '24h 무중단', effect: '24시간 운영' },
+    { company: '엑스퍼트 세무법인', industry: '회계', task: '월말 정산서 생성', before: '2~3시간', after: '10분', reduction: '90%', effect: '월 50시간 단축' },
+    { company: '엑스퍼트 세무법인', industry: '회계', task: '영수증 자동 분류', before: '10~20시간', after: '30분', reduction: '95%', effect: '월 40시간 단축' },
+    { company: '우하컴퍼니', industry: '이커머스·정산', task: '주문 정산 자동화', before: '2~3시간', after: '30초', reduction: '99%', effect: '월 60시간 단축' },
+    { company: '부자테이프', industry: '콘텐츠·미디어', task: '블로그 콘텐츠 생성', before: '2~4시간', after: '5분', reduction: '95%', effect: '월 80시간 단축' },
+    { company: '동탄퍼스트안과', industry: '헬스케어', task: '검사 결과 정리', before: '5~9분', after: '1.5~2분', reduction: '70%', effect: '월 15시간 단축' },
   ];
 
   const industries = ['전체', '물류', '물류·마케팅', '금융·VC', '금융', '헬스케어', '회계', '유통·마케팅', '건설', '에너지'];
@@ -103,7 +103,8 @@ export default function Home() {
                   <th className="text-left py-4 px-4 font-bold text-gray-900">회사명</th>
                   <th className="text-left py-4 px-4 font-bold text-gray-900">산업</th>
                   <th className="text-left py-4 px-4 font-bold text-gray-900">자동화 업무</th>
-                  <th className="text-center py-4 px-4 font-bold text-gray-900">효과</th>
+                  <th className="text-center py-4 px-4 font-bold text-gray-900">Before → After</th>
+                  <th className="text-center py-4 px-4 font-bold text-accent-after">절감율</th>
                 </tr>
               </thead>
               <tbody>
@@ -111,8 +112,13 @@ export default function Home() {
                   <tr key={i} className="border-b border-gray-300 hover:bg-blue-50 transition">
                     <td className="py-4 px-4 font-semibold text-gray-900">{c.company}</td>
                     <td className="py-4 px-4 text-gray-700">{c.industry}</td>
-                    <td className="py-4 px-4 text-gray-700">{c.task}</td>
-                    <td className="py-4 px-4 text-center"><span className="badge">{c.effect}</span></td>
+                    <td className="py-4 px-4 text-gray-700 text-xs">{c.task}</td>
+                    <td className="py-4 px-4 text-center text-gray-700">
+                      <span className="text-accent-before font-semibold">{c.before}</span>
+                      <span className="text-gray-400 mx-2">→</span>
+                      <span className="text-accent-after font-semibold">{c.after}</span>
+                    </td>
+                    <td className="py-4 px-4 text-center"><span className="badge bg-blue-100 text-accent-after">{c.reduction}</span></td>
                   </tr>
                 ))}
               </tbody>
@@ -126,36 +132,54 @@ export default function Home() {
         <h2 className="section-title text-center mb-12">대표 사례 3선</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white border-2 border-brand rounded-lg p-8">
-            <h3 className="text-lg font-bold text-brand mb-3">금융 VC 회사</h3>
-            <p className="text-gray-700 mb-4">
-              거래처 실사 요청을 자동으로 분류하고 정리하는 AI Agent 구축
+            <h3 className="text-lg font-bold text-brand mb-2">트랜스링크 인베스트먼트</h3>
+            <p className="text-xs text-gray-600 font-semibold mb-4">금융 / VC</p>
+            <p className="text-gray-700 mb-4 text-sm">
+              100개사 거래처 실사 요청을 자동으로 분류하고 정리하는 AI Agent
             </p>
-            <div className="bg-blue-50 p-4 rounded">
-              <p className="font-bold text-sm text-brand">결과</p>
-              <p className="text-sm text-gray-700 mt-2">월 30시간 업무 단축, 실수율 0%로 감소</p>
+            <div className="bg-blue-50 p-4 rounded mb-4">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-accent-before font-bold text-lg">3~5일</span>
+                <span className="text-gray-400">→</span>
+                <span className="text-accent-after font-bold text-lg">1시간</span>
+              </div>
+              <p className="text-xs text-gray-600">처리시간 99% 단축</p>
             </div>
+            <p className="text-sm text-gray-700">✓ 월 30시간 업무 단축<br/>✓ 실수율 0%</p>
           </div>
 
           <div className="bg-white border-2 border-brand rounded-lg p-8">
-            <h3 className="text-lg font-bold text-brand mb-3">물류 마케팅</h3>
-            <p className="text-gray-700 mb-4">
-              고객사 공지사항을 자동으로 분류하고 담당자에게 알림
+            <h3 className="text-lg font-bold text-brand mb-2">체인로지스 (두발히어로)</h3>
+            <p className="text-xs text-gray-600 font-semibold mb-4">물류 / 마케팅</p>
+            <p className="text-gray-700 mb-4 text-sm">
+              고객사 공지사항을 자동으로 분류하고 SNS 4채널 동시 발행
             </p>
-            <div className="bg-blue-50 p-4 rounded">
-              <p className="font-bold text-sm text-brand">결과</p>
-              <p className="text-sm text-gray-700 mt-2">월 40시간 단축, 대응 속도 5배 증가</p>
+            <div className="bg-blue-50 p-4 rounded mb-4">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-accent-before font-bold text-lg">2~4시간</span>
+                <span className="text-gray-400">→</span>
+                <span className="text-accent-after font-bold text-lg">3분</span>
+              </div>
+              <p className="text-xs text-gray-600">처리시간 97% 단축</p>
             </div>
+            <p className="text-sm text-gray-700">✓ 월 80시간 단축<br/>✓ 발행량 20배↑</p>
           </div>
 
           <div className="bg-white border-2 border-brand rounded-lg p-8">
-            <h3 className="text-lg font-bold text-brand mb-3">물류 고객 서비스</h3>
-            <p className="text-gray-700 mb-4">
-              배송 현황을 자동으로 수집하고 리포트 생성
+            <h3 className="text-lg font-bold text-brand mb-2">우하컴퍼니</h3>
+            <p className="text-xs text-gray-600 font-semibold mb-4">이커머스 / 정산</p>
+            <p className="text-gray-700 mb-4 text-sm">
+              월 수천 건 주문의 정산을 자동으로 처리하고 리포트 생성
             </p>
-            <div className="bg-blue-50 p-4 rounded">
-              <p className="font-bold text-sm text-brand">결과</p>
-              <p className="text-sm text-gray-700 mt-2">월 20시간 단축, 정확도 99.8%</p>
+            <div className="bg-blue-50 p-4 rounded mb-4">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-accent-before font-bold text-lg">2~3시간</span>
+                <span className="text-gray-400">→</span>
+                <span className="text-accent-after font-bold text-lg">30초</span>
+              </div>
+              <p className="text-xs text-gray-600">처리시간 99% 단축</p>
             </div>
+            <p className="text-sm text-gray-700">✓ 월 60시간 단축<br/>✓ 오류 0건</p>
           </div>
         </div>
       </section>
