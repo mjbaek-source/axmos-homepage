@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold text-gray-900 mb-8;
+  }
+
+  .badge {
+    @apply inline-block bg-blue-50 text-brand px-4 py-2 rounded-full font-semibold text-sm;
+  }
+}
