@@ -41,9 +41,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 사용 기업 로고 */}
+      <section className="bg-gradient-to-b from-white to-bg-light py-16">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <p className="text-sm font-bold text-brand uppercase tracking-widest mb-4 animate-slideUp">신뢰하는 기업들</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-12 animate-slideUp" style={{animationDelay: '0.1s'}}>
+            AXMOS와 함께 AI 자동화를 실행하는 기업들
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-center">
+            {[
+              { name: '트랜스링크', emoji: '💼' },
+              { name: '체인로지스', emoji: '📦' },
+              { name: '우하컴퍼니', emoji: '🛒' },
+              { name: '엑스퍼트 세무법인', emoji: '📊' },
+              { name: '동탄퍼스트안과', emoji: '⚕️' },
+              { name: '부자테이프', emoji: '✍️' },
+              { name: '더 많은 기업들', emoji: '🚀' },
+            ].map((company, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition transform hover:scale-105 animate-slideUp"
+                style={{animationDelay: `${i * 0.05}s`}}
+              >
+                <div className="text-4xl mb-3">{company.emoji}</div>
+                <p className="text-sm font-bold text-gray-800">{company.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 문제 제기 */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="section-title text-center mb-12">한국 기업의 AI 활용 현황</h2>
+      <section className="bg-gradient-to-b from-bg-light to-white py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="section-title text-center mb-12 animate-slideUp">한국 기업의 AI 활용 현황</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand">
             <p className="text-4xl font-black text-brand mb-2">77%</p>
@@ -56,7 +87,7 @@ export default function Home() {
             <p className="text-sm text-gray-600 mt-2">프로젝트 중단 또는 미활용</p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
+        <div className="flex flex-col md:flex-row gap-4 items-center justify-center animate-slideUp" style={{animationDelay: '0.2s'}}>
           <div className="w-full md:w-96 bg-accent-before bg-opacity-10 p-6 rounded-lg border-2 border-accent-before text-center">
             <p className="text-xs font-bold text-accent-before uppercase tracking-widest mb-2">Before</p>
             <p className="text-xs text-gray-600 font-semibold mb-3">예상 효율</p>
@@ -70,6 +101,7 @@ export default function Home() {
             <p className="text-5xl font-black text-accent-after mb-2">4.0%</p>
             <p className="text-xs text-gray-700 font-semibold">AXMOS로<br/>2배 이상 개선</p>
           </div>
+        </div>
         </div>
       </section>
 
@@ -362,31 +394,111 @@ export default function Home() {
       </section>
 
       {/* 진행 프로세스 */}
+      <section className="bg-gradient-to-b from-white to-bg-light py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="section-title text-center mb-12 animate-slideUp">진행 프로세스</h2>
+          {/* 데스크톱: 그리드 */}
+          <div className="hidden md:grid grid-cols-5 gap-4 mb-8">
+            <div className="bg-accent-before text-white p-8 rounded-2xl text-center card-hover transform hover:scale-105 transition-transform animate-slideUp">
+              <p className="text-4xl font-black mb-2">01</p>
+              <p className="font-bold text-lg mb-2">요청 분석</p>
+              <p className="text-sm opacity-90">당신의 업무<br/>현황 파악</p>
+            </div>
+            <div className="flex items-center justify-center text-3xl text-gray-400 font-bold">→</div>
+            <div className="bg-brand-light text-white p-8 rounded-2xl text-center card-hover transform hover:scale-105 transition-transform animate-slideUp" style={{animationDelay: '0.1s'}}>
+              <p className="text-4xl font-black mb-2">02</p>
+              <p className="font-bold text-lg mb-2">설계·개발</p>
+              <p className="text-sm opacity-90">맞춤형<br/>솔루션 개발</p>
+            </div>
+            <div className="flex items-center justify-center text-3xl text-gray-400 font-bold">→</div>
+            <div className="bg-accent-after text-white p-8 rounded-2xl text-center card-hover transform hover:scale-105 transition-transform animate-slideUp" style={{animationDelay: '0.2s'}}>
+              <p className="text-4xl font-black mb-2">03</p>
+              <p className="font-bold text-lg mb-2">테스트·배포</p>
+              <p className="text-sm opacity-90">검증 후<br/>운영 시작</p>
+            </div>
+          </div>
+          {/* 모바일: 가로 스크롤 */}
+          <div className="md:hidden overflow-x-auto -mx-6 px-6 pb-4">
+            <div className="flex gap-4 min-w-min">
+              <div className="bg-accent-before text-white p-6 rounded-2xl text-center card-hover flex-shrink-0 w-64 animate-slideUp">
+                <p className="text-4xl font-black mb-2">01</p>
+                <p className="font-bold text-lg mb-2">요청 분석</p>
+                <p className="text-sm opacity-90">당신의 업무<br/>현황 파악</p>
+              </div>
+              <div className="flex items-center justify-center text-2xl text-gray-400 font-bold flex-shrink-0">→</div>
+              <div className="bg-brand-light text-white p-6 rounded-2xl text-center card-hover flex-shrink-0 w-64 animate-slideUp" style={{animationDelay: '0.1s'}}>
+                <p className="text-4xl font-black mb-2">02</p>
+                <p className="font-bold text-lg mb-2">설계·개발</p>
+                <p className="text-sm opacity-90">맞춤형<br/>솔루션 개발</p>
+              </div>
+              <div className="flex items-center justify-center text-2xl text-gray-400 font-bold flex-shrink-0">→</div>
+              <div className="bg-accent-after text-white p-6 rounded-2xl text-center card-hover flex-shrink-0 w-64 animate-slideUp" style={{animationDelay: '0.2s'}}>
+                <p className="text-4xl font-black mb-2">03</p>
+                <p className="font-bold text-lg mb-2">테스트·배포</p>
+                <p className="text-sm opacity-90">검증 후<br/>운영 시작</p>
+              </div>
+            </div>
+          </div>
+          <p className="text-center text-gray-600 text-sm mt-8">💡 모바일에서 좌우로 스크롤 가능합니다</p>
+        </div>
+      </section>
+
+      {/* 블로그/뉴스 섹션 */}
       <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="section-title text-center mb-12 animate-slideUp">진행 프로세스</h2>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-          <div className="bg-accent-before text-white p-6 rounded-lg text-center card-hover">
-            <p className="text-xl font-bold mb-2">1단계</p>
-            <p className="font-semibold text-sm">요청 분석</p>
-            <p className="text-xs mt-2 opacity-90">당신의 업무<br/>현황 파악</p>
-          </div>
-          <div className="hidden md:flex items-center justify-center text-3xl text-gray-400 font-bold">→</div>
-          <div className="bg-brand-light text-white p-6 rounded-lg text-center card-hover">
-            <p className="text-xl font-bold mb-2">2단계</p>
-            <p className="font-semibold text-sm">설계·개발</p>
-            <p className="text-xs mt-2 opacity-90">맞춤형<br/>솔루션 개발</p>
-          </div>
-          <div className="hidden md:flex items-center justify-center text-3xl text-gray-400 font-bold">→</div>
-          <div className="bg-accent-after text-white p-6 rounded-lg text-center card-hover">
-            <p className="text-xl font-bold mb-2">3단계</p>
-            <p className="font-semibold text-sm">테스트·배포</p>
-            <p className="text-xs mt-2 opacity-90">검증 후<br/>운영 시작</p>
-          </div>
+        <h2 className="section-title text-center mb-4 animate-slideUp">최신 자동화 성공 사례</h2>
+        <p className="text-center text-gray-600 mb-12 animate-slideUp" style={{animationDelay: '0.1s'}}>
+          AI 자동화로 변화하는 기업들의 이야기를 만나보세요
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {[
+            {
+              title: '월 80시간 단축, SNS 발행량 20배 증가',
+              company: '체인로지스 (두발히어로)',
+              industry: '물류·마케팅',
+              color: 'border-green-500',
+              icon: '📦'
+            },
+            {
+              title: '거래처 실사 3~5일 → 1시간으로 단축',
+              company: '트랜스링크 인베스트먼트',
+              industry: '금융·VC',
+              color: 'border-blue-500',
+              icon: '💼'
+            },
+            {
+              title: '월 60시간 단축, 오류 0건 달성',
+              company: '우하컴퍼니',
+              industry: '이커머스·정산',
+              color: 'border-purple-500',
+              icon: '🛒'
+            }
+          ].map((article, i) => (
+            <div
+              key={i}
+              className={`bg-white border-l-4 ${article.color} p-6 rounded-lg hover:shadow-lg transition transform hover:scale-105 animate-slideUp card-hover`}
+              style={{animationDelay: `${i * 0.1}s`}}
+            >
+              <div className="text-4xl mb-3">{article.icon}</div>
+              <p className="text-xs font-bold text-gray-600 uppercase tracking-widest mb-2">{article.industry}</p>
+              <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">{article.title}</h3>
+              <p className="text-sm text-gray-700 font-semibold">{article.company}</p>
+              <div className="mt-4 pt-4 border-t border-gray-200">
+                <Link href="/cases" className="text-brand text-sm font-bold hover:underline">
+                  자세히 보기 →
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-12">
+          <Link href="/cases" className="inline-block bg-brand text-white font-bold py-3 px-8 rounded-lg hover:bg-brand-light transition transform hover:scale-105 animate-slideUp" style={{animationDelay: '0.3s'}}>
+            모든 성공 사례 보기 (9개) →
+          </Link>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="bg-bg-light py-20">
+      <section className="bg-gradient-to-b from-white via-bg-light to-white py-20">
         <div className="max-w-2xl mx-auto px-6">
           <h2 className="section-title text-center mb-12 animate-slideUp">자주 묻는 질문</h2>
           <div className="space-y-4">
@@ -436,7 +548,7 @@ export default function Home() {
       </section>
 
       {/* 최종 CTA */}
-      <section className="bg-gradient-to-r from-brand to-brand-light text-white py-20">
+      <section className="bg-gradient-to-r from-brand via-brand-light to-brand text-white py-24">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-black mb-6">지금 시작하세요</h2>
           <p className="text-xl text-blue-100 mb-8">

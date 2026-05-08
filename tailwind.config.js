@@ -12,6 +12,8 @@ module.exports = {
         'accent-before': '#E24B4A',
         'accent-after': '#1E88E5',
         'bg-light': '#F8F9FA',
+        'bg-dark': '#1A1A2E',
+        'bg-dark-light': '#16213E',
       },
       fontFamily: {
         sans: ['Pretendard Variable', 'Pretendard', 'sans-serif'],

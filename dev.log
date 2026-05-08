@@ -14,3 +14,51 @@
 
  ✓ Starting...
  ✓ Ready in 1522ms
+ ○ Compiling / ...
+ ✓ Compiled / in 7.8s (540 modules)
+ GET / 200 in 8569ms
+ ○ Compiling /cases ...
+ ✓ Compiled /cases in 768ms (546 modules)
+ ✓ Compiled in 676ms (279 modules)
+ ✓ Compiled in 1027ms (546 modules)
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Unexpected token `main`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\admin\Downloads\axmos-homepage\app\page.tsx[0m:25:1]
+ [2m25[0m |     : cases.filter(c => c.industry === selectedIndustry);
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <main>
+    : [31;1m     ^^^^[0m
+ [2m29[0m |       {/* Hero */}
+ [2m30[0m |       <section className="bg-gradient-to-r from-brand to-brand-light text-white py-16 md:py-24">
+ [2m31[0m |         <div className="max-w-6xl mx-auto px-6 text-center">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ○ Compiling /_error ...
+ ⨯ ./app/page.tsx
+Error: 
+  [31mx[0m Unexpected token `main`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\admin\Downloads\axmos-homepage\app\page.tsx[0m:25:1]
+ [2m25[0m |     : cases.filter(c => c.industry === selectedIndustry);
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <main>
+    : [31;1m     ^^^^[0m
+ [2m29[0m |       {/* Hero */}
+ [2m30[0m |       <section className="bg-gradient-to-r from-brand to-brand-light text-white py-16 md:py-24">
+ [2m31[0m |         <div className="max-w-6xl mx-auto px-6 text-center">
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ✓ Compiled /_error in 944ms (773 modules)
+ GET / 200 in 255ms
