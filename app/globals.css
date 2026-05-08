@@ -20,11 +20,19 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply bg-brand text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition;
+    @apply bg-white text-bg-dark font-semibold py-3 px-8 hover:bg-gray-200 transition;
+  }
+
+  .btn-secondary {
+    @apply border border-white/30 text-white font-semibold py-3 px-8 hover:bg-white/10 transition;
   }
 
   .section-title {
-    @apply text-3xl font-bold text-gray-900 mb-8;
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+  }
+
+  .section-eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-4;
   }
 
   .badge {
@@ -40,6 +48,10 @@ body {
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:scale-105;
+    @apply transition-all duration-300;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6;
   }
 }

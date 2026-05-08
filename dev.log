@@ -122,3 +122,1396 @@ Import trace for requested module:
  ✓ Compiled in 2s (779 modules)
  ✓ Compiled in 1582ms (779 modules)
  ✓ Compiled in 632ms (468 modules)
+ ✓ Compiled in 1572ms (779 modules)
+ ✓ Compiled in 1033ms (779 modules)
+ ✓ Compiled in 1062ms (779 modules)
+ GET / 200 in 436ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 569ms (768 modules)
+ GET /_next/static/chunks/app-pages-internals.js 404 in 871ms
+ GET /_next/static/chunks/main-app.js?v=1778219525924 404 in 887ms
+ ✓ Compiled in 944ms (782 modules)
+ GET /cases 200 in 414ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 635ms (316 modules)
+ ○ Compiling /ax-grow ...
+ ✓ Compiled /ax-grow in 2.1s (773 modules)
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\ax-grow\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:347
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:392)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\ax-grow\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 939ms (768 modules)
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\pages\\_document.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module './276.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\ax-grow\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:347
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:392)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\ax-grow\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\pages\\_document.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\admin\Downloads\axmos-homepage\.next\fallback-build-manifest.json'
+    at readFileSync (node:fs:440:20)
+    at loadManifest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-manifest.js:36:52)
+    at loadManifestWithRetries (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:2203:40)
+    at async pipe.req.req (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:2056:30)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:395:24)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\fallback-build-manifest.json'
+}
+ GET / 500 in 1498ms
+ GET / 500 in 224ms
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:347
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:392)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\pages\\_document.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\pages\\_document.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module './276.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:347
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:392)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\pages\\_document.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\pages\\_document.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\admin\Downloads\axmos-homepage\.next\fallback-build-manifest.json'
+    at readFileSync (node:fs:440:20)
+    at loadManifest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-manifest.js:36:52)
+    at loadManifestWithRetries (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:2203:40)
+    at async pipe.req.req (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:2056:30)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:395:24)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\fallback-build-manifest.json'
+}
+ GET / 500 in 512ms
+ GET / 500 in 240ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 870ms (771 modules)
+ GET / 404 in 978ms
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\_not-found\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:347
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:392)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\_not-found\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module './276.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\_not-found\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:347
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:392)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\_not-found\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\admin\Downloads\axmos-homepage\.next\fallback-build-manifest.json'
+    at readFileSync (node:fs:440:20)
+    at loadManifest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-manifest.js:36:52)
+    at loadManifestWithRetries (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:2203:40)
+    at async pipe.req.req (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:2056:30)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:395:24)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\fallback-build-manifest.json'
+}
+ GET / 500 in 536ms
+ GET / 500 in 240ms
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\_not-found\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:347
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:392)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\_not-found\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module './276.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\_not-found\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:347
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:392)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\_not-found\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\admin\Downloads\axmos-homepage\.next\fallback-build-manifest.json'
+    at readFileSync (node:fs:440:20)
+    at loadManifest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-manifest.js:36:52)
+    at loadManifestWithRetries (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:2203:40)
+    at async pipe.req.req (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:2056:30)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:395:24)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\fallback-build-manifest.json'
+}
+ GET / 500 in 526ms
+ GET / 500 in 242ms
+ ⨯ Error: Cannot find module './276.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\_not-found\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:347
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:392)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\_not-found\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: Cannot find module './276.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\_not-found\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:347
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js:15:392)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+- C:\Users\admin\Downloads\axmos-homepage\.next\server\app\_not-found\page.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-middleware.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1456:15)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1066:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1071:22)
+    at Module._load (node:internal/modules/cjs/loader:1242:25)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:198:28)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js:162:22)
+    at C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (C:\Users\admin\Downloads\axmos-homepage\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1556:12)
+    at mod.require (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js:109:84)
+    at C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\next-server.js:714:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\webpack-runtime.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\server\\app\\_not-found\\page.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\require.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\load-components.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\build\\utils.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\admin\\Downloads\\axmos-homepage\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\admin\Downloads\axmos-homepage\.next\fallback-build-manifest.json'
+    at readFileSync (node:fs:440:20)
+    at loadManifest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-manifest.js:36:52)
+    at loadManifestWithRetries (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js:40:51)
+    at async loadDefaultErrorComponentsImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-default-error-components.js:30:24)
+    at async DevServer.getFallbackErrorComponents (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:594:16)
+    at async DevServer.renderErrorToResponseImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:2203:40)
+    at async pipe.req.req (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:2056:30)
+    at async DevServer.pipeImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\base-server.js:922:25)
+    at async C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async requestHandlerImpl (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\router-server.js:395:24)
+    at async Server.requestListener (C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\admin\\Downloads\\axmos-homepage\\.next\\fallback-build-manifest.json'
+}
+ GET / 500 in 486ms
+ GET / 500 in 231ms
+ ✓ Compiled in 1224ms (768 modules)
+ ⚠ Found a change in next.config.js. Restarting the server to apply the changes...
+ ⚠ Port 3000 is in use, trying 3001 instead.
+ ⚠ Port 3001 is in use, trying 3002 instead.
+ ⚠ Port 3002 is in use, trying 3003 instead.
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3003
+
+ ✓ Starting...
+ ✓ Ready in 5.2s
+ ○ Compiling / ...
+ ✓ Compiled / in 8.9s (516 modules)
+ GET / 200 in 9752ms
+ ✓ Compiled in 1603ms (516 modules)
