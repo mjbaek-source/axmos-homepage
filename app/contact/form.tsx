@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
@@ -66,176 +67,202 @@ export default function ContactForm() {
     }
   };
 
+  const inputClass = (field: string) =>
+    `w-full px-4 py-4 bg-white border text-bg-dark focus:outline-none transition ${
+      touched[field] && errors[field]
+        ? 'border-red-500 focus:border-red-500'
+        : 'border-gray-300 focus:border-bg-dark'
+    }`;
+
   return (
-    <main>
-      {/* Hero */}
-      <section className="bg-brand text-white py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-3xl md:text-4xl font-black mb-4">파트너십 신청</h1>
-          <p className="text-base md:text-lg text-blue-100">비용 Zero, 리스크 Zero</p>
+    <main className="bg-white">
+      {/* HERO */}
+      <section className="relative bg-bg-dark text-white overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=2400&q=80')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/60 via-bg-dark/80 to-bg-dark"></div>
+
+        <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
+          <p className="section-eyebrow">Get in Touch</p>
+          <h1 className="text-5xl md:text-7xl font-black leading-[0.95] tracking-tight mb-6 max-w-3xl">
+            Schedule a Demo.
+          </h1>
+          <p className="text-lg md:text-xl text-text-light max-w-2xl leading-relaxed">
+            첫 미팅에서 자동화 가능 영역과 예상 ROI를 함께 분석해 드립니다.
+            2영업일 내에 답변드립니다.
+          </p>
         </div>
       </section>
 
-      {/* Form */}
-      <section className="max-w-2xl mx-auto px-6 py-20">
-        {submitted ? (
-          <div className="bg-green-50 border-2 border-green-200 rounded-lg p-12 text-center">
-            <h2 className="text-2xl font-bold text-green-900 mb-4">신청이 완료되었습니다! ✓</h2>
-            <p className="text-green-700 mb-6">
-              감사합니다! 2영업일 내에 axmos@codepresso.io에서 회신해드리겠습니다.
-            </p>
-            <a href="/" className="text-brand font-bold hover:underline">
-              홈으로 돌아가기 →
-            </a>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="space-y-6">
-            {/* 회사명 */}
-            <div>
-              <label className="block font-bold text-gray-900 mb-2 text-sm md:text-base">회사명 *</label>
-              <input
-                type="text"
-                name="company"
-                required
-                className="w-full px-4 py-3 md:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-brand text-base md:text-lg"
-                placeholder="예: 코드프레소"
-              />
+      {/* FORM */}
+      <section className="py-24 bg-white">
+        <div className="max-w-3xl mx-auto px-6">
+          {submitted ? (
+            <div className="bg-bg-light border border-gray-300 p-12 md:p-16">
+              <p className="section-eyebrow text-bg-dark/60">Submitted</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-bg-dark mb-6">
+                신청이 완료되었습니다.
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-8">
+                감사합니다. 2영업일 내에 <span className="font-semibold text-bg-dark">axmos@codepresso.io</span>에서
+                회신해드리겠습니다. 첫 미팅에서는 자동화 가능 영역 분석과 예상 ROI를 함께 검토합니다.
+              </p>
+              <Link href="/" className="inline-flex items-center text-bg-dark font-semibold border-b-2 border-bg-dark pb-1 hover:opacity-60 transition">
+                Back to Home →
+              </Link>
             </div>
-
-            {/* 담당자 이름 */}
-            <div>
-              <label className="block font-bold text-gray-900 mb-2">담당자 이름 *</label>
-              <input
-                type="text"
-                name="name"
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand"
-                placeholder="이름"
-              />
-            </div>
-
-            {/* 이메일 */}
-            <div>
-              <label className="block font-bold text-gray-900 mb-2">이메일 *</label>
-              <input
-                type="email"
-                name="email"
-                required
-                onBlur={() => handleBlur('email')}
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none transition ${
-                  touched.email && errors.email
-                    ? 'border-red-500 focus:border-red-500'
-                    : 'border-gray-300 focus:border-brand'
-                }`}
-                placeholder="your@email.com"
-              />
-              {touched.email && errors.email && (
-                <p className="text-red-500 text-sm mt-2">{errors.email}</p>
-              )}
-            </div>
-
-            {/* 휴대폰 */}
-            <div>
-              <label className="block font-bold text-gray-900 mb-2">휴대폰</label>
-              <input
-                type="tel"
-                name="phone"
-                onBlur={() => handleBlur('phone')}
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none transition ${
-                  touched.phone && errors.phone
-                    ? 'border-red-500 focus:border-red-500'
-                    : 'border-gray-300 focus:border-brand'
-                }`}
-                placeholder="010-0000-0000"
-              />
-              {touched.phone && errors.phone && (
-                <p className="text-red-500 text-sm mt-2">{errors.phone}</p>
-              )}
-            </div>
-
-            {/* 관심 트랙 */}
-            <div>
-              <label className="block font-bold text-gray-900 mb-4">관심 트랙 *</label>
-              <div className="space-y-3">
-                <label className="flex items-center gap-3 cursor-pointer">
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-8">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block font-semibold text-bg-dark mb-3 text-sm uppercase tracking-wider">
+                    Company *
+                  </label>
                   <input
-                    type="radio"
-                    name="track"
-                    value="AX Build"
+                    type="text"
+                    name="company"
                     required
-                    className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
+                    className={inputClass('company')}
+                    placeholder="회사명"
                   />
-                  <span>AX Build (우리가 직접 만들어드림)</span>
-                </label>
-                <label className="flex items-center gap-3 cursor-pointer">
+                </div>
+                <div>
+                  <label className="block font-semibold text-bg-dark mb-3 text-sm uppercase tracking-wider">
+                    Name *
+                  </label>
                   <input
-                    type="radio"
-                    name="track"
-                    value="AX Grow"
-                    className="w-5 h-5"
+                    type="text"
+                    name="name"
+                    required
+                    className={inputClass('name')}
+                    placeholder="담당자 이름"
                   />
-                  <span>AX Grow (우리 팀이 직접 만듦)</span>
-                </label>
-                <label className="flex items-center gap-3 cursor-pointer">
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block font-semibold text-bg-dark mb-3 text-sm uppercase tracking-wider">
+                    Email *
+                  </label>
                   <input
-                    type="radio"
-                    name="track"
-                    value="아직 모르겠음"
-                    className="w-5 h-5"
+                    type="email"
+                    name="email"
+                    required
+                    onBlur={() => handleBlur('email')}
+                    className={inputClass('email')}
+                    placeholder="your@email.com"
                   />
-                  <span>아직 모르겠음</span>
+                  {touched.email && errors.email && (
+                    <p className="text-red-500 text-sm mt-2">{errors.email}</p>
+                  )}
+                </div>
+                <div>
+                  <label className="block font-semibold text-bg-dark mb-3 text-sm uppercase tracking-wider">
+                    Phone
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    onBlur={() => handleBlur('phone')}
+                    className={inputClass('phone')}
+                    placeholder="010-0000-0000"
+                  />
+                  {touched.phone && errors.phone && (
+                    <p className="text-red-500 text-sm mt-2">{errors.phone}</p>
+                  )}
+                </div>
+              </div>
+
+              <div>
+                <label className="block font-semibold text-bg-dark mb-4 text-sm uppercase tracking-wider">
+                  Engagement Model *
+                </label>
+                <div className="grid md:grid-cols-3 gap-3">
+                  {[
+                    { value: 'AX Build', title: 'AX Build', desc: 'AXMOS 팀이 직접 구축' },
+                    { value: 'AX Grow', title: 'AX Grow', desc: '팀이 함께 배우며 구축' },
+                    { value: '아직 모르겠음', title: '아직 모르겠음', desc: '상담 후 결정하고 싶음' },
+                  ].map((opt) => (
+                    <label
+                      key={opt.value}
+                      className="border border-gray-300 p-5 cursor-pointer hover:border-bg-dark transition has-[:checked]:bg-bg-dark has-[:checked]:text-white has-[:checked]:border-bg-dark"
+                    >
+                      <input
+                        type="radio"
+                        name="track"
+                        value={opt.value}
+                        required
+                        className="sr-only"
+                      />
+                      <p className="font-bold mb-1">{opt.title}</p>
+                      <p className="text-xs opacity-70">{opt.desc}</p>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="block font-semibold text-bg-dark mb-3 text-sm uppercase tracking-wider">
+                  Workflow to Automate *
+                </label>
+                <input
+                  type="text"
+                  name="task"
+                  required
+                  className={inputClass('task')}
+                  placeholder="예: 월말 정산서 100건 발송, 거래처 실사 요청 정리 등"
+                />
+                <p className="text-xs text-gray-500 mt-2">
+                  구체적으로 작성해주실수록 더 정확한 상담이 가능합니다.
+                </p>
+              </div>
+
+              <div className="border-t border-gray-200 pt-8">
+                <label className="flex items-start gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    name="privacy"
+                    required
+                    className="w-5 h-5 mt-0.5 cursor-pointer accent-bg-dark"
+                  />
+                  <span className="text-sm text-gray-700 leading-relaxed">
+                    개인정보 수집·이용에 동의합니다. 수집된 정보는 상담 목적으로만 사용되며,
+                    제3자에게 제공되지 않습니다. *
+                  </span>
                 </label>
               </div>
-            </div>
 
-            {/* 자동화하고 싶은 업무 */}
-            <div>
-              <label className="block font-bold text-gray-900 mb-2">자동화하고 싶은 업무 (한 줄) *</label>
-              <input
-                type="text"
-                name="task"
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-brand"
-                placeholder="예: 월말 정산서 100건 발송"
-              />
-            </div>
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full bg-bg-dark text-white font-semibold py-5 hover:bg-bg-dark-3 disabled:opacity-50 transition flex items-center justify-center gap-3"
+              >
+                {loading ? (
+                  <>
+                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                    제출 중...
+                  </>
+                ) : (
+                  <>
+                    Schedule a Demo
+                    <span>→</span>
+                  </>
+                )}
+              </button>
 
-            {/* 개인정보 동의 */}
-            <div>
-              <label className="flex items-center gap-3 cursor-pointer">
-                <input
-                  type="checkbox"
-                  name="privacy"
-                  required
-                  className="w-5 h-5 md:w-6 md:h-6 cursor-pointer"
-                />
-                <span className="text-sm text-gray-700">
-                  개인정보 수집·이용에 동의합니다 *
-                </span>
-              </label>
-            </div>
-
-            {/* Submit */}
-            <button
-              type="submit"
-              disabled={loading}
-              className="w-full bg-brand text-white font-bold py-4 rounded-lg hover:bg-opacity-90 disabled:opacity-50 transition mt-8 flex items-center justify-center gap-2"
-            >
-              {loading ? (
-                <>
-                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                  제출 중...
-                </>
-              ) : (
-                '무료 신청하기'
-              )}
-            </button>
-
-            <p className="text-center text-sm text-gray-600">
-              제출 후 2영업일 내에 연락드리겠습니다.
-            </p>
-          </form>
-        )}
+              <p className="text-center text-sm text-gray-600">
+                ⚡ 2영업일 내 답변 · 무료 상담
+              </p>
+            </form>
+          )}
+        </div>
       </section>
     </main>
   );
