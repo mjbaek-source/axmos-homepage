@@ -99,3 +99,9 @@ Import trace for requested module:
 <w>  at resolve commonjs C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
  ✓ Compiled in 1862ms (771 modules)
  ✓ Compiled in 412ms (464 modules)
+ ✓ Compiled in 1170ms (757 modules)
+ ✓ Compiled in 2.1s (771 modules)
+ ✓ Compiled in 1964ms (771 modules)
+ ✓ Compiled in 1121ms (757 modules)
+ ✓ Compiled in 1279ms (771 modules)
+ ✓ Compiled in 1930ms (763 modules)
