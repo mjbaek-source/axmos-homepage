@@ -105,3 +105,20 @@ Import trace for requested module:
  ✓ Compiled in 1121ms (757 modules)
  ✓ Compiled in 1279ms (771 modules)
  ✓ Compiled in 1930ms (763 modules)
+ GET / 200 in 468ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1782ms (766 modules)
+ GET /_next/static/chunks/main-app.js?v=1778217722134 404 in 2243ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 2225ms
+ GET /cases 200 in 124ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 142ms
+ GET /_next/static/chunks/main-app.js?v=1778217735074 404 in 141ms
+ GET /_next/static/chunks/app/cases/page.js 404 in 141ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 1234ms (787 modules)
+ GET /contact 200 in 1405ms
+ GET /_next/static/chunks/main-app.js?v=1778217764680 404 in 111ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 107ms
+ ✓ Compiled in 2s (779 modules)
+ ✓ Compiled in 1582ms (779 modules)
+ ✓ Compiled in 632ms (468 modules)

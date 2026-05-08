@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'axmos@codepresso.io';
 
 export async function POST(request: NextRequest) {
@@ -15,6 +14,16 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
+
+    if (!process.env.RESEND_API_KEY) {
+      console.log('신청 정보 (이메일 미발송):', { company, name, email, phone, track, task });
+      return NextResponse.json(
+        { success: true, message: '신청이 완료되었습니다' },
+        { status: 200 }
+      );
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     // 관리자에게 보낼 이메일
     const adminEmailResult = await resend.emails.send({
