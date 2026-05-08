@@ -127,153 +127,186 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 대표 사례 */}
+      {/* 대표 사례 3선 */}
       <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="section-title text-center mb-12 animate-slideUp">대표 사례 3선</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white border-2 border-brand rounded-lg p-8 card-hover">
-            <h3 className="text-lg font-bold text-brand mb-2">트랜스링크 인베스트먼트</h3>
-            <p className="text-xs text-gray-600 font-semibold mb-4">금융 / VC</p>
-            <p className="text-gray-700 mb-4 text-sm">
-              100개사 거래처 실사 요청을 자동으로 분류하고 정리하는 AI Agent
-            </p>
-            <div className="bg-blue-50 p-4 rounded mb-4">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-accent-before font-bold text-lg">3~5일</span>
-                <span className="text-gray-400">→</span>
-                <span className="text-accent-after font-bold text-lg">1시간</span>
+        <h2 className="section-title text-center mb-4 animate-slideUp">대표 사례 3선</h2>
+        <p className="text-center text-gray-600 mb-12 animate-slideUp" style={{animationDelay: '0.1s'}}>
+          검증된 성과로 증명하는 AXMOS의 진정한 가치
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+          {/* 금융 */}
+          <div className="bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-2xl overflow-hidden card-hover transform hover:scale-105 transition-transform animate-slideUp">
+            <div className="p-8">
+              <div className="text-5xl font-black mb-4 opacity-20">💼</div>
+              <h3 className="text-xl font-bold mb-1">트랜스링크 인베스트먼트</h3>
+              <p className="text-blue-100 text-xs font-semibold mb-4">금융 · VC</p>
+              <p className="text-sm mb-6 text-blue-50 leading-relaxed">
+                100개사 거래처 실사 요청을 자동으로 분류하고 정리하는 AI Agent
+              </p>
+              <div className="bg-white bg-opacity-20 p-4 rounded-lg mb-4 border border-white border-opacity-30">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-2xl font-black">3~5일</span>
+                  <span className="text-xl">→</span>
+                  <span className="text-2xl font-black">1시간</span>
+                </div>
+                <p className="text-xs opacity-90">처리시간 99% 단축</p>
               </div>
-              <p className="text-xs text-gray-600">처리시간 99% 단축</p>
+              <ul className="text-sm space-y-1">
+                <li>✓ 월 30시간 업무 단축</li>
+                <li>✓ 실수율 0%</li>
+              </ul>
             </div>
-            <p className="text-sm text-gray-700">✓ 월 30시간 업무 단축<br/>✓ 실수율 0%</p>
           </div>
 
-          <div className="bg-white border-2 border-brand rounded-lg p-8 card-hover">
-            <h3 className="text-lg font-bold text-brand mb-2">체인로지스 (두발히어로)</h3>
-            <p className="text-xs text-gray-600 font-semibold mb-4">물류 / 마케팅</p>
-            <p className="text-gray-700 mb-4 text-sm">
-              고객사 공지사항을 자동으로 분류하고 SNS 4채널 동시 발행
-            </p>
-            <div className="bg-blue-50 p-4 rounded mb-4">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-accent-before font-bold text-lg">2~4시간</span>
-                <span className="text-gray-400">→</span>
-                <span className="text-accent-after font-bold text-lg">3분</span>
+          {/* 물류 */}
+          <div className="bg-gradient-to-br from-green-500 to-green-600 text-white rounded-2xl overflow-hidden card-hover transform hover:scale-105 transition-transform animate-slideUp" style={{animationDelay: '0.1s'}}>
+            <div className="p-8">
+              <div className="text-5xl font-black mb-4 opacity-20">📦</div>
+              <h3 className="text-xl font-bold mb-1">체인로지스 (두발히어로)</h3>
+              <p className="text-green-100 text-xs font-semibold mb-4">물류 · 마케팅</p>
+              <p className="text-sm mb-6 text-green-50 leading-relaxed">
+                고객사 공지사항을 자동으로 분류하고 SNS 4채널 동시 발행
+              </p>
+              <div className="bg-white bg-opacity-20 p-4 rounded-lg mb-4 border border-white border-opacity-30">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-2xl font-black">2~4시간</span>
+                  <span className="text-xl">→</span>
+                  <span className="text-2xl font-black">3분</span>
+                </div>
+                <p className="text-xs opacity-90">처리시간 97% 단축</p>
               </div>
-              <p className="text-xs text-gray-600">처리시간 97% 단축</p>
+              <ul className="text-sm space-y-1">
+                <li>✓ 월 80시간 단축</li>
+                <li>✓ 발행량 20배↑</li>
+              </ul>
             </div>
-            <p className="text-sm text-gray-700">✓ 월 80시간 단축<br/>✓ 발행량 20배↑</p>
           </div>
 
-          <div className="bg-white border-2 border-brand rounded-lg p-8 card-hover">
-            <h3 className="text-lg font-bold text-brand mb-2">우하컴퍼니</h3>
-            <p className="text-xs text-gray-600 font-semibold mb-4">이커머스 / 정산</p>
-            <p className="text-gray-700 mb-4 text-sm">
-              월 수천 건 주문의 정산을 자동으로 처리하고 리포트 생성
-            </p>
-            <div className="bg-blue-50 p-4 rounded mb-4">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-accent-before font-bold text-lg">2~3시간</span>
-                <span className="text-gray-400">→</span>
-                <span className="text-accent-after font-bold text-lg">30초</span>
+          {/* 이커머스 */}
+          <div className="bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-2xl overflow-hidden card-hover transform hover:scale-105 transition-transform animate-slideUp" style={{animationDelay: '0.2s'}}>
+            <div className="p-8">
+              <div className="text-5xl font-black mb-4 opacity-20">🛒</div>
+              <h3 className="text-xl font-bold mb-1">우하컴퍼니</h3>
+              <p className="text-purple-100 text-xs font-semibold mb-4">이커머스 · 정산</p>
+              <p className="text-sm mb-6 text-purple-50 leading-relaxed">
+                월 수천 건 주문의 정산을 자동으로 처리하고 리포트 생성
+              </p>
+              <div className="bg-white bg-opacity-20 p-4 rounded-lg mb-4 border border-white border-opacity-30">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-2xl font-black">2~3시간</span>
+                  <span className="text-xl">→</span>
+                  <span className="text-2xl font-black">30초</span>
+                </div>
+                <p className="text-xs opacity-90">처리시간 99% 단축</p>
               </div>
-              <p className="text-xs text-gray-600">처리시간 99% 단축</p>
+              <ul className="text-sm space-y-1">
+                <li>✓ 월 60시간 단축</li>
+                <li>✓ 오류 0건</li>
+              </ul>
             </div>
-            <p className="text-sm text-gray-700">✓ 월 60시간 단축<br/>✓ 오류 0건</p>
           </div>
+        </div>
+        <div className="text-center">
+          <Link href="/cases" className="inline-block bg-brand text-white font-bold py-3 px-8 rounded-lg hover:bg-brand-light transition transform hover:scale-105 animate-slideUp" style={{animationDelay: '0.3s'}}>
+            전체 사례 9개 보기 →
+          </Link>
         </div>
       </section>
 
       {/* AXMOS 차별점 */}
-      <section className="bg-brand text-white py-20">
+      <section className="bg-gradient-to-r from-brand to-brand-light text-white py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">AXMOS 차별점</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="flex gap-6">
-              <div className="text-4xl font-black flex-shrink-0">⚡</div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">3주 초고속 구축</h3>
-                <p className="text-blue-100">
-                  기획부터 배포까지 3주 안에 완성. 기업의 시간은 금입니다.
-                </p>
-              </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 animate-slideUp">AXMOS만의 차별점</h2>
+          <p className="text-center text-blue-100 mb-16 animate-slideUp" style={{animationDelay: '0.1s'}}>
+            빠르고, 검증되고, 안전한 AI 자동화의 완성
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 hover:bg-opacity-20 transition card-hover animate-slideUp">
+              <div className="text-7xl mb-6 animate-bounce">⚡</div>
+              <h3 className="text-2xl font-bold mb-3">3주 초고속 구축</h3>
+              <p className="text-blue-100 text-sm leading-relaxed">
+                기획부터 배포까지 3주 안에 완성. 기업의 시간은 금입니다. 오늘부터 시작하면 3주 후 바로 운영 가능합니다.
+              </p>
             </div>
 
-            <div className="flex gap-6">
-              <div className="text-4xl font-black flex-shrink-0">🌍</div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">글로벌 개발 인력</h3>
-                <p className="text-blue-100">
-                  한국 PM과 동남아 개발팀의 조합으로 비용은 낮추고 품질은 높입니다.
-                </p>
-              </div>
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 hover:bg-opacity-20 transition card-hover animate-slideUp" style={{animationDelay: '0.1s'}}>
+              <div className="text-7xl mb-6 animate-bounce">🌍</div>
+              <h3 className="text-2xl font-bold mb-3">글로벌 개발 인력</h3>
+              <p className="text-blue-100 text-sm leading-relaxed">
+                한국 PM과 동남아 개발팀의 조합으로 비용은 낮추고 품질은 높입니다. 더 빠르고 효율적입니다.
+              </p>
             </div>
 
-            <div className="flex gap-6">
-              <div className="text-4xl font-black flex-shrink-0">📊</div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">10만명 데이터 기반</h3>
-                <p className="text-blue-100">
-                  1000+ 프로젝트 경험과 10만명 사용자 데이터로 최적화된 솔루션 제공
-                </p>
-              </div>
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 hover:bg-opacity-20 transition card-hover animate-slideUp" style={{animationDelay: '0.2s'}}>
+              <div className="text-7xl mb-6 animate-bounce">📊</div>
+              <h3 className="text-2xl font-bold mb-3">10만명 데이터 기반</h3>
+              <p className="text-blue-100 text-sm leading-relaxed">
+                1000+ 프로젝트 경험과 10만명 사용자 데이터로 최적화된 솔루션 제공. 검증된 방식입니다.
+              </p>
             </div>
 
-            <div className="flex gap-6">
-              <div className="text-4xl font-black flex-shrink-0">🔒</div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">기업 보안 준수</h3>
-                <p className="text-blue-100">
-                  ISO 27001, SOC 2 인증. 금융, 공공기관 보안 기준 충족
-                </p>
-              </div>
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 hover:bg-opacity-20 transition card-hover animate-slideUp" style={{animationDelay: '0.2s'}}>
+              <div className="text-7xl mb-6 animate-bounce">🔒</div>
+              <h3 className="text-2xl font-bold mb-3">기업 보안 준수</h3>
+              <p className="text-blue-100 text-sm leading-relaxed">
+                ISO 27001, SOC 2 인증. 금융, 공공기관 보안 기준 충족. 데이터는 완벽하게 보호됩니다.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* 자동화 가능 영역 */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="section-title text-center mb-12 animate-slideUp">자동화 가능 영역</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand card-hover">
-            <h3 className="text-xl font-bold text-brand mb-4">병원·의료</h3>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li>• 환자 상담 기록 정리</li>
-              <li>• 처방전 관리 자동화</li>
-              <li>• 검사 결과 요약</li>
-              <li>• 예약 시스템 자동 운영</li>
-            </ul>
-          </div>
+      <section className="bg-white py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="section-title text-center mb-4 animate-slideUp">자동화 가능 영역</h2>
+          <p className="text-center text-gray-600 mb-12 animate-slideUp" style={{animationDelay: '0.1s'}}>
+            AXMOS가 지원하는 다양한 산업과 업무 영역
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl border-l-4 border-red-500 card-hover transform hover:scale-105 transition-transform animate-slideUp">
+              <div className="text-5xl mb-4">⚕️</div>
+              <h3 className="text-xl font-bold text-red-700 mb-4">병원·의료</h3>
+              <ul className="space-y-2 text-gray-700 text-sm font-medium">
+                <li>✓ 환자 상담 기록 정리</li>
+                <li>✓ 처방전 관리 자동화</li>
+                <li>✓ 검사 결과 요약</li>
+                <li>✓ 예약 시스템 자동 운영</li>
+              </ul>
+            </div>
 
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand card-hover">
-            <h3 className="text-xl font-bold text-brand mb-4">세무·회계</h3>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li>• 월말 정산서 자동 생성</li>
-              <li>• 영수증 자동 분류</li>
-              <li>• 세금 신고 데이터 정리</li>
-              <li>• 거래처 장부 관리</li>
-            </ul>
-          </div>
+            <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl border-l-4 border-green-500 card-hover transform hover:scale-105 transition-transform animate-slideUp" style={{animationDelay: '0.1s'}}>
+              <div className="text-5xl mb-4">📊</div>
+              <h3 className="text-xl font-bold text-green-700 mb-4">세무·회계</h3>
+              <ul className="space-y-2 text-gray-700 text-sm font-medium">
+                <li>✓ 월말 정산서 자동 생성</li>
+                <li>✓ 영수증 자동 분류</li>
+                <li>✓ 세금 신고 데이터 정리</li>
+                <li>✓ 거래처 장부 관리</li>
+              </ul>
+            </div>
 
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand card-hover">
-            <h3 className="text-xl font-bold text-brand mb-4">물류·CS</h3>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li>• 배송 현황 리포트 자동화</li>
-              <li>• 고객 문의 분류 및 응답</li>
-              <li>• 재고 관리 자동화</li>
-              <li>• 배송 추적 정보 수집</li>
-            </ul>
-          </div>
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl border-l-4 border-orange-500 card-hover transform hover:scale-105 transition-transform animate-slideUp" style={{animationDelay: '0.2s'}}>
+              <div className="text-5xl mb-4">📦</div>
+              <h3 className="text-xl font-bold text-orange-700 mb-4">물류·CS</h3>
+              <ul className="space-y-2 text-gray-700 text-sm font-medium">
+                <li>✓ 배송 현황 리포트 자동화</li>
+                <li>✓ 고객 문의 분류 및 응답</li>
+                <li>✓ 재고 관리 자동화</li>
+                <li>✓ 배송 추적 정보 수집</li>
+              </ul>
+            </div>
 
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand card-hover">
-            <h3 className="text-xl font-bold text-brand mb-4">금융·VC</h3>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li>• 거래처 실사 요청 정리</li>
-              <li>• 청구서 심사 자동화</li>
-              <li>• 투자 기회 분석</li>
-              <li>• 계약서 검토 지원</li>
-            </ul>
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-l-4 border-blue-500 card-hover transform hover:scale-105 transition-transform animate-slideUp" style={{animationDelay: '0.2s'}}>
+              <div className="text-5xl mb-4">💼</div>
+              <h3 className="text-xl font-bold text-blue-700 mb-4">금융·VC</h3>
+              <ul className="space-y-2 text-gray-700 text-sm font-medium">
+                <li>✓ 거래처 실사 요청 정리</li>
+                <li>✓ 청구서 심사 자동화</li>
+                <li>✓ 투자 기회 분석</li>
+                <li>✓ 계약서 검토 지원</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
