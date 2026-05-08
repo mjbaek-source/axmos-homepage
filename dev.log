@@ -97,3 +97,5 @@ Import trace for requested module:
 <w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
 <w>  at file C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
 <w>  at resolve commonjs C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ✓ Compiled in 1862ms (771 modules)
+ ✓ Compiled in 412ms (464 modules)

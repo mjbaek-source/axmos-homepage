@@ -1,25 +1,41 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+interface Case {
+  company: string;
+  industry: string;
+  task: string;
+  before: string;
+  after: string;
+  reduction: string;
+  effect: string;
+}
 
 export default function Home() {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   const [selectedIndustry, setSelectedIndustry] = useState<string>('전체');
+  const [cases, setCases] = useState<Case[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  const cases = [
-    { company: '트랜스링크 인베스트먼트', industry: '금융·VC', task: '거래처 실사 요청 정리', before: '3~5일', after: '1시간', reduction: '90~99%', effect: '월 30시간 단축' },
-    { company: '체인로지스', industry: '물류·마케팅', task: '고객사 공지사항 분류', before: '2~4시간', after: '3분', reduction: '97%', effect: '월 40시간 단축' },
-    { company: '체인로지스', industry: '물류·CS', task: '배송 문의 자동 응대', before: '수동 2명', after: 'AI 90%', reduction: '24h 무중단', effect: '24시간 운영' },
-    { company: '동탄퍼스트안과', industry: '헬스케어', task: '환자 상담 자동화', before: '수동 응대', after: 'AI 90%', reduction: '24h 무중단', effect: '24시간 운영' },
-    { company: '엑스퍼트 세무법인', industry: '회계', task: '월말 정산서 생성', before: '2~3시간', after: '10분', reduction: '90%', effect: '월 50시간 단축' },
-    { company: '엑스퍼트 세무법인', industry: '회계', task: '영수증 자동 분류', before: '10~20시간', after: '30분', reduction: '95%', effect: '월 40시간 단축' },
-    { company: '우하컴퍼니', industry: '이커머스·정산', task: '주문 정산 자동화', before: '2~3시간', after: '30초', reduction: '99%', effect: '월 60시간 단축' },
-    { company: '부자테이프', industry: '콘텐츠·미디어', task: '블로그 콘텐츠 생성', before: '2~4시간', after: '5분', reduction: '95%', effect: '월 80시간 단축' },
-    { company: '동탄퍼스트안과', industry: '헬스케어', task: '검사 결과 정리', before: '5~9분', after: '1.5~2분', reduction: '70%', effect: '월 15시간 단축' },
-  ];
+  useEffect(() => {
+    fetch('/api/cases')
+      .then(res => res.json())
+      .then(data => {
+        setCases(data);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Failed to fetch cases:', error);
+        setLoading(false);
+      });
+  }, []);
 
-  const industries = ['전체', '물류', '물류·마케팅', '금융·VC', '금융', '헬스케어', '회계', '유통·마케팅', '건설', '에너지'];
+  const industries = cases.length > 0
+    ? ['전체', ...Array.from(new Set(cases.map(c => c.industry))).sort()]
+    : ['전체', '물류', '물류·마케팅', '금융·VC', '금융', '헬스케어', '회계', '유통·마케팅', '건설', '에너지'];
+
   const filteredCases = selectedIndustry === '전체'
     ? cases
     : cases.filter(c => c.industry === selectedIndustry);
