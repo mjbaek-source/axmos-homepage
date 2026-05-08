@@ -49,14 +49,19 @@ export default function Home() {
       <section className="bg-gradient-to-r from-brand to-brand-light text-white py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-3xl md:text-5xl font-black mb-6 leading-tight animate-slideUp">
-            AI 도입이 아니라,<br />업무를 줄이는 실행을 합니다
+            기존 시스템은 그대로,<br />3주 안에 AI로 업무 자동화
           </h1>
           <p className="text-lg md:text-xl text-blue-100 mb-8 animate-slideUp" style={{animationDelay: '0.2s'}}>
-            3주 안에 AI Agent로 업무 자동화 구현
+            이메일, 엑셀, 메신저로 하던 일을 한 번에 자동화합니다
           </p>
-          <Link href="/contact" className="inline-block bg-white text-brand font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-gray-100 hover:scale-105 transition text-base md:text-lg animate-slideUp" style={{animationDelay: '0.4s'}}>
-            무료 신청하기 →
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="inline-block bg-white text-brand font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg hover:bg-gray-100 hover:scale-105 transition text-base md:text-lg animate-slideUp" style={{animationDelay: '0.4s'}}>
+              3주 안에 시작하기 →
+            </Link>
+            <div className="inline-block bg-white bg-opacity-20 backdrop-blur-sm border border-white border-opacity-30 text-white font-semibold py-3 md:py-4 px-6 md:px-8 rounded-lg text-sm md:text-base animate-slideUp" style={{animationDelay: '0.4s'}}>
+              ⚡ 평균 월 40시간 단축
+            </div>
+          </div>
         </div>
       </section>
 
@@ -93,32 +98,42 @@ export default function Home() {
       {/* 문제 제기 */}
       <section className="bg-gradient-to-b from-bg-light to-white py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="section-title text-center mb-12 animate-slideUp">한국 기업의 AI 활용 현황</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand">
-            <p className="text-4xl font-black text-brand mb-2">77%</p>
-            <p className="text-gray-700 font-semibold">AI 도입 계획 있음</p>
-            <p className="text-sm text-gray-600 mt-2">하지만...</p>
+          <h2 className="section-title text-center mb-12 animate-slideUp">여전히 이렇게 일하고 계신가요?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div className="bg-red-50 p-8 rounded-xl border-l-4 border-red-500 card-hover">
+              <div className="text-4xl mb-4">📧</div>
+              <p className="font-bold text-gray-900 mb-3">이메일로 하나하나 확인</p>
+              <p className="text-sm text-gray-600">고객 문의, 주문 내용, 승인 요청... 모두 이메일을 읽고 수동으로 처리</p>
+            </div>
+            <div className="bg-orange-50 p-8 rounded-xl border-l-4 border-orange-500 card-hover">
+              <div className="text-4xl mb-4">📊</div>
+              <p className="font-bold text-gray-900 mb-3">엑셀로 데이터 정리</p>
+              <p className="text-sm text-gray-600">매일 같은 내용을 복사·붙여넣기, 정렬, 계산. 인간 오류의 위험</p>
+            </div>
+            <div className="bg-yellow-50 p-8 rounded-xl border-l-4 border-yellow-500 card-hover">
+              <div className="text-4xl mb-4">💬</div>
+              <p className="font-bold text-gray-900 mb-3">메신저로 보고·지시</p>
+              <p className="text-sm text-gray-600">슬랙, 카톡으로 업무 지시 후 결과 기다리기. 역사 관리 불가</p>
+            </div>
+            <div className="bg-purple-50 p-8 rounded-xl border-l-4 border-purple-500 card-hover">
+              <div className="text-4xl mb-4">⏰</div>
+              <p className="font-bold text-gray-900 mb-3">야근·주말 근무</p>
+              <p className="text-sm text-gray-600">월말 정산, 긴급 리포트... 반복되는 업무가 시간을 잡아먹음</p>
+            </div>
           </div>
-          <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-brand">
-            <p className="text-4xl font-black text-brand mb-2">70%</p>
-            <p className="text-gray-700 font-semibold">구축 중 실패 경험</p>
-            <p className="text-sm text-gray-600 mt-2">프로젝트 중단 또는 미활용</p>
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row gap-4 items-center justify-center animate-slideUp" style={{animationDelay: '0.2s'}}>
+        <div className="flex flex-col md:flex-row gap-4 items-center justify-center animate-slideUp">
           <div className="w-full md:w-96 bg-accent-before bg-opacity-10 p-6 rounded-lg border-2 border-accent-before text-center">
             <p className="text-xs font-bold text-accent-before uppercase tracking-widest mb-2">Before</p>
-            <p className="text-xs text-gray-600 font-semibold mb-3">예상 효율</p>
-            <p className="text-5xl font-black text-accent-before mb-2">1.7%</p>
-            <p className="text-xs text-gray-700 font-semibold">기대만 높고<br/>실행 미흡</p>
+            <p className="text-xs text-gray-600 font-semibold mb-3">전형적인 기업</p>
+            <p className="text-5xl font-black text-accent-before mb-2">월 40시간</p>
+            <p className="text-xs text-gray-700 font-semibold">비효율적인 업무에<br/>허비되는 시간</p>
           </div>
           <div className="hidden md:flex items-center text-3xl font-black text-gray-300">→</div>
           <div className="w-full md:w-96 bg-accent-after bg-opacity-10 p-6 rounded-lg border-2 border-accent-after text-center">
             <p className="text-xs font-bold text-accent-after uppercase tracking-widest mb-2">After</p>
-            <p className="text-xs text-gray-600 font-semibold mb-3">실제 효율</p>
-            <p className="text-5xl font-black text-accent-after mb-2">4.0%</p>
-            <p className="text-xs text-gray-700 font-semibold">AXMOS로<br/>2배 이상 개선</p>
+            <p className="text-xs text-gray-600 font-semibold mb-3">AXMOS 도입 후</p>
+            <p className="text-5xl font-black text-accent-after mb-2">자동 처리</p>
+            <p className="text-xs text-gray-700 font-semibold">직원은 중요한 일에만<br/>집중할 수 있음</p>
           </div>
         </div>
         </div>
@@ -269,30 +284,30 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 animate-slideUp">AXMOS만의 차별점</h2>
           <p className="text-center text-blue-100 mb-16 animate-slideUp" style={{animationDelay: '0.1s'}}>
-            빠르고, 검증되고, 안전한 AI 자동화의 완성
+            기존 도구는 그대로, 더 똑똑하고 빠른 자동화
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div className="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 hover:bg-opacity-20 transition card-hover animate-slideUp">
-              <div className="text-7xl mb-6 animate-bounce">⚡</div>
-              <h3 className="text-2xl font-bold mb-3">3주 초고속 구축</h3>
+              <div className="text-7xl mb-6 animate-bounce">🔗</div>
+              <h3 className="text-2xl font-bold mb-3">기존 시스템과 통합</h3>
               <p className="text-blue-100 text-sm leading-relaxed">
-                기획부터 배포까지 3주 안에 완성. 기업의 시간은 금입니다. 오늘부터 시작하면 3주 후 바로 운영 가능합니다.
+                쓰던 도구(Slack, Gmail, Excel, CRM)는 그대로. AXMOS가 연결하고 자동화해줍니다. 새로운 시스템 학습 불필요.
               </p>
             </div>
 
             <div className="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 hover:bg-opacity-20 transition card-hover animate-slideUp" style={{animationDelay: '0.1s'}}>
-              <div className="text-7xl mb-6 animate-bounce">🌍</div>
-              <h3 className="text-2xl font-bold mb-3">글로벌 개발 인력</h3>
+              <div className="text-7xl mb-6 animate-bounce">🧠</div>
+              <h3 className="text-2xl font-bold mb-3">Semantic 이해</h3>
               <p className="text-blue-100 text-sm leading-relaxed">
-                한국 PM과 동남아 개발팀의 조합으로 비용은 낮추고 품질은 높입니다. 더 빠르고 효율적입니다.
+                AI가 당신의 업무 규칙을 학습하고 맥락을 이해합니다. 예외 상황도 똑똑하게 처리합니다.
               </p>
             </div>
 
             <div className="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 hover:bg-opacity-20 transition card-hover animate-slideUp" style={{animationDelay: '0.2s'}}>
-              <div className="text-7xl mb-6 animate-bounce">📊</div>
-              <h3 className="text-2xl font-bold mb-3">10만명 데이터 기반</h3>
+              <div className="text-7xl mb-6 animate-bounce">⚡</div>
+              <h3 className="text-2xl font-bold mb-3">3주 초고속 구축</h3>
               <p className="text-blue-100 text-sm leading-relaxed">
-                1000+ 프로젝트 경험과 10만명 사용자 데이터로 최적화된 솔루션 제공. 검증된 방식입니다.
+                기획부터 배포까지 3주. 즉시 효과를 볼 수 있습니다. 월 40시간 이상의 업무가 자동으로 처리됩니다.
               </p>
             </div>
 
@@ -300,7 +315,7 @@ export default function Home() {
               <div className="text-7xl mb-6 animate-bounce">🔒</div>
               <h3 className="text-2xl font-bold mb-3">기업 보안 준수</h3>
               <p className="text-blue-100 text-sm leading-relaxed">
-                ISO 27001, SOC 2 인증. 금융, 공공기관 보안 기준 충족. 데이터는 완벽하게 보호됩니다.
+                ISO 27001, SOC 2 인증. 금융, 공공기관 보안 기준 충족. 데이터 100% 보호합니다.
               </p>
             </div>
           </div>
@@ -569,16 +584,21 @@ export default function Home() {
       {/* 최종 CTA */}
       <section className="bg-gradient-to-r from-brand via-brand-light to-brand text-white py-24">
         <div className="max-w-2xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-black mb-6">지금 시작하세요</h2>
-          <p className="text-xl text-blue-100 mb-8">
-            3주 안에 당신의 업무를 줄이는 AI를 만날 수 있습니다.
+          <h2 className="text-4xl font-black mb-6 animate-slideUp">월 40시간을 되찾으세요</h2>
+          <p className="text-xl text-blue-100 mb-3 animate-slideUp" style={{animationDelay: '0.1s'}}>
+            지금 신청하면 <span className="text-white font-bold">3주 후</span>부터 자동화가 시작됩니다
           </p>
-          <Link href="/contact" className="inline-block bg-white text-brand font-bold py-4 px-12 rounded-lg hover:bg-gray-100 transition text-lg">
-            무료 신청하기 →
-          </Link>
-          <p className="text-sm text-blue-100 mt-6">
-            비용 Zero, 리스크 Zero. 2영업일 내에 회신합니다.
+          <p className="text-sm text-blue-100 mb-8 animate-slideUp" style={{animationDelay: '0.2s'}}>
+            이메일, 엑셀, 데이터 정리... 모두 AI가 담당합니다
           </p>
+          <div className="flex flex-col gap-3 justify-center animate-slideUp" style={{animationDelay: '0.3s'}}>
+            <Link href="/contact" className="inline-block bg-white text-brand font-bold py-4 px-12 rounded-lg hover:bg-gray-100 transition text-lg">
+              지금 신청하기 (무료 상담) →
+            </Link>
+            <p className="text-sm text-blue-100">
+              ⚡ 상담은 2영업일 내에, 구축은 3주 내에 완료
+            </p>
+          </div>
         </div>
       </section>
     </main>
