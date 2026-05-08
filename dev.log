@@ -62,3 +62,38 @@ Import trace for requested module:
 ./app/page.tsx
  ✓ Compiled /_error in 944ms (773 modules)
  GET / 200 in 255ms
+ ✓ Compiled in 604ms (773 modules)
+ ✓ Compiled in 565ms (773 modules)
+ ✓ Compiled in 580ms (773 modules)
+ ✓ Compiled in 502ms (773 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'C:\Users\admin\Downloads\axmos-homepage\.next\server\vendor-chunks'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/@swc' in C:\Users\admin\Downloads\axmos-homepage\.next\server for build dependencies doesn't lead to expected result 'C:\Users\admin\Downloads\axmos-homepage\.next\server\vendor-chunks\@swc.js', but to 'Error: Can't resolve './vendor-chunks/@swc' in 'C:\Users\admin\Downloads\axmos-homepage\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/@swc (expected C:\Users\admin\Downloads\axmos-homepage\.next\server\vendor-chunks\@swc.js)
+<w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+<w>  at file C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js
+<w>  at file C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js
+<w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/next' in C:\Users\admin\Downloads\axmos-homepage\.next\server for build dependencies doesn't lead to expected result 'C:\Users\admin\Downloads\axmos-homepage\.next\server\vendor-chunks\next.js', but to 'Error: Can't resolve './vendor-chunks/next' in 'C:\Users\admin\Downloads\axmos-homepage\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/next (expected C:\Users\admin\Downloads\axmos-homepage\.next\server\vendor-chunks\next.js)
+<w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+<w>  at file C:\Users\admin\Downloads\axmos-homepage\.next\server\webpack-runtime.js
+<w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js
+<w>  at file C:\Users\admin\Downloads\axmos-homepage\.next\server\app\page.js
+<w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+<w>  at file C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\require.js
+<w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+<w>  at file C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+<w>  at file C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\utils.js
+<w>  at file dependencies C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs C:\Users\admin\Downloads\axmos-homepage\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
