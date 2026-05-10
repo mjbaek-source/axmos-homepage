@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -6,7 +7,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
-            <h3 className="font-black text-2xl mb-4 tracking-tight">AXMOS</h3>
+            <Image
+              src="/logo.png"
+              alt="AXMOS"
+              width={140}
+              height={47}
+              className="brightness-0 invert mb-6"
+            />
             <p className="text-text-light text-sm leading-relaxed max-w-md">
               The AI Operating System for Korean enterprises.<br />
               Implement AI automation in 3 weeks—without replacing your existing systems.

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Header() {
@@ -9,8 +10,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-bg-dark border-b border-border-dark">
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-        <Link href="/" className="text-white font-black text-xl tracking-tight">
-          AXMOS
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="AXMOS"
+            width={120}
+            height={40}
+            priority
+            className="brightness-0 invert"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
