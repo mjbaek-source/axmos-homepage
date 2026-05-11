@@ -93,15 +93,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRUSTED BY — Minimal logo bar */}
-      <section className="bg-bg-dark border-t border-border-dark py-16">
+      {/* TRUSTED BY — Customer logos */}
+      <section className="bg-bg-dark border-t border-border-dark py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <p className="section-eyebrow text-center mb-10">Trusted by Korean Enterprises</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-12 gap-y-8 items-center justify-items-center">
-            {['트랜스링크', '체인로지스', '우하컴퍼니', '엑스퍼트 세무법인', '동탄퍼스트안과', '부자테이프'].map((name, i) => (
-              <p key={i} className="text-text-light text-sm md:text-base font-semibold tracking-wide opacity-60 hover:opacity-100 transition">
-                {name}
-              </p>
+          <p className="section-eyebrow text-center mb-12">Trusted by Korean Enterprises</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-12 gap-y-10 items-center justify-items-center">
+            {[
+              { name: '트랜스링크 인베스트먼트', logo: '/logos/translink.png', height: 28 },
+              { name: '체인로지스', logo: '/logos/chainlogis.png', height: 32 },
+              { name: '엑스퍼트 세무법인', logo: '/logos/taxexpert.png', height: 36 },
+              { name: '동탄퍼스트안과', logo: '/logos/firsteye.png', height: 28 },
+              { name: '부자테이프', logo: '/logos/bujatape.png', height: 40 },
+              { name: '우하컴퍼니', logo: null, height: 28 },
+            ].map((company, i) => (
+              <div key={i} className="flex items-center justify-center h-12 opacity-60 hover:opacity-100 transition" title={company.name}>
+                {company.logo ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={company.logo}
+                    alt={company.name}
+                    style={{ height: `${company.height}px`, width: 'auto' }}
+                    className="brightness-0 invert max-w-[140px] object-contain"
+                  />
+                ) : (
+                  <p className="text-text-light text-sm md:text-base font-semibold tracking-wide">
+                    {company.name}
+                  </p>
+                )}
+              </div>
             ))}
           </div>
         </div>
