@@ -186,7 +186,7 @@ export default function ContactForm() {
                 </label>
                 <div className="grid md:grid-cols-3 gap-3">
                   {[
-                    { value: 'AX Build', title: 'AX Build', desc: 'AXMOS 팀이 직접 구축' },
+                    { value: 'AX Build', title: 'AX Build', desc: 'AX.presso 팀이 직접 구축' },
                     { value: 'AX Grow', title: 'AX Grow', desc: '팀이 함께 배우며 구축' },
                     { value: '아직 모르겠음', title: '아직 모르겠음', desc: '상담 후 결정하고 싶음' },
                   ].map((opt) => (

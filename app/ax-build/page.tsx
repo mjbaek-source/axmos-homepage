@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AX Build - Built by AXMOS, for Speed',
-  description: '20일 안에 맞춤형 AI Agent를 구축해드립니다. AXMOS 팀이 직접 설계·개발·배포하는 가장 빠른 길.',
+  title: 'AX Build - Built by AX.presso, for Speed',
+  description: '20일 안에 맞춤형 AI Agent를 구축해드립니다. AX.presso 팀이 직접 설계·개발·배포하는 가장 빠른 길.',
   keywords: ['AX Build', 'AI 구축', '맞춤형 솔루션', '업무 자동화', 'AI Agent'],
 };
 
@@ -28,7 +28,7 @@ export default function AXBuild() {
             AX Build
           </h1>
           <p className="text-xl md:text-2xl text-text-light max-w-3xl leading-relaxed mb-10">
-            AXMOS 팀이 직접 설계·개발·배포합니다.<br />
+            AX.presso 팀이 직접 설계·개발·배포합니다.<br />
             가장 빠르게 운영 가능한 AI Agent를 받는 길.
           </p>
 

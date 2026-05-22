@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
@@ -7,13 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
-            <Image
-              src="/logo.png"
-              alt="AXMOS"
-              width={140}
-              height={47}
-              className="brightness-0 invert mb-6"
-            />
+            <Logo variant="dark" className="h-10 w-auto mb-6" />
             <p className="text-text-light text-sm leading-relaxed max-w-md">
               The AI Operating System for Korean enterprises.<br />
               Implement AI automation in 3 weeks—without replacing your existing systems.
@@ -39,7 +33,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border-dark pt-8 flex flex-col md:flex-row justify-between text-xs text-text-muted">
-          <p>&copy; 2026 AXMOS. All rights reserved.</p>
+          <p>&copy; 2026 AX.presso. All rights reserved.</p>
           <p>Built for Korean enterprises. Powered by Codepresso.</p>
         </div>
       </div>

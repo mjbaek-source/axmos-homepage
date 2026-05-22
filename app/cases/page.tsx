@@ -121,7 +121,7 @@ export default function CasesPage() {
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-40">
           <p className="section-eyebrow animate-slideUp">Customer Stories</p>
           <h1 className="text-5xl md:text-7xl font-black leading-[0.95] tracking-tight mb-8 max-w-4xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
-            한국 기업이 AXMOS로<br />만든 실행 결과.
+            한국 기업이 AX.presso로<br />만든 실행 결과.
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
             금융·물류·헬스케어·회계·이커머스. 9가지 산업, 9개 기업이 검증한

@@ -62,7 +62,7 @@ export default function Home() {
             <span className="text-text-light">실행만 더 빠르게.</span>
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl mb-10 leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
-            기존 시스템과 도구는 그대로. AXMOS가 연결하고, 자동화하고, 가속합니다.
+            기존 시스템과 도구는 그대로. AX.presso가 연결하고, 자동화하고, 가속합니다.
             3주 안에 가시적인 결과를 만듭니다.
           </p>
 
@@ -180,7 +180,7 @@ export default function Home() {
                 The AI OS that adapts to your business—not the other way around.
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                AXMOS는 기존 시스템을 교체하지 않습니다. 데이터를 옮기지도 않습니다.
+                AX.presso는 기존 시스템을 교체하지 않습니다. 데이터를 옮기지도 않습니다.
                 대신, 당신의 도구와 워크플로우 위에 AI Agent를 얹어 자동화합니다.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-10">
@@ -250,7 +250,7 @@ export default function Home() {
               <p className="section-eyebrow">Customer Voice</p>
               <blockquote className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-8">
                 &ldquo;100개사 거래처 실사 요청을 3~5일이 걸리던 작업이
-                AXMOS 도입 후 1시간 만에 끝납니다. 단순한 시간 절감이 아니라,
+                AX.presso 도입 후 1시간 만에 끝납니다. 단순한 시간 절감이 아니라,
                 의사결정 속도 자체가 달라졌습니다.&rdquo;
               </blockquote>
               <div className="flex items-center gap-6 pt-8 border-t border-border-dark">
@@ -283,7 +283,7 @@ export default function Home() {
               <p className="section-eyebrow text-bg-dark/60">Customer Stories</p>
               <h2 className="section-title text-bg-dark">
                 업계 최고의 기업들이<br />
-                AXMOS로 실행을 가속합니다.
+                AX.presso로 실행을 가속합니다.
               </h2>
             </div>
             <Link href="/cases" className="text-bg-dark text-sm font-semibold border-b-2 border-bg-dark pb-1 hover:opacity-60 transition">
@@ -345,13 +345,13 @@ export default function Home() {
       <section className="bg-bg-dark text-white py-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-20">
-            <p className="section-eyebrow">Why AXMOS</p>
+            <p className="section-eyebrow">Why AX.presso</p>
             <h2 className="section-title mb-6">
               Built for the speed<br />
               and complexity of Korean business.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
-              AXMOS는 글로벌 SaaS가 아닙니다. 한국 기업의 실제 워크플로우, 보안 요구사항,
+              AX.presso는 글로벌 SaaS가 아닙니다. 한국 기업의 실제 워크플로우, 보안 요구사항,
               규제 환경에 맞춰 설계되었습니다.
             </p>
           </div>
@@ -425,7 +425,7 @@ export default function Home() {
             <p className="section-eyebrow text-bg-dark/60">Results</p>
             <h2 className="section-title text-bg-dark">검증된 성과 데이터</h2>
             <p className="text-lg text-gray-700 leading-relaxed mt-4">
-              실제 고객사가 AXMOS와 함께 만들어낸 결과입니다.
+              실제 고객사가 AX.presso와 함께 만들어낸 결과입니다.
             </p>
           </div>
 
@@ -495,7 +495,7 @@ export default function Home() {
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">For Speed</p>
               <h3 className="text-3xl font-bold mb-4">AX Build</h3>
               <p className="text-text-light mb-8 leading-relaxed">
-                AXMOS 팀이 직접 구축합니다. 가장 빠른 길.
+                AX.presso 팀이 직접 구축합니다. 가장 빠른 길.
               </p>
               <div className="space-y-3 mb-10">
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
@@ -559,11 +559,11 @@ export default function Home() {
               },
               {
                 q: '기존 시스템을 교체해야 하나요?',
-                a: '아닙니다. AXMOS는 기존 시스템 위에 얹어 작동합니다. Slack, Gmail, Excel, ERP, CRM 등 현재 사용하시는 도구를 그대로 두고 AI Agent가 데이터를 연결하고 자동화합니다.',
+                a: '아닙니다. AX.presso는 기존 시스템 위에 얹어 작동합니다. Slack, Gmail, Excel, ERP, CRM 등 현재 사용하시는 도구를 그대로 두고 AI Agent가 데이터를 연결하고 자동화합니다.',
               },
               {
                 q: '개발 인력이 없어도 되나요?',
-                a: 'AX Build는 AXMOS 팀이 모두 구축합니다. AX Grow를 선택하시면 당신 팀이 함께 배우면서 만듭니다. 기술팀이 없어도 운영 가능한 결과물을 받을 수 있습니다.',
+                a: 'AX Build는 AX.presso 팀이 모두 구축합니다. AX Grow를 선택하시면 당신 팀이 함께 배우면서 만듭니다. 기술팀이 없어도 운영 가능한 결과물을 받을 수 있습니다.',
               },
               {
                 q: '비용은 얼마나 되나요?',

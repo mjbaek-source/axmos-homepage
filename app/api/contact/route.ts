@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'growth@codepresso.kr';
-const EMAIL_FROM = process.env.EMAIL_FROM || 'AXMOS <onboarding@resend.dev>';
+const EMAIL_FROM = process.env.EMAIL_FROM || 'AX.presso <onboarding@resend.dev>';
 
 interface ContactData {
   company: string;
@@ -29,11 +29,11 @@ async function sendEmail(data: ContactData) {
       from: EMAIL_FROM,
       to: CONTACT_EMAIL,
       replyTo: data.email,
-      subject: `[AXMOS] 새로운 신청 — ${data.company}`,
+      subject: `[AX.presso] 새로운 신청 — ${data.company}`,
       html: `
         <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:600px;margin:0 auto;padding:24px">
           <h2 style="color:#0a0a0a;margin:0 0 16px 0;font-size:24px">새로운 파트너십 신청</h2>
-          <p style="color:#737373;margin:0 0 24px 0">아래 회사가 AXMOS에 상담을 신청했습니다.</p>
+          <p style="color:#737373;margin:0 0 24px 0">아래 회사가 AX.presso에 상담을 신청했습니다.</p>
           <table style="border-collapse:collapse;width:100%;font-size:14px">
             ${adminRow('회사명', data.company)}
             ${adminRow('담당자', data.name)}
@@ -51,11 +51,11 @@ async function sendEmail(data: ContactData) {
     await resend.emails.send({
       from: EMAIL_FROM,
       to: data.email,
-      subject: 'AXMOS 신청이 접수되었습니다',
+      subject: 'AX.presso 신청이 접수되었습니다',
       html: `
         <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:600px;margin:0 auto;padding:24px">
           <h2 style="color:#0a0a0a;margin:0 0 16px 0">${data.name}님, 신청해 주셔서 감사합니다.</h2>
-          <p style="color:#404040;line-height:1.6">AXMOS 파트너십 신청이 정상적으로 접수되었습니다.<br />2영업일 내에 담당자가 회신해 드리겠습니다.</p>
+          <p style="color:#404040;line-height:1.6">AX.presso 파트너십 신청이 정상적으로 접수되었습니다.<br />2영업일 내에 담당자가 회신해 드리겠습니다.</p>
           <div style="border-left:3px solid #0a0a0a;padding:12px 16px;margin:24px 0;background:#f8f9fa">
             <p style="margin:0 0 8px 0;color:#737373;font-size:12px;text-transform:uppercase;letter-spacing:1px">접수 내용</p>
             <p style="margin:0;color:#0a0a0a;font-weight:600">${data.company} · ${data.track}</p>
