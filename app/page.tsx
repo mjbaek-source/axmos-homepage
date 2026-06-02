@@ -183,8 +183,7 @@ export default function Home() {
             <div>
               <p className="section-eyebrow text-bg-dark/60">The Solution</p>
               <h2 className="section-title text-bg-dark mb-8">
-                당신의 비즈니스에 맞추는 AI OS<br />
-                — 반대가 아니라.
+                비즈니스를 바꾸지 않고, AI가 맞춰갑니다.
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 AXMOS는 기존 시스템을 교체하지 않습니다. 데이터를 옮기지도 않습니다.
@@ -354,8 +353,7 @@ export default function Home() {
           <div className="max-w-3xl mb-20">
             <p className="section-eyebrow">Why AXMOS</p>
             <h2 className="section-title mb-6">
-              Built for the speed<br />
-              and complexity of Korean business.
+              한국 기업의 속도와 복잡성에 맞춰 설계했습니다.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
               AXMOS는 글로벌 SaaS가 아닙니다. 한국 기업의 실제 워크플로우, 보안 요구사항,
