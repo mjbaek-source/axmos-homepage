@@ -244,12 +244,12 @@ export default function CasesPage() {
             Your operations are next.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto leading-relaxed">
-            Measurable results in three weeks. Request a consultation and we&apos;ll map what&apos;s
+            Measurable results in three weeks. Book a demo and we&apos;ll map what&apos;s
             worth automating — and what it&apos;s worth to you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">
-              Request a consultation →
+              Book a demo →
             </Link>
             <Link href="/" className="inline-flex items-center justify-center border border-white/30 text-white font-semibold py-4 px-10 hover:bg-white/10 transition text-lg">
               Back to Home

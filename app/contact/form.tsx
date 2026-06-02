@@ -91,7 +91,7 @@ export default function ContactForm() {
         <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
           <p className="section-eyebrow">Get in Touch</p>
           <h1 className="text-5xl md:text-7xl font-black leading-[0.95] tracking-tight mb-6 max-w-3xl">
-            Request a consultation.
+            Let&apos;s talk.
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl leading-relaxed">
             The first session maps what&apos;s worth automating, and what it&apos;s worth to you.
@@ -252,7 +252,7 @@ export default function ContactForm() {
                   </>
                 ) : (
                   <>
-                    Request a consultation
+                    Book a demo
                     <span>→</span>
                   </>
                 )}

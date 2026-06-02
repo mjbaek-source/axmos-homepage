@@ -173,7 +173,7 @@ export default function AXBuild() {
             operational in 20 days.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto">
-            Request a consultation. The first session maps what&apos;s worth automating, and what it&apos;s worth to you.
+            Book a demo. The first session maps what&apos;s worth automating, and what it&apos;s worth to you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">

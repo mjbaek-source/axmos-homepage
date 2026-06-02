@@ -174,7 +174,7 @@ export default function AXGrow() {
             stays with your team.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto">
-            Request a consultation. We begin with a diagnostic of your organization&apos;s AI capability — strengths and gaps.
+            Book a demo. We begin with a diagnostic of your organization&apos;s AI capability — strengths and gaps.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">
