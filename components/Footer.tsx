@@ -27,7 +27,7 @@ export default function Footer() {
               <li><Link href="/ax-grow" className="hover:text-white transition">AX Grow</Link></li>
               <li><Link href="/ax-learn" className="hover:text-white transition">AX Learn</Link></li>
               <li><Link href="/ax-insight" className="hover:text-white transition">AX Insight</Link></li>
-              <li><Link href="/cases" className="hover:text-white transition">Customers</Link></li>
+              <li><Link href="/cases" className="hover:text-white transition">AX Cases</Link></li>
             </ul>
           </div>
 

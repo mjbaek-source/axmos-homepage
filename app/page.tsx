@@ -43,17 +43,23 @@ export default function Home() {
 
   return (
     <main className="bg-white">
-      {/* HERO — Dark, large typography, image background */}
+      {/* HERO — Dark, large typography, image background + radial accent */}
       <section className="relative bg-bg-dark text-white overflow-hidden">
         <div
-          className="absolute inset-0 opacity-30"
+          className="absolute inset-0 opacity-50"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=80')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/60 via-bg-dark/80 to-bg-dark"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/25 via-bg-dark/50 to-bg-dark/95"></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'radial-gradient(circle at 78% 22%, rgba(46,117,182,0.22), transparent 55%), radial-gradient(circle at 15% 85%, rgba(46,117,182,0.10), transparent 50%)',
+          }}
+        ></div>
 
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-44">
           <p className="section-eyebrow animate-slideUp">The AI Operating System for Korean Enterprises</p>
@@ -71,7 +77,7 @@ export default function Home() {
               Schedule a Demo →
             </Link>
             <Link href="/cases" className="inline-flex items-center justify-center border border-white/30 text-white font-semibold py-4 px-8 hover:bg-white/10 transition">
-              See Customer Stories
+              See AX Cases
             </Link>
           </div>
 

@@ -35,7 +35,7 @@ export default function Header() {
             AX Insight
           </Link>
           <Link href="/cases" className="text-text-light hover:text-white text-sm font-medium transition">
-            Customers
+            AX Cases
           </Link>
           <Link href="/contact" className="bg-white text-bg-dark text-sm font-semibold py-2.5 px-6 hover:bg-gray-200 transition">
             Get in touch
@@ -66,7 +66,7 @@ export default function Header() {
             AX Insight
           </Link>
           <Link href="/cases" className="block text-text-light hover:text-white text-sm font-medium transition">
-            Customers
+            AX Cases
           </Link>
           <Link href="/contact" className="block bg-white text-bg-dark text-sm font-semibold py-3 px-6 text-center hover:bg-gray-200 transition">
             Get in touch
