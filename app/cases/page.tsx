@@ -106,41 +106,36 @@ export default function CasesPage() {
 
   return (
     <main className="bg-white">
-      {/* HERO */}
-      <section className="relative bg-bg-dark text-white overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-45"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2400&q=80')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/30 via-bg-dark/55 to-bg-dark/95"></div>
-
-        <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-40">
-          <p className="section-eyebrow animate-slideUp">Customer Stories</p>
-          <h1 className="text-5xl md:text-7xl font-black leading-[0.95] tracking-tight mb-8 max-w-4xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
+      {/* HERO — Cohere editorial white canvas */}
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
+          <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-muted-slate mb-6 animate-slideUp">
+            CUSTOMER STORIES
+          </p>
+          <h1
+            className="font-display text-ink leading-[1.0] tracking-[-1.44px] mb-10 max-w-4xl animate-slideUp"
+            style={{ fontSize: 'clamp(48px, 6vw, 80px)', animationDelay: '0.1s' }}
+          >
             한국 기업이 AXMOS로<br />만든 실행 결과.
           </h1>
-          <p className="text-lg md:text-xl text-text-light max-w-2xl leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl md:text-2xl text-slate-text max-w-3xl leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
             금융·물류·헬스케어·회계·이커머스. 9가지 산업, 9개 기업이 검증한
             업무 자동화의 실질적 임팩트.
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 max-w-3xl border-t border-border-dark pt-12 animate-slideUp" style={{ animationDelay: '0.3s' }}>
+          <div className="grid grid-cols-3 gap-8 mt-16 max-w-3xl border-t border-hairline pt-10 animate-slideUp" style={{ animationDelay: '0.3s' }}>
             <div>
-              <p className="text-4xl md:text-5xl font-black mb-2">9</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">Industries</p>
+              <p className="font-display text-4xl md:text-5xl text-ink leading-none tracking-[-0.96px] mb-3">9</p>
+              <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-muted-slate">Industries</p>
             </div>
             <div>
-              <p className="text-4xl md:text-5xl font-black mb-2">90%+</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">Avg. Time Reduction</p>
+              <p className="font-display text-4xl md:text-5xl text-ink leading-none tracking-[-0.96px] mb-3">90%+</p>
+              <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-muted-slate">Avg. Time Reduction</p>
             </div>
             <div>
-              <p className="text-4xl md:text-5xl font-black mb-2">600h</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">Monthly Saved</p>
+              <p className="font-display text-4xl md:text-5xl text-ink leading-none tracking-[-0.96px] mb-3">600h</p>
+              <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-muted-slate">Monthly Saved</p>
             </div>
           </div>
         </div>
@@ -226,33 +221,32 @@ export default function CasesPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-bg-dark text-white py-32 relative overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-35"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2400&q=80')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/55 via-bg-dark/75 to-bg-dark/95"></div>
-
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <p className="section-eyebrow">Get Started</p>
-          <h2 className="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight mb-8">
+      {/* CTA — Cohere deep green band */}
+      <section className="bg-deep-green text-white py-24 md:py-32">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-coral mb-6">Get Started</p>
+          <h2
+            className="font-display text-white leading-[1.0] tracking-[-1.2px] mb-8"
+            style={{ fontSize: 'clamp(36px, 5vw, 60px)' }}
+          >
             당신의 업무도 자동화 가능합니다.
           </h2>
-          <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-white/70 mb-12 max-w-2xl mx-auto leading-relaxed">
             3주 안에 가시적인 결과를 만들어 드립니다. 무료 상담 후 자동화 가능 영역과
             예상 ROI를 함께 분석해 드립니다.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">
-              Schedule a Demo →
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center bg-white text-near-black font-medium px-7 py-3.5 rounded-pill hover:bg-soft-stone transition"
+            >
+              Schedule a demo
             </Link>
-            <Link href="/" className="inline-flex items-center justify-center border border-white/30 text-white font-semibold py-4 px-10 hover:bg-white/10 transition text-lg">
-              Back to Home
+            <Link
+              href="/"
+              className="inline-flex items-center text-white font-medium border-b border-white pb-1 hover:opacity-60 transition"
+            >
+              Back to Home →
             </Link>
           </div>
         </div>

@@ -66,24 +66,19 @@ const UPCOMING = [
 export default function AXInsight() {
   return (
     <main className="bg-white">
-      {/* HERO */}
-      <section className="relative bg-bg-dark text-white overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-45"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=2400&q=80')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/30 via-bg-dark/55 to-bg-dark/95"></div>
-
-        <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-40">
-          <p className="section-eyebrow">From the Field</p>
-          <h1 className="text-6xl md:text-8xl font-black leading-[0.95] tracking-tight mb-8 max-w-4xl">
+      {/* HERO — Cohere editorial white canvas */}
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-24">
+          <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-muted-slate mb-6">
+            FROM THE FIELD
+          </p>
+          <h1
+            className="font-display text-ink leading-[1.0] tracking-[-1.44px] mb-10 max-w-4xl"
+            style={{ fontSize: 'clamp(56px, 7vw, 88px)' }}
+          >
             AX Insight
           </h1>
-          <p className="text-xl md:text-2xl text-text-light max-w-3xl leading-relaxed mb-10">
+          <p className="text-xl md:text-2xl text-slate-text max-w-3xl leading-relaxed">
             한국 기업의 AI 도입 현장에서 길어 올린 인사이트.<br />
             사례, 가이드, 도구 리뷰 — 바로 적용되는 것만.
           </p>
@@ -98,12 +93,14 @@ export default function AXInsight() {
             <h2 className="section-title text-bg-dark">다루는 주제</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-hairline">
             {TOPICS.map((t, i) => (
               <div key={i} className="bg-white p-10">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-bg-dark/60 mb-4">{t.label}</p>
-                <h3 className="text-2xl font-bold text-bg-dark mb-4 leading-tight">{t.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{t.desc}</p>
+                <span className="inline-flex items-center border border-coral text-coral rounded-sm px-3 py-1 text-xs font-medium uppercase tracking-wider mb-5">
+                  {t.label}
+                </span>
+                <h3 className="font-display text-2xl text-ink mb-4 leading-tight tracking-card">{t.title}</h3>
+                <p className="text-slate-text leading-relaxed">{t.desc}</p>
               </div>
             ))}
           </div>
@@ -121,34 +118,41 @@ export default function AXInsight() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border-dark">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {UPCOMING.map((p, i) => (
-              <article key={i} className="bg-bg-dark-2 p-10 flex flex-col">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">{p.category}</p>
-                <h3 className="text-xl font-bold mb-4 leading-tight flex-grow-0">{p.title}</h3>
-                <p className="text-sm text-text-light leading-relaxed mb-8 flex-grow">{p.excerpt}</p>
-                <p className="text-xs font-semibold text-text-muted uppercase tracking-wider">Coming Soon</p>
+              <article key={i} className="bg-white/5 backdrop-blur rounded-lg p-8 flex flex-col border border-white/10">
+                <span className="inline-flex items-center self-start bg-coral text-white rounded-sm px-3 py-1 text-xs font-medium uppercase tracking-wider mb-6">
+                  {p.category}
+                </span>
+                <h3 className="font-display text-xl text-white mb-4 leading-tight tracking-card flex-grow-0">{p.title}</h3>
+                <p className="text-sm text-white/70 leading-relaxed mb-8 flex-grow">{p.excerpt}</p>
+                <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-white/40">Coming Soon</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-bg-dark text-white py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/80 via-bg-dark/90 to-bg-dark"></div>
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <p className="section-eyebrow">Suggest a Topic</p>
-          <h2 className="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight mb-8">
+      {/* CTA — Cohere deep green band */}
+      <section className="bg-deep-green text-white py-24 md:py-32">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-coral mb-6">Suggest a Topic</p>
+          <h2
+            className="font-display text-white leading-[1.0] tracking-[-1.2px] mb-8"
+            style={{ fontSize: 'clamp(36px, 5vw, 60px)' }}
+          >
             궁금한 주제가 있다면<br />
             먼저 다뤄드립니다.
           </h2>
-          <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto">
+          <p className="text-lg text-white/70 mb-12 max-w-2xl mx-auto leading-relaxed">
             현장에서 막힌 자동화·도구·역할에 대한 질문을 보내주세요. 우선순위로 글로 정리해 올립니다.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">
-              주제 제안하기 →
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center bg-white text-near-black font-medium px-7 py-3.5 rounded-pill hover:bg-soft-stone transition"
+            >
+              주제 제안하기
             </Link>
           </div>
         </div>

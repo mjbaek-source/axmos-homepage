@@ -76,24 +76,19 @@ export default function ContactForm() {
 
   return (
     <main className="bg-white">
-      {/* HERO */}
-      <section className="relative bg-bg-dark text-white overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-45"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=2400&q=80')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/30 via-bg-dark/55 to-bg-dark/95"></div>
-
-        <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
-          <p className="section-eyebrow">Get in Touch</p>
-          <h1 className="text-5xl md:text-7xl font-black leading-[0.95] tracking-tight mb-6 max-w-3xl">
-            Schedule a Demo.
+      {/* HERO — Cohere soft stone for warm welcome */}
+      <section className="bg-soft-stone">
+        <div className="max-w-7xl mx-auto px-6 pt-24 pb-16 md:pt-32 md:pb-20">
+          <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-muted-slate mb-6">
+            GET IN TOUCH
+          </p>
+          <h1
+            className="font-display text-ink leading-[1.0] tracking-[-1.44px] mb-8 max-w-3xl"
+            style={{ fontSize: 'clamp(48px, 6vw, 80px)' }}
+          >
+            Schedule a demo.
           </h1>
-          <p className="text-lg md:text-xl text-text-light max-w-2xl leading-relaxed">
+          <p className="text-xl md:text-2xl text-slate-text max-w-2xl leading-relaxed">
             첫 미팅에서 자동화 가능 영역과 예상 ROI를 함께 분석해 드립니다.
             2영업일 내에 답변드립니다.
           </p>
@@ -243,7 +238,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-bg-dark text-white font-semibold py-5 hover:bg-bg-dark-3 disabled:opacity-50 transition flex items-center justify-center gap-3"
+                className="w-full bg-near-black text-white font-medium py-5 rounded-pill hover:bg-ink disabled:opacity-50 transition flex items-center justify-center gap-3"
               >
                 {loading ? (
                   <>
