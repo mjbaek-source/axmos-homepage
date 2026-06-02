@@ -4,103 +4,103 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function CasesPage() {
-  const [selectedIndustry, setSelectedIndustry] = useState<string>('전체');
+  const [selectedIndustry, setSelectedIndustry] = useState<string>('All');
 
   const cases = [
     {
-      company: '트랜스링크 인베스트먼트',
-      industry: '금융·VC',
-      task: '거래처 실사 요청 정리',
-      before: '3~5일',
-      after: '1시간',
+      company: 'TransLink Investment',
+      industry: 'Finance · VC',
+      task: 'Vendor due-diligence triage',
+      before: '3–5 days',
+      after: '1 hour',
       reduction: '99%',
-      effect: '월 30시간 단축',
+      effect: '30 hrs/mo saved',
       image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80',
     },
     {
-      company: '체인로지스',
-      industry: '물류·마케팅',
-      task: '고객사 공지사항 분류·SNS 발행',
-      before: '2~4시간',
-      after: '3분',
+      company: 'ChainLogis',
+      industry: 'Logistics · Marketing',
+      task: 'Client announcement classification & social posting',
+      before: '2–4 hours',
+      after: '3 min',
       reduction: '97%',
-      effect: '월 80시간 단축, 발행량 20배↑',
+      effect: '80 hrs/mo saved · 20× output',
       image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
     },
     {
-      company: '체인로지스',
-      industry: '물류·CS',
-      task: '배송 문의 자동 응대',
-      before: '수동 2명',
+      company: 'ChainLogis',
+      industry: 'Logistics · CS',
+      task: 'Delivery inquiry auto-response',
+      before: '2 humans',
       after: 'AI 90%',
-      reduction: '24h 무중단',
-      effect: '24시간 운영',
+      reduction: '24/7 always-on',
+      effect: '24-hour operation',
       image: 'https://images.unsplash.com/photo-1586528116493-a029325540fa?auto=format&fit=crop&w=1200&q=80',
     },
     {
-      company: '동탄퍼스트안과',
-      industry: '헬스케어',
-      task: '환자 상담 자동화',
-      before: '수동 응대',
+      company: 'Dongtan First Eye Clinic',
+      industry: 'Healthcare',
+      task: 'Patient consultation automation',
+      before: 'Manual',
       after: 'AI 90%',
-      reduction: '24h 무중단',
-      effect: '24시간 운영',
+      reduction: '24/7 always-on',
+      effect: '24-hour operation',
       image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80',
     },
     {
-      company: '엑스퍼트 세무법인',
-      industry: '회계',
-      task: '월말 정산서 생성',
-      before: '2~3시간',
-      after: '10분',
+      company: 'Expert Tax Firm',
+      industry: 'Accounting',
+      task: 'Month-end statement generation',
+      before: '2–3 hours',
+      after: '10 min',
       reduction: '90%',
-      effect: '월 50시간 단축',
+      effect: '50 hrs/mo saved',
       image: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1200&q=80',
     },
     {
-      company: '엑스퍼트 세무법인',
-      industry: '회계',
-      task: '영수증 자동 분류',
-      before: '10~20시간',
-      after: '30분',
+      company: 'Expert Tax Firm',
+      industry: 'Accounting',
+      task: 'Receipt auto-classification',
+      before: '10–20 hours',
+      after: '30 min',
       reduction: '95%',
-      effect: '월 40시간 단축',
+      effect: '40 hrs/mo saved',
       image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80',
     },
     {
-      company: '우하컴퍼니',
-      industry: '이커머스·정산',
-      task: '주문 정산 자동화',
-      before: '2~3시간',
-      after: '30초',
+      company: 'UHA Company',
+      industry: 'E-commerce · Settlement',
+      task: 'Order reconciliation automation',
+      before: '2–3 hours',
+      after: '30 sec',
       reduction: '99%',
-      effect: '월 60시간 단축',
+      effect: '60 hrs/mo saved',
       image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80',
     },
     {
-      company: '부자테이프',
-      industry: '콘텐츠·미디어',
-      task: '블로그 콘텐츠 생성',
-      before: '2~4시간',
-      after: '5분',
+      company: 'Buja Tape',
+      industry: 'Content · Media',
+      task: 'Blog content generation',
+      before: '2–4 hours',
+      after: '5 min',
       reduction: '95%',
-      effect: '월 80시간 단축',
+      effect: '80 hrs/mo saved',
       image: 'https://images.unsplash.com/photo-1493612276216-ee3925520721?auto=format&fit=crop&w=1200&q=80',
     },
     {
-      company: '동탄퍼스트안과',
-      industry: '헬스케어',
-      task: '검사 결과 정리',
-      before: '5~9분',
-      after: '1.5~2분',
+      company: 'Dongtan First Eye Clinic',
+      industry: 'Healthcare',
+      task: 'Exam result summarization',
+      before: '5–9 min',
+      after: '1.5–2 min',
       reduction: '70%',
-      effect: '월 15시간 단축',
+      effect: '15 hrs/mo saved',
       image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1200&q=80',
     },
   ];
 
-  const industries = ['전체', ...Array.from(new Set(cases.map(c => c.industry))).sort()];
-  const filteredCases = selectedIndustry === '전체'
+  const industries = ['All', ...Array.from(new Set(cases.map(c => c.industry))).sort()];
+  const filteredCases = selectedIndustry === 'All'
     ? cases
     : cases.filter(c => c.industry === selectedIndustry);
 
@@ -121,11 +121,11 @@ export default function CasesPage() {
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-40">
           <p className="section-eyebrow animate-slideUp">Customer Stories</p>
           <h1 className="text-5xl md:text-7xl font-black leading-[0.95] tracking-tight mb-8 max-w-4xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
-            한국 기업이 AXMOS로<br />만든 실행 결과.
+            Results Korean enterprises<br />built with AXMOS.
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
-            금융·물류·헬스케어·회계·이커머스. 9가지 산업, 9개 기업이 검증한
-            업무 자동화의 실질적 임팩트.
+            Finance, logistics, healthcare, accounting, e-commerce. Nine industries.
+            Nine companies. One pattern: measurable automation impact.
           </p>
 
           {/* Stats */}
@@ -152,7 +152,7 @@ export default function CasesPage() {
           <div className="flex justify-between items-end mb-12 flex-wrap gap-6">
             <div>
               <p className="section-eyebrow text-bg-dark/60">All Cases</p>
-              <h2 className="section-title text-bg-dark">산업별 자동화 사례</h2>
+              <h2 className="section-title text-bg-dark">Automation cases by industry</h2>
             </div>
             <p className="text-sm text-gray-600">
               {filteredCases.length} of {cases.length} cases
@@ -220,7 +220,7 @@ export default function CasesPage() {
 
           {filteredCases.length === 0 && (
             <div className="text-center py-20">
-              <p className="text-text-muted">해당 산업의 사례가 없습니다.</p>
+              <p className="text-text-muted">No cases in this industry yet.</p>
             </div>
           )}
         </div>
@@ -241,11 +241,11 @@ export default function CasesPage() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Get Started</p>
           <h2 className="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight mb-8">
-            당신의 업무도 자동화 가능합니다.
+            Your workflows can be automated too.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto leading-relaxed">
-            3주 안에 가시적인 결과를 만들어 드립니다. 무료 상담 후 자동화 가능 영역과
-            예상 ROI를 함께 분석해 드립니다.
+            We&apos;ll deliver measurable results in 3 weeks. After a free consultation,
+            we map automation opportunities and projected ROI together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">

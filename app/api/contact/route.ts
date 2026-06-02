@@ -29,20 +29,20 @@ async function sendEmail(data: ContactData) {
       from: EMAIL_FROM,
       to: CONTACT_EMAIL,
       replyTo: data.email,
-      subject: `[AXMOS] 새로운 신청 — ${data.company}`,
+      subject: `[AXMOS] New inquiry — ${data.company}`,
       html: `
         <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:600px;margin:0 auto;padding:24px">
-          <h2 style="color:#0a0a0a;margin:0 0 16px 0;font-size:24px">새로운 파트너십 신청</h2>
-          <p style="color:#737373;margin:0 0 24px 0">아래 회사가 AXMOS에 상담을 신청했습니다.</p>
+          <h2 style="color:#0a0a0a;margin:0 0 16px 0;font-size:24px">New partnership inquiry</h2>
+          <p style="color:#737373;margin:0 0 24px 0">The company below requested a consultation with AXMOS.</p>
           <table style="border-collapse:collapse;width:100%;font-size:14px">
-            ${adminRow('회사명', data.company)}
-            ${adminRow('담당자', data.name)}
-            ${adminRow('이메일', `<a href="mailto:${data.email}" style="color:#1F3864">${data.email}</a>`)}
-            ${adminRow('연락처', data.phone || '입력 안됨')}
-            ${adminRow('관심 트랙', data.track)}
-            ${adminRow('자동화 업무', data.task)}
+            ${adminRow('Company', data.company)}
+            ${adminRow('Contact', data.name)}
+            ${adminRow('Email', `<a href="mailto:${data.email}" style="color:#1F3864">${data.email}</a>`)}
+            ${adminRow('Phone', data.phone || 'Not provided')}
+            ${adminRow('Track', data.track)}
+            ${adminRow('Workflow', data.task)}
           </table>
-          <p style="color:#737373;margin:24px 0 0 0;font-size:12px">접수 시각: ${new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })}</p>
+          <p style="color:#737373;margin:24px 0 0 0;font-size:12px">Received at: ${new Date().toUTCString()}</p>
         </div>
       `,
     });
@@ -51,18 +51,18 @@ async function sendEmail(data: ContactData) {
     await resend.emails.send({
       from: EMAIL_FROM,
       to: data.email,
-      subject: 'AXMOS 신청이 접수되었습니다',
+      subject: 'Your AXMOS inquiry has been received',
       html: `
         <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:600px;margin:0 auto;padding:24px">
-          <h2 style="color:#0a0a0a;margin:0 0 16px 0">${data.name}님, 신청해 주셔서 감사합니다.</h2>
-          <p style="color:#404040;line-height:1.6">AXMOS 파트너십 신청이 정상적으로 접수되었습니다.<br />2영업일 내에 담당자가 회신해 드리겠습니다.</p>
+          <h2 style="color:#0a0a0a;margin:0 0 16px 0">${data.name}, thank you for reaching out.</h2>
+          <p style="color:#404040;line-height:1.6">Your AXMOS inquiry has been received.<br />A team member will reply within 2 business days.</p>
           <div style="border-left:3px solid #0a0a0a;padding:12px 16px;margin:24px 0;background:#f8f9fa">
-            <p style="margin:0 0 8px 0;color:#737373;font-size:12px;text-transform:uppercase;letter-spacing:1px">접수 내용</p>
+            <p style="margin:0 0 8px 0;color:#737373;font-size:12px;text-transform:uppercase;letter-spacing:1px">Your submission</p>
             <p style="margin:0;color:#0a0a0a;font-weight:600">${data.company} · ${data.track}</p>
             <p style="margin:4px 0 0 0;color:#404040;font-size:14px">${data.task}</p>
           </div>
           <p style="color:#737373;font-size:12px;margin-top:32px;border-top:1px solid #e5e5e5;padding-top:16px">
-            본 메일은 자동 발송된 메일입니다. 문의: ${CONTACT_EMAIL}
+            This message was sent automatically. Questions: ${CONTACT_EMAIL}
           </p>
         </div>
       `,
@@ -118,13 +118,13 @@ async function saveToNotion(data: ContactData) {
       body: JSON.stringify({
         parent: { database_id: databaseId },
         properties: {
-          회사명: { title: [{ text: { content: data.company } }] },
-          담당자: { rich_text: [{ text: { content: data.name } }] },
-          이메일: { email: data.email },
-          연락처: data.phone ? { phone_number: data.phone } : { phone_number: null },
-          트랙: { select: { name: data.track } },
-          '자동화 업무': { rich_text: [{ text: { content: data.task } }] },
-          상태: { select: { name: '신규' } },
+          Company: { title: [{ text: { content: data.company } }] },
+          Contact: { rich_text: [{ text: { content: data.name } }] },
+          Email: { email: data.email },
+          Phone: data.phone ? { phone_number: data.phone } : { phone_number: null },
+          Track: { select: { name: data.track } },
+          Workflow: { rich_text: [{ text: { content: data.task } }] },
+          Status: { select: { name: 'New' } },
         },
       }),
     });
@@ -146,7 +146,7 @@ export async function POST(request: NextRequest) {
 
     if (!company || !name || !email || !track || !task) {
       return NextResponse.json(
-        { error: '필수 항목을 모두 입력해주세요' },
+        { error: 'Please complete all required fields' },
         { status: 400 }
       );
     }
@@ -171,13 +171,13 @@ export async function POST(request: NextRequest) {
     });
 
     return NextResponse.json(
-      { success: true, message: '신청이 완료되었습니다' },
+      { success: true, message: 'Inquiry submitted successfully' },
       { status: 200 }
     );
   } catch (error) {
     console.error('[contact] error', error);
     return NextResponse.json(
-      { error: '서버 오류가 발생했습니다' },
+      { error: 'Internal server error' },
       { status: 500 }
     );
   }

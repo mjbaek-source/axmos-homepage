@@ -15,8 +15,8 @@ export default function Footer() {
               className="brightness-0 invert mb-6"
             />
             <p className="text-text-light text-sm leading-relaxed max-w-md">
-              한국 기업을 위한 AI 운영체제.<br />
-              기존 시스템을 교체하지 않고, 3주 안에 AI 자동화를 도입합니다.
+              The AI Operating System for Korean enterprises.<br />
+              Roll out AI automation in 3 weeks — without replacing your existing systems.
             </p>
           </div>
 

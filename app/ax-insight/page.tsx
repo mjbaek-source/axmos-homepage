@@ -3,63 +3,63 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'AX Insight — From the Field',
-  description: '한국 기업의 AI 도입 현장에서 길어 올린 인사이트. 도입 사례, 비개발자 가이드, 도구 리뷰, AX 인사이트.',
-  keywords: ['AX Insight', 'AI 블로그', 'AI 도입 사례', '비개발자 AI', 'AX 인사이트', 'AXMOS 블로그'],
+  description: 'Insights drawn from the front lines of AI adoption in Korean enterprises. Case studies, non-developer guides, tool reviews, AX perspective.',
+  keywords: ['AX Insight', 'AI blog', 'AI adoption case studies', 'AI for non-developers', 'AX perspective', 'AXMOS blog'],
 };
 
 const TOPICS = [
   {
-    label: '도입 사례',
+    label: 'Case Studies',
     title: 'Case Studies',
-    desc: '어떤 회사가 어떤 워크플로우를 어떻게 자동화했는지. 실제 현장의 시행착오까지 가감 없이.',
+    desc: 'Which companies automated which workflows, and how. Including the field-level missteps, unedited.',
   },
   {
-    label: '비개발자 가이드',
+    label: 'For Non-Developers',
     title: 'For Non-Developers',
-    desc: 'ChatGPT·Claude·노코드 도구를 실무에 바로 쓰는 법. 코드 없이, 직무 그대로.',
+    desc: 'How to use ChatGPT, Claude, and no-code tools at work. No code required. Your job, as is.',
   },
   {
-    label: 'AX 인사이트',
+    label: 'AX Perspective',
     title: 'AX Perspective',
-    desc: 'AI 시대 조직·운영·역할의 변화. 한국 기업 50곳 이상을 만나며 본 패턴.',
+    desc: 'How organizations, operations, and roles shift in the AI era. Patterns we&apos;ve seen across 50+ Korean enterprises.',
   },
   {
-    label: '도구 & 튜토리얼',
+    label: 'Tools & Tutorials',
     title: 'Tools & Tutorials',
-    desc: '새로 쓸 만한 AI 도구 리뷰와, 따라 하면 그대로 작동하는 단계별 워크플로우.',
+    desc: 'Reviews of AI tools worth adopting, plus step-by-step workflows that work when you follow them.',
   },
 ];
 
 const UPCOMING = [
   {
-    category: '도입 사례',
-    title: 'FDE 한 명이 바꿔놓은 30명 규모 영업팀',
-    excerpt: '기술 부서가 없어도 가능했던 자동화. 어떻게 시작했고, 무엇이 막혔고, 무엇이 풀렸는지.',
+    category: 'Case Studies',
+    title: 'How one FDE transformed a 30-person sales team',
+    excerpt: 'Automation that worked without an engineering department. How it started, what got blocked, and what finally unblocked.',
   },
   {
-    category: '비개발자 가이드',
-    title: '엑셀과 PDF만 쓰던 팀의 첫 AI 자동화',
-    excerpt: '노코드로 시작하는 영업·기획·운영 자동화. 다음 주 업무 보고부터 쓰는 워크플로우.',
+    category: 'For Non-Developers',
+    title: 'The first AI automation for teams who only used Excel and PDFs',
+    excerpt: 'No-code starters for sales, strategy, and operations. Workflows you can run from next week&apos;s report onward.',
   },
   {
-    category: 'AX 인사이트',
-    title: '왜 한국 기업 AI 도입은 PoC에서 멈추는가',
-    excerpt: '현장 인터뷰로 본 도입 실패의 공통 패턴, 그리고 그것을 깬 조직들의 공통점.',
+    category: 'AX Perspective',
+    title: 'Why most Korean enterprise AI adoption stalls at PoC',
+    excerpt: 'Common failure patterns from field interviews — and the shared traits of organizations that broke through.',
   },
   {
-    category: '도구 & 튜토리얼',
-    title: '한국어 업무에서 ChatGPT와 Claude를 다르게 써야 하는 이유',
-    excerpt: '실제 워크플로우 케이스로 비교한 강점·약점. 어떤 일은 누구에게 맡길 것인가.',
+    category: 'Tools & Tutorials',
+    title: 'Why you should use ChatGPT and Claude differently for Korean-language work',
+    excerpt: 'Strengths and weaknesses compared across real workflow cases. Which jobs go to which model.',
   },
   {
-    category: 'AX 인사이트',
-    title: 'AI 시대의 "인쇄공" — Field Deployment Expert',
-    excerpt: 'AI를 만드는 사람이 아닌, 현장에 이식하는 사람. 우리가 정의하는 새로운 역할.',
+    category: 'AX Perspective',
+    title: 'The "printers" of the AI era — Field Deployment Experts',
+    excerpt: 'Not the people who build AI, but the people who deploy it on the ground. How we define this new role.',
   },
   {
-    category: '도구 & 튜토리얼',
-    title: '회의록 자동화 30분 셋업 — 녹취부터 액션 아이템까지',
-    excerpt: '한 번 셋업하면 매주 2시간이 돌아오는 워크플로우. 비개발자도 따라할 수 있게 단계별로.',
+    category: 'Tools & Tutorials',
+    title: 'A 30-minute setup for meeting-notes automation — from transcript to action items',
+    excerpt: 'One setup gives you back 2 hours every week. Step-by-step, written so non-developers can follow.',
   },
 ];
 
@@ -84,8 +84,8 @@ export default function AXInsight() {
             AX Insight
           </h1>
           <p className="text-xl md:text-2xl text-text-light max-w-3xl leading-relaxed mb-10">
-            한국 기업의 AI 도입 현장에서 길어 올린 인사이트.<br />
-            사례, 가이드, 도구 리뷰 — 바로 적용되는 것만.
+            Insights drawn from the front lines of AI adoption in Korean enterprises.<br />
+            Cases, guides, tool reviews — only what you can apply immediately.
           </p>
         </div>
       </section>
@@ -95,7 +95,7 @@ export default function AXInsight() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <p className="section-eyebrow text-bg-dark/60">Topics</p>
-            <h2 className="section-title text-bg-dark">다루는 주제</h2>
+            <h2 className="section-title text-bg-dark">What we cover</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-200">
@@ -115,9 +115,9 @@ export default function AXInsight() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <p className="section-eyebrow">Coming First</p>
-            <h2 className="section-title">곧 올라올 글들</h2>
+            <h2 className="section-title">What&apos;s coming first</h2>
             <p className="text-lg text-text-light mt-6 leading-relaxed">
-              제목과 윤곽만 먼저 공개합니다. 첫 글은 곧 이곳에 올라옵니다.
+              Titles and outlines first. The first article lands here soon.
             </p>
           </div>
 
@@ -140,15 +140,15 @@ export default function AXInsight() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Suggest a Topic</p>
           <h2 className="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight mb-8">
-            궁금한 주제가 있다면<br />
-            먼저 다뤄드립니다.
+            Have a question?<br />
+            We&apos;ll cover it first.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto">
-            현장에서 막힌 자동화·도구·역할에 대한 질문을 보내주세요. 우선순위로 글로 정리해 올립니다.
+            Send us the automation, tool, or role question you&apos;re stuck on. We prioritize it as a written article.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">
-              주제 제안하기 →
+              Suggest a topic →
             </Link>
           </div>
         </div>

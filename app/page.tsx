@@ -16,29 +16,29 @@ interface Case {
 
 export default function Home() {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
-  const [selectedIndustry, setSelectedIndustry] = useState<string>('전체');
+  const [selectedIndustry, setSelectedIndustry] = useState<string>('All');
   const [cases, setCases] = useState<Case[]>([]);
 
   useEffect(() => {
     const defaultCases: Case[] = [
-      { company: '트랜스링크 인베스트먼트', industry: '금융·VC', task: '거래처 실사 요청 정리', before: '3~5일', after: '1시간', reduction: '90~99%', effect: '월 30시간 단축' },
-      { company: '체인로지스', industry: '물류·마케팅', task: '고객사 공지사항 분류', before: '2~4시간', after: '3분', reduction: '97%', effect: '월 40시간 단축' },
-      { company: '체인로지스', industry: '물류', task: '배송 문의 자동 응대', before: '수동 2명', after: 'AI 90%', reduction: '24h 무중단', effect: '24시간 운영' },
-      { company: '동탄퍼스트안과', industry: '헬스케어', task: '환자 상담 자동화', before: '수동 응대', after: 'AI 90%', reduction: '24h 무중단', effect: '24시간 운영' },
-      { company: '엑스퍼트 세무법인', industry: '회계', task: '월말 정산서 생성', before: '2~3시간', after: '10분', reduction: '90%', effect: '월 50시간 단축' },
-      { company: '엑스퍼트 세무법인', industry: '회계', task: '영수증 자동 분류', before: '10~20시간', after: '30분', reduction: '95%', effect: '월 40시간 단축' },
-      { company: '우하컴퍼니', industry: '유통·마케팅', task: '주문 정산 자동화', before: '2~3시간', after: '30초', reduction: '99%', effect: '월 60시간 단축' },
-      { company: '부자테이프', industry: '콘텐츠·미디어', task: '블로그 콘텐츠 생성', before: '2~4시간', after: '5분', reduction: '95%', effect: '월 80시간 단축' },
-      { company: '동탄퍼스트안과', industry: '헬스케어', task: '검사 결과 정리', before: '5~9분', after: '1.5~2분', reduction: '70%', effect: '월 15시간 단축' },
+      { company: 'TransLink Investment', industry: 'Finance · VC', task: 'Vendor due-diligence triage', before: '3–5 days', after: '1 hour', reduction: '90–99%', effect: '30 hrs/mo saved' },
+      { company: 'ChainLogis', industry: 'Logistics · Marketing', task: 'Client announcement classification', before: '2–4 hours', after: '3 min', reduction: '97%', effect: '40 hrs/mo saved' },
+      { company: 'ChainLogis', industry: 'Logistics', task: 'Delivery inquiry auto-response', before: '2 humans', after: 'AI 90%', reduction: '24/7 always-on', effect: '24-hour ops' },
+      { company: 'Dongtan First Eye Clinic', industry: 'Healthcare', task: 'Patient consultation automation', before: 'manual', after: 'AI 90%', reduction: '24/7 always-on', effect: '24-hour ops' },
+      { company: 'Expert Tax Firm', industry: 'Accounting', task: 'Month-end statement generation', before: '2–3 hours', after: '10 min', reduction: '90%', effect: '50 hrs/mo saved' },
+      { company: 'Expert Tax Firm', industry: 'Accounting', task: 'Receipt auto-classification', before: '10–20 hours', after: '30 min', reduction: '95%', effect: '40 hrs/mo saved' },
+      { company: 'UHA Company', industry: 'Retail · Marketing', task: 'Order reconciliation automation', before: '2–3 hours', after: '30 sec', reduction: '99%', effect: '60 hrs/mo saved' },
+      { company: 'Buja Tape', industry: 'Content · Media', task: 'Blog content generation', before: '2–4 hours', after: '5 min', reduction: '95%', effect: '80 hrs/mo saved' },
+      { company: 'Dongtan First Eye Clinic', industry: 'Healthcare', task: 'Exam result summarization', before: '5–9 min', after: '1.5–2 min', reduction: '70%', effect: '15 hrs/mo saved' },
     ];
     setCases(defaultCases);
   }, []);
 
   const industries = cases.length > 0
-    ? ['전체', ...Array.from(new Set(cases.map(c => c.industry))).sort()]
-    : ['전체'];
+    ? ['All', ...Array.from(new Set(cases.map(c => c.industry))).sort()]
+    : ['All'];
 
-  const filteredCases = selectedIndustry === '전체'
+  const filteredCases = selectedIndustry === 'All'
     ? cases
     : cases.filter(c => c.industry === selectedIndustry);
 
@@ -66,12 +66,12 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-44">
           <p className="section-eyebrow animate-slideUp">The AI Operating System for Korean Enterprises</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tight mb-8 max-w-5xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
-            업무는 그대로,<br />
-            <span className="text-text-light">실행만 더 빠르게.</span>
+            Same work.<br />
+            <span className="text-text-light">Faster execution.</span>
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl mb-10 leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
-            기존 시스템과 도구는 그대로. AXMOS가 연결하고, 자동화하고, 가속합니다.
-            3주 안에 가시적인 결과를 만듭니다.
+            Your existing systems and tools — untouched. AXMOS connects, automates, and accelerates them.
+            Measurable results in 3 weeks.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-slideUp" style={{ animationDelay: '0.3s' }}>
@@ -86,16 +86,16 @@ export default function Home() {
           {/* Stats inline */}
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-3xl animate-slideUp" style={{ animationDelay: '0.4s' }}>
             <div>
-              <p className="text-3xl md:text-4xl font-black mb-2">3주</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">평균 구축 기간</p>
+              <p className="text-3xl md:text-4xl font-black mb-2">3 wks</p>
+              <p className="text-xs text-text-muted uppercase tracking-wider">Avg. Implementation</p>
             </div>
             <div>
               <p className="text-3xl md:text-4xl font-black mb-2">99%</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">최대 시간 단축률</p>
+              <p className="text-xs text-text-muted uppercase tracking-wider">Max Time Reduction</p>
             </div>
             <div>
               <p className="text-3xl md:text-4xl font-black mb-2">9+</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">엔터프라이즈 고객사</p>
+              <p className="text-xs text-text-muted uppercase tracking-wider">Enterprise Customers</p>
             </div>
           </div>
         </div>
@@ -107,12 +107,12 @@ export default function Home() {
           <p className="section-eyebrow text-center mb-12">Trusted by Korean Enterprises</p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-12 gap-y-10 items-center justify-items-center">
             {[
-              { name: '트랜스링크 인베스트먼트', logo: '/logos/translink.png', height: 28 },
-              { name: '체인로지스', logo: '/logos/chainlogis.png', height: 32 },
-              { name: '엑스퍼트 세무법인', logo: '/logos/taxexpert.png', height: 36 },
-              { name: '동탄퍼스트안과', logo: '/logos/firsteye.png', height: 28 },
-              { name: '부자테이프', logo: '/logos/bujatape.png', height: 40 },
-              { name: '우하컴퍼니', logo: null, height: 28 },
+              { name: 'TransLink Investment', logo: '/logos/translink.png', height: 28 },
+              { name: 'ChainLogis', logo: '/logos/chainlogis.png', height: 32 },
+              { name: 'Expert Tax Firm', logo: '/logos/taxexpert.png', height: 36 },
+              { name: 'Dongtan First Eye Clinic', logo: '/logos/firsteye.png', height: 28 },
+              { name: 'Buja Tape', logo: '/logos/bujatape.png', height: 40 },
+              { name: 'UHA Company', logo: null, height: 28 },
             ].map((company, i) => (
               <div key={i} className="flex items-center justify-center h-12 opacity-60 hover:opacity-100 transition" title={company.name}>
                 {company.logo ? (
@@ -140,38 +140,38 @@ export default function Home() {
           <div className="max-w-3xl mb-20">
             <p className="section-eyebrow">The Problem</p>
             <h2 className="section-title mb-6">
-              한국 기업의 실행 속도는<br />
-              여전히 수십 년 전 그대로입니다.
+              Korean enterprises still run<br />
+              at the speed of decades ago.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
-              이메일을 한 통씩 읽고, 엑셀에 데이터를 옮기고, 메신저로 보고를 주고받는 동안
-              경쟁사는 이미 한 발 앞서 있습니다.
+              While you read emails one by one, move data into Excel, and pass reports through messengers,
+              your competitors are already a step ahead.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border-dark">
             <div className="bg-bg-dark-2 p-10">
               <p className="text-5xl font-black text-white mb-4">01</p>
-              <h3 className="text-xl font-bold mb-4">반복 업무가 사람을 갉아먹습니다</h3>
+              <h3 className="text-xl font-bold mb-4">Repetitive work drains your people</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                정산, 분류, 정리, 보고. 매일 반복되는 비효율이 인재의 시간을
-                갉아먹고 핵심 업무에 집중하지 못하게 만듭니다.
+                Reconciliation, classification, cleanup, reporting. The daily inefficiencies
+                eat into your talent&apos;s time and pull them away from core work.
               </p>
             </div>
             <div className="bg-bg-dark-2 p-10">
               <p className="text-5xl font-black text-white mb-4">02</p>
-              <h3 className="text-xl font-bold mb-4">시스템이 흩어져 있습니다</h3>
+              <h3 className="text-xl font-bold mb-4">Your systems are siloed</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                Slack, Gmail, Excel, CRM, ERP. 데이터는 도구마다 흩어져 있고,
-                연결이 끊어진 채로 의사결정이 이뤄집니다.
+                Slack, Gmail, Excel, CRM, ERP. Data is scattered across tools,
+                and decisions get made with broken connections in between.
               </p>
             </div>
             <div className="bg-bg-dark-2 p-10">
               <p className="text-5xl font-black text-white mb-4">03</p>
-              <h3 className="text-xl font-bold mb-4">AI 도입은 너무 멉니다</h3>
+              <h3 className="text-xl font-bold mb-4">AI adoption takes too long</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                기획·개발·검증·배포를 거치면 6개월~1년. 그 사이 비즈니스 환경은
-                바뀌고, 도입한 AI는 이미 낡아 있습니다.
+                Plan, build, validate, deploy — 6 to 12 months. By the time you ship,
+                the business has moved on and the AI is already outdated.
               </p>
             </div>
           </div>
@@ -185,21 +185,21 @@ export default function Home() {
             <div>
               <p className="section-eyebrow text-bg-dark/60">The Solution</p>
               <h2 className="section-title text-bg-dark mb-8">
-                비즈니스를 바꾸지 않고, AI가 맞춰갑니다.
+                Don&apos;t change the business. Let AI adapt to it.
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                AXMOS는 기존 시스템을 교체하지 않습니다. 데이터를 옮기지도 않습니다.
-                대신, 당신의 도구와 워크플로우 위에 AI Agent를 얹어 자동화합니다.
+                AXMOS doesn&apos;t replace your existing systems. It doesn&apos;t move your data either.
+                Instead, it layers AI Agents on top of your tools and workflows.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-10">
-                Slack 메시지를 분석하고, Gmail을 분류하고, Excel을 정리하고,
-                CRM을 업데이트합니다. <strong>3주 안에 운영 가능한 결과물</strong>을 받게 됩니다.
+                It reads Slack messages, classifies Gmail, organizes Excel,
+                and updates your CRM. <strong>You get a production-ready result in 3 weeks.</strong>
               </p>
               <div className="space-y-4">
                 {[
-                  { label: 'Install', desc: '기존 시스템 분석 — 1주차' },
-                  { label: 'Build', desc: 'AI Agent 설계 및 개발 — 2주차' },
-                  { label: 'Operate', desc: '검증·배포·운영 — 3주차' },
+                  { label: 'Install', desc: 'Analyze existing systems — Week 1' },
+                  { label: 'Build', desc: 'Design and develop the AI Agent — Week 2' },
+                  { label: 'Operate', desc: 'Validate, deploy, run — Week 3' },
                 ].map((step, i) => (
                   <div key={i} className="flex items-start gap-4 border-l-2 border-bg-dark pl-6 py-2">
                     <div>
@@ -223,7 +223,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-bg-dark/80 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 p-10 text-white">
                 <p className="text-xs font-bold uppercase tracking-[0.2em] mb-2 opacity-80">Live Dashboard</p>
-                <p className="text-2xl font-bold">실시간으로 자동화 성과를 확인합니다.</p>
+                <p className="text-2xl font-bold">Track automation impact in real time.</p>
               </div>
             </div>
           </div>
@@ -247,8 +247,8 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-bg-dark via-bg-dark/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-6">
                   <p className="text-xs font-bold uppercase tracking-widest text-text-muted mb-1">Customer</p>
-                  <p className="text-xl font-bold">박희덕</p>
-                  <p className="text-sm text-text-light">CEO, 트랜스링크 인베스트먼트</p>
+                  <p className="text-xl font-bold">Heedeok Park</p>
+                  <p className="text-sm text-text-light">CEO, TransLink Investment</p>
                 </div>
               </div>
             </div>
@@ -256,26 +256,26 @@ export default function Home() {
             <div className="md:col-span-2">
               <p className="section-eyebrow">Customer Voice</p>
               <blockquote className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-8">
-                &ldquo;100개사 거래처 실사 요청을 3~5일이 걸리던 작업이
-                AXMOS 도입 후 1시간 만에 끝납니다. 단순한 시간 절감이 아니라,
-                의사결정 속도 자체가 달라졌습니다.&rdquo;
+                &ldquo;Due-diligence reviews for 100+ portfolio vendors used to take 3 to 5 days.
+                With AXMOS, the same work finishes in an hour. It&apos;s not just time saved —
+                the speed of decision-making itself has changed.&rdquo;
               </blockquote>
               <div className="flex items-center gap-6 pt-8 border-t border-border-dark">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-text-muted mb-1">Industry</p>
-                  <p className="text-white font-semibold">금융 · VC</p>
+                  <p className="text-white font-semibold">Finance · VC</p>
                 </div>
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-text-muted mb-1">Result</p>
-                  <p className="text-white font-semibold">99% 시간 단축</p>
+                  <p className="text-white font-semibold">99% time reduction</p>
                 </div>
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-text-muted mb-1">Time saved</p>
-                  <p className="text-white font-semibold">월 30시간</p>
+                  <p className="text-white font-semibold">30 hrs/mo</p>
                 </div>
               </div>
               <p className="text-xs text-text-muted mt-6 italic">
-                💬 인터뷰 텍스트 — placeholder. 실제 인터뷰 후 교체 예정.
+                💬 Interview text — placeholder. To be replaced after the actual interview.
               </p>
             </div>
           </div>
@@ -289,8 +289,8 @@ export default function Home() {
             <div className="max-w-2xl">
               <p className="section-eyebrow text-bg-dark/60">Customer Stories</p>
               <h2 className="section-title text-bg-dark">
-                업계 최고의 기업들이<br />
-                AXMOS로 실행을 가속합니다.
+                Industry leaders move<br />
+                faster with AXMOS.
               </h2>
             </div>
             <Link href="/cases" className="text-bg-dark text-sm font-semibold border-b-2 border-bg-dark pb-1 hover:opacity-60 transition">
@@ -301,24 +301,24 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                company: '트랜스링크 인베스트먼트',
-                industry: '금융 · VC',
-                title: '거래처 실사 요청 자동화로 의사결정 속도를 99% 가속',
-                metric: '3~5일 → 1시간',
+                company: 'TransLink Investment',
+                industry: 'Finance · VC',
+                title: 'Due-diligence automation accelerates decisions by 99%',
+                metric: '3–5 days → 1 hour',
                 image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80',
               },
               {
-                company: '체인로지스',
-                industry: '물류 · 마케팅',
-                title: '공지사항 분류·발행 자동화로 발행량 20배 증가',
-                metric: '2~4시간 → 3분',
+                company: 'ChainLogis',
+                industry: 'Logistics · Marketing',
+                title: 'Announcement classification and publishing — 20× output',
+                metric: '2–4 hours → 3 min',
                 image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
               },
               {
-                company: '우하컴퍼니',
-                industry: '이커머스 · 정산',
-                title: '주문 정산 자동화로 월 60시간 운영 효율 확보',
-                metric: '2~3시간 → 30초',
+                company: 'UHA Company',
+                industry: 'E-commerce · Settlement',
+                title: 'Order reconciliation automation — 60 hrs/mo of operational headroom',
+                metric: '2–3 hours → 30 sec',
                 image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80',
               },
             ].map((story, i) => (
@@ -354,11 +354,11 @@ export default function Home() {
           <div className="max-w-3xl mb-20">
             <p className="section-eyebrow">Why AXMOS</p>
             <h2 className="section-title mb-6">
-              한국 기업의 속도와 복잡성에 맞춰 설계했습니다.
+              Built for the speed and complexity of Korean business.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
-              AXMOS는 글로벌 SaaS가 아닙니다. 한국 기업의 실제 워크플로우, 보안 요구사항,
-              규제 환경에 맞춰 설계되었습니다.
+              AXMOS isn&apos;t a global SaaS. It&apos;s designed around the real workflows,
+              security requirements, and regulatory environment of Korean enterprises.
             </p>
           </div>
 
@@ -366,23 +366,23 @@ export default function Home() {
             {[
               {
                 label: 'Integration',
-                title: '기존 시스템 위에 얹는 AI',
-                desc: 'Slack, Gmail, Excel, ERP, CRM. 새로운 시스템 없이 기존 도구 위에서 작동합니다.',
+                title: 'AI on top of your stack',
+                desc: 'Slack, Gmail, Excel, ERP, CRM. Works on your existing tools — no new systems required.',
               },
               {
                 label: 'Speed',
-                title: '3주 만에 운영 시작',
-                desc: '기획·개발·배포까지 평균 3주. 첫 달부터 가시적인 ROI를 확인할 수 있습니다.',
+                title: 'Live in 3 weeks',
+                desc: 'Plan to deploy in 3 weeks on average. See measurable ROI within the first month.',
               },
               {
                 label: 'Intelligence',
-                title: 'Semantic 비즈니스 이해',
-                desc: '단순 RPA가 아닙니다. 업무 맥락과 예외 상황까지 학습하는 AI Agent입니다.',
+                title: 'Semantic business understanding',
+                desc: 'Not simple RPA. AI Agents that learn your business context and handle edge cases.',
               },
               {
                 label: 'Security',
-                title: '엔터프라이즈 보안',
-                desc: '데이터는 한국 클라우드에서만 처리합니다. 기업별 보안·컴플라이언스 요구사항에 맞춰 운영합니다.',
+                title: 'Enterprise-grade security',
+                desc: 'All data processed in Korean cloud only. Operated to match each enterprise&apos;s security and compliance requirements.',
               },
             ].map((item, i) => (
               <div key={i} className="bg-bg-dark p-10">
@@ -400,8 +400,8 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 text-center">
           <p className="section-eyebrow text-bg-dark/60">Customer Voice</p>
           <blockquote className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-bg-dark mb-12 max-w-4xl mx-auto">
-            &ldquo;도입 첫 달에 월 80시간을 회수했습니다.
-            그건 한 명의 풀타임 직원을 더 채용한 것과 같은 효과였습니다.&rdquo;
+            &ldquo;In our first month, we recovered 80 hours.
+            That&apos;s the equivalent of hiring one additional full-time employee.&rdquo;
           </blockquote>
 
           <div className="flex flex-col items-center gap-4">
@@ -416,10 +416,10 @@ export default function Home() {
               />
             </div>
             <div>
-              <p className="text-bg-dark font-semibold">[고객사 대표명]</p>
-              <p className="text-sm text-gray-600">CEO, 체인로지스 (두발히어로)</p>
+              <p className="text-bg-dark font-semibold">[Customer Name]</p>
+              <p className="text-sm text-gray-600">CEO, ChainLogis (DoobleHero)</p>
             </div>
-            <p className="text-xs text-text-muted italic mt-4">📷 인터뷰 사진 + 텍스트 placeholder</p>
+            <p className="text-xs text-text-muted italic mt-4">📷 Interview photo + text placeholder</p>
           </div>
         </div>
       </section>
@@ -429,9 +429,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <p className="section-eyebrow text-bg-dark/60">Results</p>
-            <h2 className="section-title text-bg-dark">검증된 성과 데이터</h2>
+            <h2 className="section-title text-bg-dark">Validated performance data</h2>
             <p className="text-lg text-gray-700 leading-relaxed mt-4">
-              실제 고객사가 AXMOS와 함께 만들어낸 결과입니다.
+              Real results from real customers running on AXMOS.
             </p>
           </div>
 
@@ -493,7 +493,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <p className="section-eyebrow">Engagement Models</p>
-            <h2 className="section-title">세 가지 시작 방법</h2>
+            <h2 className="section-title">Three ways to get started</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -501,20 +501,20 @@ export default function Home() {
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">For Speed</p>
               <h3 className="text-3xl font-bold mb-4">AX Build</h3>
               <p className="text-text-light mb-8 leading-relaxed">
-                AXMOS 팀이 직접 구축합니다. 가장 빠른 길.
+                AXMOS builds it for you. The fastest path.
               </p>
               <div className="space-y-3 mb-10">
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
-                  <span className="text-text-muted">기간</span>
-                  <span className="font-semibold">20일</span>
+                  <span className="text-text-muted">Duration</span>
+                  <span className="font-semibold">20 days</span>
                 </div>
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
-                  <span className="text-text-muted">산출물</span>
-                  <span className="font-semibold">완성된 AI Agent</span>
+                  <span className="text-text-muted">Deliverable</span>
+                  <span className="font-semibold">Production-ready AI Agent</span>
                 </div>
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
-                  <span className="text-text-muted">추천 대상</span>
-                  <span className="font-semibold">빠른 구축 우선</span>
+                  <span className="text-text-muted">Best for</span>
+                  <span className="font-semibold">Speed-first teams</span>
                 </div>
               </div>
               <p className="text-sm font-semibold border-b border-white pb-1 inline-block group-hover:opacity-60 transition">
@@ -526,20 +526,20 @@ export default function Home() {
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">For Capability</p>
               <h3 className="text-3xl font-bold mb-4">AX Grow</h3>
               <p className="text-text-light mb-8 leading-relaxed">
-                당신의 팀과 함께 만듭니다. 내재화의 길.
+                Build it with your team. The path to internal capability.
               </p>
               <div className="space-y-3 mb-10">
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
-                  <span className="text-text-muted">기간</span>
-                  <span className="font-semibold">16일</span>
+                  <span className="text-text-muted">Duration</span>
+                  <span className="font-semibold">16 days</span>
                 </div>
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
-                  <span className="text-text-muted">산출물</span>
-                  <span className="font-semibold">진단 + Agent + 로드맵</span>
+                  <span className="text-text-muted">Deliverable</span>
+                  <span className="font-semibold">Diagnostic + Agent + Roadmap</span>
                 </div>
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
-                  <span className="text-text-muted">추천 대상</span>
-                  <span className="font-semibold">팀 역량 강화</span>
+                  <span className="text-text-muted">Best for</span>
+                  <span className="font-semibold">Internal team enablement</span>
                 </div>
               </div>
               <p className="text-sm font-semibold border-b border-white pb-1 inline-block group-hover:opacity-60 transition">
@@ -551,20 +551,20 @@ export default function Home() {
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">For Literacy</p>
               <h3 className="text-3xl font-bold mb-4">AX Learn</h3>
               <p className="text-text-light mb-8 leading-relaxed">
-                비개발자 임직원이 AI를 업무에 직접 씁니다. 리터러시의 길.
+                Help non-developer employees use AI at work. The literacy path.
               </p>
               <div className="space-y-3 mb-10">
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
-                  <span className="text-text-muted">기간</span>
-                  <span className="font-semibold">1~2일</span>
+                  <span className="text-text-muted">Duration</span>
+                  <span className="font-semibold">1–2 days</span>
                 </div>
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
-                  <span className="text-text-muted">산출물</span>
-                  <span className="font-semibold">직무 맞춤 활용 가이드</span>
+                  <span className="text-text-muted">Deliverable</span>
+                  <span className="font-semibold">Role-tailored AI playbook</span>
                 </div>
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
-                  <span className="text-text-muted">추천 대상</span>
-                  <span className="font-semibold">비개발자·전사 교육</span>
+                  <span className="text-text-muted">Best for</span>
+                  <span className="font-semibold">Non-developers · Company-wide enablement</span>
                 </div>
               </div>
               <p className="text-sm font-semibold border-b border-white pb-1 inline-block group-hover:opacity-60 transition">
@@ -580,33 +580,33 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-16">
             <p className="section-eyebrow text-bg-dark/60">FAQ</p>
-            <h2 className="section-title text-bg-dark">자주 묻는 질문</h2>
+            <h2 className="section-title text-bg-dark">Frequently asked questions</h2>
           </div>
           <div className="space-y-px bg-gray-200">
             {[
               {
-                q: '우리 회사 업무도 자동화 가능한가요?',
-                a: '대부분 가능합니다. 예측 가능한 패턴이 있고 반복되는 업무라면 AI로 자동화할 수 있습니다. 무료 진단 후 정확히 판단해 드립니다.',
+                q: 'Can our company’s workflows be automated too?',
+                a: 'Most likely yes. If your workflow has predictable patterns and repeats, AI can automate it. We confirm exactly what’s in scope after a free assessment.',
               },
               {
-                q: '기존 시스템을 교체해야 하나요?',
-                a: '아닙니다. AXMOS는 기존 시스템 위에 얹어 작동합니다. Slack, Gmail, Excel, ERP, CRM 등 현재 사용하시는 도구를 그대로 두고 AI Agent가 데이터를 연결하고 자동화합니다.',
+                q: 'Do we need to replace our existing systems?',
+                a: 'No. AXMOS sits on top of your existing systems. Slack, Gmail, Excel, ERP, CRM — keep the tools you already use. AI Agents connect the data and automate the work.',
               },
               {
-                q: '개발 인력이 없어도 되나요?',
-                a: 'AX Build는 AXMOS 팀이 모두 구축합니다. AX Grow를 선택하시면 당신 팀이 함께 배우면서 만듭니다. 구축 프로젝트 전에 임직원 AI 리터러시부터 다지고 싶다면 AX Learn 특강을 먼저 받으셔도 됩니다. 기술팀이 없어도 운영 가능한 결과물을 받을 수 있습니다.',
+                q: 'Do we need our own engineering team?',
+                a: 'Not necessarily. With AX Build, the AXMOS team delivers everything end to end. With AX Grow, your team learns and builds alongside us. If you want to raise AI literacy across employees before any build project, AX Learn workshops can come first. You can ship operational results without an internal tech team.',
               },
               {
-                q: '비용은 얼마나 되나요?',
-                a: '요구사항과 복잡도에 따라 맞춤 견적을 드립니다. 무료 상담 후 명확한 비용을 안내해 드립니다. 일반적으로 3주 구축 기간 내 비용이 전부이며, 추가 비용은 발생하지 않습니다.',
+                q: 'What does it cost?',
+                a: 'We provide a custom quote based on scope and complexity. After a free consultation, we share a clear, fixed-fee proposal. In most cases the cost covers the full 3-week build period — no surprise add-ons.',
               },
               {
-                q: '데이터 보안은 어떻게 보장되나요?',
-                a: 'AXMOS는 데이터 주권 원칙에 따라 한국 클라우드에서만 데이터를 처리합니다. 기업별 보안·컴플라이언스 요구사항에 맞춰 운영하며, 도입 시 NDA·데이터 처리 위탁 계약을 함께 진행합니다.',
+                q: 'How is data security handled?',
+                a: 'AXMOS follows a data-sovereignty principle: all customer data is processed in Korean cloud only. We operate according to each enterprise’s security and compliance requirements, and execute NDAs and data-processing agreements as part of onboarding.',
               },
               {
-                q: '구축 후 유지보수는?',
-                a: '3개월간 무료 유지보수를 제공합니다. 이후 연장은 별도 계약으로 진행됩니다. 운영 매뉴얼과 사용 교육이 포함됩니다.',
+                q: 'What about post-launch support?',
+                a: 'We include 3 months of free maintenance. Extensions are arranged through a separate contract. Operations manuals and user training are included.',
               },
             ].map((faq, i) => (
               <div key={i} className="bg-white">
@@ -645,12 +645,12 @@ export default function Home() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Get Started</p>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] tracking-tight mb-8">
-            3주 후, 당신의 팀은<br />
-            완전히 다른 속도로 일합니다.
+            In 3 weeks, your team<br />
+            works at an entirely different speed.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto leading-relaxed">
-            지금 무료 상담을 신청하세요. 2영업일 내에 답변드립니다.
-            첫 미팅에서 자동화 가능 영역과 예상 ROI를 함께 분석해 드립니다.
+            Request a free consultation today. We reply within 2 business days.
+            In the first meeting we map automation opportunities and project ROI.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">
