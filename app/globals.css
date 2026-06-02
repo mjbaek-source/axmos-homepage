@@ -1,14 +1,9 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  /* 포인트 컬러 — Electric Cyan. 한 곳에서 관리 */
-  --ax-accent: #22D3EE;
-  --ax-accent-rgb: 34, 211, 238;
-}
 
 * {
   margin: 0;
@@ -21,100 +16,81 @@ html {
 }
 
 body {
-  font-family: 'Pretendard Variable', 'Pretendard', sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', 'Inter', sans-serif;
+  color: #212121;
+  background: #ffffff;
 }
 
 @layer components {
+  /* CTA — 블랙 필 (Cohere primary) */
   .btn-primary {
-    @apply bg-white text-bg-dark font-semibold py-3 px-8 hover:bg-gray-200 transition;
+    @apply inline-flex items-center justify-center bg-near-black text-white font-medium px-6 py-3 rounded-pill hover:bg-ink transition;
+  }
+  .btn-primary-inv {
+    @apply inline-flex items-center justify-center bg-white text-near-black font-medium px-6 py-3 rounded-pill hover:bg-soft-stone transition;
   }
 
+  /* 텍스트 링크 + 언더라인 (Cohere secondary) */
   .btn-secondary {
-    @apply border border-white/30 text-white font-semibold py-3 px-8 hover:bg-white/10 transition;
+    @apply inline-flex items-center text-ink font-medium border-b border-ink pb-0.5 hover:opacity-60 transition;
+  }
+  .btn-secondary-light {
+    @apply inline-flex items-center text-white font-medium border-b border-white pb-0.5 hover:opacity-60 transition;
   }
 
-  .section-title {
-    @apply text-4xl md:text-5xl font-bold tracking-tight;
+  /* Pill outline — 필터·택소노미 */
+  .pill-outline {
+    @apply inline-flex items-center border border-ink/30 rounded-xl px-5 py-2 text-sm font-medium hover:border-ink transition;
   }
 
+  /* 디스플레이 활자 — 거대, 타이트 (Cohere monumental headline) */
+  .display-hero {
+    @apply font-display font-normal leading-[1.0] tracking-display-hero;
+    font-size: clamp(48px, 7vw, 96px);
+  }
+  .display-section {
+    @apply font-display font-normal leading-[1.0] tracking-display;
+    font-size: clamp(36px, 5vw, 60px);
+  }
+  .display-card {
+    @apply font-display font-normal leading-tight tracking-card;
+    font-size: clamp(24px, 2.5vw, 32px);
+  }
+
+  /* 모노 라벨 */
+  .mono-label {
+    @apply font-mono uppercase text-[14px] tracking-mono-label text-muted-slate;
+  }
+  .mono-label-sm {
+    @apply font-mono uppercase text-[11px] tracking-mono-label text-muted-slate;
+  }
+
+  /* Section eyebrow */
   .section-eyebrow {
-    @apply text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-4;
+    @apply mono-label-sm mb-3 block;
+  }
+  .section-title {
+    @apply display-section;
   }
 
-  .badge {
-    @apply inline-block bg-blue-50 text-brand px-4 py-2 rounded-full font-semibold text-sm;
+  /* 코랄 칩 (편집 택소노미용) */
+  .chip-coral {
+    @apply inline-flex items-center bg-coral text-white rounded-sm px-4 py-1.5 text-sm font-medium;
+  }
+  .chip-coral-outline {
+    @apply inline-flex items-center border border-coral text-coral rounded-sm px-4 py-1.5 text-sm font-medium hover:bg-coral/5 transition;
   }
 
-  .fade-in {
-    @apply animate-fadeIn;
+  .hr-rule {
+    @apply border-t border-hairline;
   }
-
-  .slide-up {
-    @apply animate-slideUp;
-  }
-
-  .card-hover {
-    @apply transition-all duration-300;
-  }
-
   .container-custom {
     @apply max-w-7xl mx-auto px-6;
   }
-}
-
-/* AX 커스텀 커서 — 홈 전용
-   레이어 구조:
-   1) ax-cursor-glow: 시안 라디얼 글로우(블러), mix-blend 없음 → 미래지향 포인트
-   2) ax-cursor-ring: 화이트 링, mix-blend-difference → 다크/라이트 자동 반전 */
-.ax-cursor-glow {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 80px;
-  height: 80px;
-  border-radius: 9999px;
-  pointer-events: none;
-  z-index: 9998;
-  background: radial-gradient(circle,
-              rgba(var(--ax-accent-rgb), 0.45) 0%,
-              rgba(var(--ax-accent-rgb), 0.18) 35%,
-              transparent 70%);
-  filter: blur(6px);
-  will-change: transform, width, height;
-  transition: width 0.22s cubic-bezier(0.2, 0.8, 0.2, 1),
-              height 0.22s cubic-bezier(0.2, 0.8, 0.2, 1),
-              opacity 0.15s ease;
-}
-.ax-cursor-glow.hover {
-  width: 130px;
-  height: 130px;
-}
-.ax-cursor-glow.hidden { opacity: 0; }
-
-.ax-cursor-ring {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 32px;
-  height: 32px;
-  border: 2px solid #ffffff;
-  border-radius: 9999px;
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: difference;
-  will-change: transform, width, height;
-  transition: width 0.22s cubic-bezier(0.2, 0.8, 0.2, 1),
-              height 0.22s cubic-bezier(0.2, 0.8, 0.2, 1),
-              background-color 0.22s ease,
-              opacity 0.15s ease;
-}
-.ax-cursor-ring.hover {
-  width: 60px;
-  height: 60px;
-  background-color: rgba(255, 255, 255, 0.14);
-}
-.ax-cursor-ring.hidden { opacity: 0; }
-
-@media (pointer: coarse) {
-  .ax-cursor-glow, .ax-cursor-ring { display: none; }
+  .badge {
+    @apply inline-block bg-pale-blue text-action-blue px-4 py-2 rounded-sm font-medium text-sm;
+  }
+  .card-hover {
+    @apply transition-all duration-300;
+  }
 }

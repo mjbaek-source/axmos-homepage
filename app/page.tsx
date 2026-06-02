@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import Cursor from '@/components/Cursor';
 
 interface Case {
   company: string;
@@ -44,58 +43,55 @@ export default function Home() {
 
   return (
     <main className="bg-white">
-      <Cursor />
-      {/* HERO — Dark, large typography, image background + radial accent */}
-      <section className="relative bg-bg-dark text-white overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-50"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=80')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/25 via-bg-dark/50 to-bg-dark/95"></div>
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 78% 22%, rgba(34,211,238,0.28), transparent 55%), radial-gradient(circle at 15% 85%, rgba(46,117,182,0.12), transparent 50%)',
-          }}
-        ></div>
-
-        <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-44">
-          <p className="section-eyebrow animate-slideUp">The AI Operating System for Korean Enterprises</p>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tight mb-8 max-w-5xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
+      {/* HERO — Cohere monumental display on white canvas */}
+      <section className="relative bg-white overflow-hidden">
+        <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-20 md:pt-32 md:pb-28">
+          <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-muted-slate mb-6 animate-slideUp">
+            THE AI OPERATING SYSTEM · FOR KOREAN ENTERPRISES
+          </p>
+          <h1
+            className="font-display text-ink leading-[1.0] tracking-[-1.92px] mb-10 animate-slideUp max-w-5xl"
+            style={{ animationDelay: '0.1s', fontSize: 'clamp(48px, 7vw, 96px)' }}
+          >
             업무는 그대로,<br />
-            <span className="text-text-light">실행만 더 빠르게.</span>
+            <span className="text-muted-slate">실행만 더 빠르게.</span>
           </h1>
-          <p className="text-lg md:text-xl text-text-light max-w-2xl mb-10 leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
+          <p
+            className="text-lg md:text-xl text-slate-text max-w-2xl mb-12 leading-relaxed animate-slideUp"
+            style={{ animationDelay: '0.2s' }}
+          >
             기존 시스템과 도구는 그대로. AXMOS가 연결하고, 자동화하고, 가속합니다.
             3주 안에 가시적인 결과를 만듭니다.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 animate-slideUp" style={{ animationDelay: '0.3s' }}>
-            <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-8 hover:bg-gray-200 transition">
-              Schedule a Demo →
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 animate-slideUp" style={{ animationDelay: '0.3s' }}>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center bg-near-black text-white text-base font-medium px-7 py-3.5 rounded-pill hover:bg-ink transition"
+            >
+              Schedule a demo
             </Link>
-            <Link href="/cases" className="inline-flex items-center justify-center border border-white/30 text-white font-semibold py-4 px-8 hover:bg-white/10 transition">
-              See AX Cases
+            <Link
+              href="/cases"
+              className="inline-flex items-center text-ink font-medium border-b border-ink pb-1 hover:opacity-60 transition"
+            >
+              Explore AX Cases →
             </Link>
           </div>
 
-          {/* Stats inline */}
-          <div className="grid grid-cols-3 gap-8 mt-20 max-w-3xl animate-slideUp" style={{ animationDelay: '0.4s' }}>
+          {/* Stats — Cohere-style restrained metrics row */}
+          <div className="grid grid-cols-3 gap-8 mt-24 max-w-3xl border-t border-hairline pt-10 animate-slideUp" style={{ animationDelay: '0.4s' }}>
             <div>
-              <p className="text-3xl md:text-4xl font-black mb-2">3주</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">평균 구축 기간</p>
+              <p className="font-display text-4xl md:text-5xl text-ink leading-none tracking-[-0.96px] mb-3">3주</p>
+              <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-muted-slate">평균 구축 기간</p>
             </div>
             <div>
-              <p className="text-3xl md:text-4xl font-black mb-2">99%</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">최대 시간 단축률</p>
+              <p className="font-display text-4xl md:text-5xl text-ink leading-none tracking-[-0.96px] mb-3">99%</p>
+              <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-muted-slate">최대 시간 단축률</p>
             </div>
             <div>
-              <p className="text-3xl md:text-4xl font-black mb-2">9+</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">엔터프라이즈 고객사</p>
+              <p className="font-display text-4xl md:text-5xl text-ink leading-none tracking-[-0.96px] mb-3">9+</p>
+              <p className="font-mono uppercase text-[11px] tracking-[0.28px] text-muted-slate">엔터프라이즈 고객사</p>
             </div>
           </div>
         </div>
