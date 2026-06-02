@@ -31,6 +31,9 @@ export default function Header() {
           <Link href="/ax-learn" className="text-text-light hover:text-white text-sm font-medium transition">
             AX Learn
           </Link>
+          <Link href="/ai-insight" className="text-text-light hover:text-white text-sm font-medium transition">
+            AI Insight
+          </Link>
           <Link href="/cases" className="text-text-light hover:text-white text-sm font-medium transition">
             Customers
           </Link>
@@ -58,6 +61,9 @@ export default function Header() {
           </Link>
           <Link href="/ax-learn" className="block text-text-light hover:text-white text-sm font-medium transition">
             AX Learn
+          </Link>
+          <Link href="/ai-insight" className="block text-text-light hover:text-white text-sm font-medium transition">
+            AI Insight
           </Link>
           <Link href="/cases" className="block text-text-light hover:text-white text-sm font-medium transition">
             Customers

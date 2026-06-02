@@ -79,14 +79,14 @@ export default function ContactForm() {
       {/* HERO */}
       <section className="relative bg-bg-dark text-white overflow-hidden">
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-45"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=2400&q=80')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/60 via-bg-dark/80 to-bg-dark"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/30 via-bg-dark/55 to-bg-dark/95"></div>
 
         <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
           <p className="section-eyebrow">Get in Touch</p>
