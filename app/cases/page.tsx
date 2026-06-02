@@ -109,14 +109,14 @@ export default function CasesPage() {
       {/* HERO */}
       <section className="relative bg-bg-dark text-white overflow-hidden">
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-45"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2400&q=80')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/60 via-bg-dark/80 to-bg-dark"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/30 via-bg-dark/55 to-bg-dark/95"></div>
 
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-40">
           <p className="section-eyebrow animate-slideUp">Customer Stories</p>
@@ -229,14 +229,14 @@ export default function CasesPage() {
       {/* CTA */}
       <section className="bg-bg-dark text-white py-32 relative overflow-hidden">
         <div
-          className="absolute inset-0 opacity-15"
+          className="absolute inset-0 opacity-35"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2400&q=80')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/80 via-bg-dark/90 to-bg-dark"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/55 via-bg-dark/75 to-bg-dark/95"></div>
 
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Get Started</p>
