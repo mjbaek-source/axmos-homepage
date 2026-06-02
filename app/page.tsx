@@ -66,11 +66,11 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-44">
           <p className="section-eyebrow animate-slideUp">The AI Operating System for Korean Enterprises</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tight mb-8 max-w-5xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
-            업무는 그대로,<br />
-            <span className="text-text-light">실행만 더 빠르게.</span>
+            시스템은 그대로,<br />
+            <span className="text-text-light">나머지는 다 바뀝니다.</span>
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl mb-10 leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
-            기존 시스템과 도구는 그대로. AXMOS가 연결하고, 자동화하고, 가속합니다.
+            기존 시스템과 도구는 건드리지 않습니다. AXMOS가 그 위에서 연결하고, 자동화하고, 가속합니다.
             3주 안에 가시적인 결과를 만듭니다.
           </p>
 
