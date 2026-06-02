@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import Cursor from '@/components/Cursor';
 
 interface Case {
   company: string;
@@ -43,6 +44,7 @@ export default function Home() {
 
   return (
     <main className="bg-white">
+      <Cursor />
       {/* HERO — Dark, large typography, image background + radial accent */}
       <section className="relative bg-bg-dark text-white overflow-hidden">
         <div

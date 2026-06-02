@@ -55,3 +55,33 @@ body {
     @apply max-w-7xl mx-auto px-6;
   }
 }
+
+/* AX 커스텀 커서 — 홈 전용. 네이티브 커서 위에 ring 따라오기, mix-blend로 배경 자동 반전 */
+.ax-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid #ffffff;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  will-change: transform, width, height;
+  transition: width 0.22s cubic-bezier(0.2, 0.8, 0.2, 1),
+              height 0.22s cubic-bezier(0.2, 0.8, 0.2, 1),
+              background-color 0.22s ease,
+              opacity 0.15s ease;
+}
+.ax-cursor-ring.hover {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.14);
+}
+.ax-cursor-ring.hidden {
+  opacity: 0;
+}
+@media (pointer: coarse) {
+  .ax-cursor-ring { display: none; }
+}
