@@ -54,7 +54,7 @@ export default function Home() {
             style={{ animationDelay: '0.1s', fontSize: 'clamp(48px, 7vw, 96px)' }}
           >
             시스템은 그대로,<br />
-            <span className="text-muted-slate">나머지는 다 바뀝니다.</span>
+            <span className="text-muted-slate">실행만 더 빠르게.</span>
           </h1>
           <p
             className="text-lg md:text-xl text-slate-text max-w-2xl mb-12 leading-relaxed animate-slideUp"
