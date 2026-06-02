@@ -237,21 +237,20 @@ export default function Home() {
             <div className="md:col-span-1">
               <div className="aspect-square bg-bg-dark-3 relative overflow-hidden">
                 <div
-                  className="absolute inset-0 opacity-50"
+                  className="absolute inset-0"
                   style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80')`,
+                    backgroundImage: `url('/people/heedeok-park.png')`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'top center',
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-bg-dark via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-bg-dark via-bg-dark/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-6">
                   <p className="text-xs font-bold uppercase tracking-widest text-text-muted mb-1">Customer</p>
-                  <p className="text-xl font-bold">[고객사 대표명]</p>
+                  <p className="text-xl font-bold">박희덕</p>
                   <p className="text-sm text-text-light">CEO, 트랜스링크 인베스트먼트</p>
                 </div>
               </div>
-              <p className="text-xs text-text-muted mt-3 italic">📷 인터뷰 사진 placeholder</p>
             </div>
 
             <div className="md:col-span-2">

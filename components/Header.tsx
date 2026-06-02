@@ -22,19 +22,19 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
-          <Link href="/ax-build" className="text-text-light hover:text-white text-sm font-medium transition">
+          <Link href="/ax-build" className="text-white/85 hover:text-white text-sm font-semibold transition">
             AX Build
           </Link>
-          <Link href="/ax-grow" className="text-text-light hover:text-white text-sm font-medium transition">
+          <Link href="/ax-grow" className="text-white/85 hover:text-white text-sm font-semibold transition">
             AX Grow
           </Link>
-          <Link href="/ax-learn" className="text-text-light hover:text-white text-sm font-medium transition">
+          <Link href="/ax-learn" className="text-white/85 hover:text-white text-sm font-semibold transition">
             AX Learn
           </Link>
-          <Link href="/ax-insight" className="text-text-light hover:text-white text-sm font-medium transition">
+          <Link href="/ax-insight" className="text-white/85 hover:text-white text-sm font-semibold transition">
             AX Insight
           </Link>
-          <Link href="/cases" className="text-text-light hover:text-white text-sm font-medium transition">
+          <Link href="/cases" className="text-white/85 hover:text-white text-sm font-semibold transition">
             AX Cases
           </Link>
           <Link href="/contact" className="bg-white text-bg-dark text-sm font-semibold py-2.5 px-6 hover:bg-gray-200 transition">
@@ -53,19 +53,19 @@ export default function Header() {
 
       {isMenuOpen && (
         <nav className="md:hidden bg-bg-dark-2 border-t border-border-dark px-6 py-6 space-y-5 animate-slideUp">
-          <Link href="/ax-build" className="block text-text-light hover:text-white text-sm font-medium transition">
+          <Link href="/ax-build" className="block text-white/85 hover:text-white text-sm font-semibold transition">
             AX Build
           </Link>
-          <Link href="/ax-grow" className="block text-text-light hover:text-white text-sm font-medium transition">
+          <Link href="/ax-grow" className="block text-white/85 hover:text-white text-sm font-semibold transition">
             AX Grow
           </Link>
-          <Link href="/ax-learn" className="block text-text-light hover:text-white text-sm font-medium transition">
+          <Link href="/ax-learn" className="block text-white/85 hover:text-white text-sm font-semibold transition">
             AX Learn
           </Link>
-          <Link href="/ax-insight" className="block text-text-light hover:text-white text-sm font-medium transition">
+          <Link href="/ax-insight" className="block text-white/85 hover:text-white text-sm font-semibold transition">
             AX Insight
           </Link>
-          <Link href="/cases" className="block text-text-light hover:text-white text-sm font-medium transition">
+          <Link href="/cases" className="block text-white/85 hover:text-white text-sm font-semibold transition">
             AX Cases
           </Link>
           <Link href="/contact" className="block bg-white text-bg-dark text-sm font-semibold py-3 px-6 text-center hover:bg-gray-200 transition">
