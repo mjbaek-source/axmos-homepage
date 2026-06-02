@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Insight — From the Field',
+  title: 'AX Insight — From the Field',
   description: '한국 기업의 AI 도입 현장에서 길어 올린 인사이트. 도입 사례, 비개발자 가이드, 도구 리뷰, AX 인사이트.',
-  keywords: ['AI Insight', 'AI 블로그', 'AI 도입 사례', '비개발자 AI', 'AX 인사이트', 'AXMOS 블로그'],
+  keywords: ['AX Insight', 'AI 블로그', 'AI 도입 사례', '비개발자 AI', 'AX 인사이트', 'AXMOS 블로그'],
 };
 
 const TOPICS = [
@@ -63,7 +63,7 @@ const UPCOMING = [
   },
 ];
 
-export default function AIInsight() {
+export default function AXInsight() {
   return (
     <main className="bg-white">
       {/* HERO */}
@@ -81,19 +81,12 @@ export default function AIInsight() {
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-40">
           <p className="section-eyebrow">From the Field</p>
           <h1 className="text-6xl md:text-8xl font-black leading-[0.95] tracking-tight mb-8 max-w-4xl">
-            AI Insight
+            AX Insight
           </h1>
           <p className="text-xl md:text-2xl text-text-light max-w-3xl leading-relaxed mb-10">
             한국 기업의 AI 도입 현장에서 길어 올린 인사이트.<br />
-            사례, 가이드, 도구 리뷰 — 곧 첫 글이 올라옵니다.
+            사례, 가이드, 도구 리뷰 — 바로 적용되는 것만.
           </p>
-
-          <div className="inline-flex items-center gap-3 border border-border-dark bg-bg-dark-2 px-5 py-3">
-            <span className="w-2 h-2 bg-accent-after rounded-full animate-pulse"></span>
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-text-light">
-              Coming Soon · 곧 발행 시작
-            </span>
-          </div>
         </div>
       </section>
 
