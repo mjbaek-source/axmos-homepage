@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import Cursor from '@/components/Cursor';
 
 interface Case {
   company: string;
@@ -43,17 +44,24 @@ export default function Home() {
 
   return (
     <main className="bg-white">
-      {/* HERO — Dark, large typography, image background */}
+      <Cursor />
+      {/* HERO — Dark, large typography, image background + radial accent */}
       <section className="relative bg-bg-dark text-white overflow-hidden">
         <div
-          className="absolute inset-0 opacity-30"
+          className="absolute inset-0 opacity-50"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2400&q=80')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/60 via-bg-dark/80 to-bg-dark"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/25 via-bg-dark/50 to-bg-dark/95"></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: 'radial-gradient(circle at 78% 22%, rgba(34,211,238,0.28), transparent 55%), radial-gradient(circle at 15% 85%, rgba(46,117,182,0.12), transparent 50%)',
+          }}
+        ></div>
 
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-44">
           <p className="section-eyebrow animate-slideUp">The AI Operating System for Korean Enterprises</p>
@@ -71,7 +79,7 @@ export default function Home() {
               Schedule a Demo →
             </Link>
             <Link href="/cases" className="inline-flex items-center justify-center border border-white/30 text-white font-semibold py-4 px-8 hover:bg-white/10 transition">
-              See Customer Stories
+              See AX Cases
             </Link>
           </div>
 
@@ -79,15 +87,15 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-3xl animate-slideUp" style={{ animationDelay: '0.4s' }}>
             <div>
               <p className="text-3xl md:text-4xl font-black mb-2">3주</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">Average Implementation</p>
+              <p className="text-xs text-text-muted uppercase tracking-wider">평균 구축 기간</p>
             </div>
             <div>
               <p className="text-3xl md:text-4xl font-black mb-2">99%</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">Time Reduction</p>
+              <p className="text-xs text-text-muted uppercase tracking-wider">최대 시간 단축률</p>
             </div>
             <div>
               <p className="text-3xl md:text-4xl font-black mb-2">9+</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">Enterprise Customers</p>
+              <p className="text-xs text-text-muted uppercase tracking-wider">엔터프라이즈 고객사</p>
             </div>
           </div>
         </div>
@@ -177,7 +185,7 @@ export default function Home() {
             <div>
               <p className="section-eyebrow text-bg-dark/60">The Solution</p>
               <h2 className="section-title text-bg-dark mb-8">
-                The AI OS that adapts to your business—not the other way around.
+                비즈니스를 바꾸지 않고, AI가 맞춰갑니다.
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 AX.presso는 기존 시스템을 교체하지 않습니다. 데이터를 옮기지도 않습니다.
@@ -229,21 +237,20 @@ export default function Home() {
             <div className="md:col-span-1">
               <div className="aspect-square bg-bg-dark-3 relative overflow-hidden">
                 <div
-                  className="absolute inset-0 opacity-50"
+                  className="absolute inset-0"
                   style={{
-                    backgroundImage: `url('https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80')`,
+                    backgroundImage: `url('/people/heedeok-park.png')`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'top center',
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-bg-dark via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-bg-dark via-bg-dark/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-6">
                   <p className="text-xs font-bold uppercase tracking-widest text-text-muted mb-1">Customer</p>
-                  <p className="text-xl font-bold">[고객사 대표명]</p>
+                  <p className="text-xl font-bold">박희덕</p>
                   <p className="text-sm text-text-light">CEO, 트랜스링크 인베스트먼트</p>
                 </div>
               </div>
-              <p className="text-xs text-text-muted mt-3 italic">📷 인터뷰 사진 placeholder</p>
             </div>
 
             <div className="md:col-span-2">
@@ -347,8 +354,7 @@ export default function Home() {
           <div className="max-w-3xl mb-20">
             <p className="section-eyebrow">Why AX.presso</p>
             <h2 className="section-title mb-6">
-              Built for the speed<br />
-              and complexity of Korean business.
+              한국 기업의 속도와 복잡성에 맞춰 설계했습니다.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
               AX.presso는 글로벌 SaaS가 아닙니다. 한국 기업의 실제 워크플로우, 보안 요구사항,
@@ -376,7 +382,7 @@ export default function Home() {
               {
                 label: 'Security',
                 title: '엔터프라이즈 보안',
-                desc: 'ISO 27001, SOC 2 인증. 데이터는 한국 클라우드에서 처리됩니다.',
+                desc: '데이터는 한국 클라우드에서만 처리합니다. 기업별 보안·컴플라이언스 요구사항에 맞춰 운영합니다.',
               },
             ].map((item, i) => (
               <div key={i} className="bg-bg-dark p-10">
@@ -487,11 +493,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <p className="section-eyebrow">Engagement Models</p>
-            <h2 className="section-title">두 가지 시작 방법</h2>
+            <h2 className="section-title">세 가지 시작 방법</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Link href="/ax-build" className="group bg-bg-dark p-12 border border-border-dark hover:border-white transition">
+          <div className="grid md:grid-cols-3 gap-8">
+            <Link href="/ax-build" className="group bg-bg-dark p-10 border border-border-dark hover:border-white transition">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">For Speed</p>
               <h3 className="text-3xl font-bold mb-4">AX Build</h3>
               <p className="text-text-light mb-8 leading-relaxed">
@@ -516,7 +522,7 @@ export default function Home() {
               </p>
             </Link>
 
-            <Link href="/ax-grow" className="group bg-bg-dark p-12 border border-border-dark hover:border-white transition">
+            <Link href="/ax-grow" className="group bg-bg-dark p-10 border border-border-dark hover:border-white transition">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">For Capability</p>
               <h3 className="text-3xl font-bold mb-4">AX Grow</h3>
               <p className="text-text-light mb-8 leading-relaxed">
@@ -534,6 +540,31 @@ export default function Home() {
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
                   <span className="text-text-muted">추천 대상</span>
                   <span className="font-semibold">팀 역량 강화</span>
+                </div>
+              </div>
+              <p className="text-sm font-semibold border-b border-white pb-1 inline-block group-hover:opacity-60 transition">
+                Learn more →
+              </p>
+            </Link>
+
+            <Link href="/ax-learn" className="group bg-bg-dark p-10 border border-border-dark hover:border-white transition">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">For Literacy</p>
+              <h3 className="text-3xl font-bold mb-4">AX Learn</h3>
+              <p className="text-text-light mb-8 leading-relaxed">
+                비개발자 임직원이 AI를 업무에 직접 씁니다. 리터러시의 길.
+              </p>
+              <div className="space-y-3 mb-10">
+                <div className="flex justify-between text-sm border-b border-border-dark pb-3">
+                  <span className="text-text-muted">기간</span>
+                  <span className="font-semibold">1~2일</span>
+                </div>
+                <div className="flex justify-between text-sm border-b border-border-dark pb-3">
+                  <span className="text-text-muted">산출물</span>
+                  <span className="font-semibold">직무 맞춤 활용 가이드</span>
+                </div>
+                <div className="flex justify-between text-sm border-b border-border-dark pb-3">
+                  <span className="text-text-muted">추천 대상</span>
+                  <span className="font-semibold">비개발자·전사 교육</span>
                 </div>
               </div>
               <p className="text-sm font-semibold border-b border-white pb-1 inline-block group-hover:opacity-60 transition">
@@ -563,7 +594,7 @@ export default function Home() {
               },
               {
                 q: '개발 인력이 없어도 되나요?',
-                a: 'AX Build는 AX.presso 팀이 모두 구축합니다. AX Grow를 선택하시면 당신 팀이 함께 배우면서 만듭니다. 기술팀이 없어도 운영 가능한 결과물을 받을 수 있습니다.',
+                a: 'AX Build는 AX.presso 팀이 모두 구축합니다. AX Grow를 선택하시면 당신 팀이 함께 배우면서 만듭니다. 구축 프로젝트 전에 임직원 AI 리터러시부터 다지고 싶다면 AX Learn 특강을 먼저 받으셔도 됩니다. 기술팀이 없어도 운영 가능한 결과물을 받을 수 있습니다.',
               },
               {
                 q: '비용은 얼마나 되나요?',
@@ -571,7 +602,7 @@ export default function Home() {
               },
               {
                 q: '데이터 보안은 어떻게 보장되나요?',
-                a: 'ISO 27001, SOC 2 인증을 보유하고 있으며, 데이터는 한국 클라우드에서 처리됩니다. 금융, 의료 등 규제 산업의 보안 기준을 충족합니다.',
+                a: 'AX.presso는 데이터 주권 원칙에 따라 한국 클라우드에서만 데이터를 처리합니다. 기업별 보안·컴플라이언스 요구사항에 맞춰 운영하며, 도입 시 NDA·데이터 처리 위탁 계약을 함께 진행합니다.',
               },
               {
                 q: '구축 후 유지보수는?',

@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AX Build - Built by AX.presso, for Speed',
-  description: '20일 안에 맞춤형 AI Agent를 구축해드립니다. AX.presso 팀이 직접 설계·개발·배포하는 가장 빠른 길.',
-  keywords: ['AX Build', 'AI 구축', '맞춤형 솔루션', '업무 자동화', 'AI Agent'],
+  title: 'AX Learn - AI Literacy for Non-Developers',
+  description: '비개발자 임직원을 위한 AI 실무 특강. 코드 없이, 직무별 시나리오 중심으로 다음 날 바로 적용 가능한 AI 활용법을 익힙니다.',
+  keywords: ['AX Learn', 'AI 특강', '비개발자 AI 교육', 'AI 리터러시', '임직원 AI 교육', '사내 AI 워크샵'],
 };
 
-export default function AXBuild() {
+export default function AXLearn() {
   return (
     <main className="bg-white">
       {/* HERO */}
@@ -15,7 +15,7 @@ export default function AXBuild() {
         <div
           className="absolute inset-0 opacity-45"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=2400&q=80')`,
+            backgroundImage: `url('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=2400&q=80')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -23,27 +23,27 @@ export default function AXBuild() {
         <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/30 via-bg-dark/55 to-bg-dark/95"></div>
 
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-40">
-          <p className="section-eyebrow">Engagement Model — For Speed</p>
+          <p className="section-eyebrow">Engagement Model — For Literacy</p>
           <h1 className="text-6xl md:text-8xl font-black leading-[0.95] tracking-tight mb-8 max-w-4xl">
-            AX Build
+            AX Learn
           </h1>
           <p className="text-xl md:text-2xl text-text-light max-w-3xl leading-relaxed mb-10">
-            AX.presso 팀이 직접 설계·개발·배포합니다.<br />
-            가장 빠르게 운영 가능한 AI Agent를 받는 길.
+            코드 없이, 직무 그대로.<br />
+            비개발자 임직원이 AI를 실제 업무에 쓰게 만드는 특강 프로그램.
           </p>
 
           <div className="grid grid-cols-3 gap-8 max-w-3xl border-t border-border-dark pt-12">
             <div>
-              <p className="text-4xl md:text-5xl font-black mb-2">20일</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">Build Duration</p>
+              <p className="text-4xl md:text-5xl font-black mb-2">1~2일</p>
+              <p className="text-xs text-text-muted uppercase tracking-wider">Lecture Duration</p>
+            </div>
+            <div>
+              <p className="text-4xl md:text-5xl font-black mb-2">비개발자</p>
+              <p className="text-xs text-text-muted uppercase tracking-wider">Target Audience</p>
             </div>
             <div>
               <p className="text-4xl md:text-5xl font-black mb-2">100%</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">Custom-built</p>
-            </div>
-            <div>
-              <p className="text-4xl md:text-5xl font-black mb-2">3개월</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">Free Support</p>
+              <p className="text-xs text-text-muted uppercase tracking-wider">Hands-on</p>
             </div>
           </div>
         </div>
@@ -56,24 +56,24 @@ export default function AXBuild() {
             <div>
               <p className="section-eyebrow text-bg-dark/60">3 Commitments</p>
               <h2 className="section-title text-bg-dark mb-12">
-                AX Build의 3가지 약속
+                AX Learn의 3가지 약속
               </h2>
               <div className="space-y-px bg-gray-200">
                 {[
                   {
                     label: '01',
-                    title: '완전 맞춤형 솔루션',
-                    desc: '템플릿이 아닙니다. 당신의 업무 방식, 데이터 구조, 시스템 환경에 맞춰 처음부터 설계합니다.',
+                    title: '코드 없이 시작하는 AI',
+                    desc: '프로그래밍 지식 없이도 ChatGPT·Claude·노코드 AI 도구를 업무에 바로 적용하는 법을 배웁니다.',
                   },
                   {
                     label: '02',
-                    title: '20일 내 구축 완료',
-                    desc: '기획·개발·테스트·배포까지 20일. 첫 달부터 가시적인 ROI를 확인할 수 있습니다.',
+                    title: '직무별 실무 시나리오',
+                    desc: '기획·마케팅·영업·HR·운영 등 참가자 직무에 맞춘 실제 워크플로우와 프롬프트를 함께 만듭니다.',
                   },
                   {
                     label: '03',
-                    title: '운영 핸드오버',
-                    desc: '3개월 무료 지원 후 자체 운영 가능하도록 매뉴얼·교육·이관까지 완벽하게 진행합니다.',
+                    title: '다음 날 바로 적용',
+                    desc: '이론 강의가 아닌 실습 중심. 강의가 끝난 다음 날부터 본인 업무에 그대로 쓸 수 있는 결과물을 가지고 돌아갑니다.',
                   },
                 ].map((item, i) => (
                   <div key={i} className="bg-white py-8">
@@ -94,10 +94,10 @@ export default function AXBuild() {
               <h3 className="text-3xl font-bold mb-10">받게 되는 것</h3>
               <div className="space-y-8">
                 {[
-                  { title: '조직 맞춤 AI Agent', desc: '당신의 시스템에 통합된 운영 가능한 AI' },
-                  { title: 'AI Workflow 자동화', desc: '핵심 업무 프로세스의 end-to-end 자동화' },
-                  { title: '운영 매뉴얼·교육', desc: '관리자·실무자 대상 운영 가이드 및 교육' },
-                  { title: '3개월 무상 지원', desc: '버그 수정·개선·운영 컨설팅 포함' },
+                  { title: '직무 맞춤 AI 활용 가이드북', desc: '참가자 직무별로 정리된 워크플로우·프롬프트 모음' },
+                  { title: '실습 결과물 패키지', desc: '현업 업무에 바로 쓸 수 있는 템플릿·자동화 시나리오' },
+                  { title: '강의 영상·자료', desc: '사내 공유 및 신규 입사자 교육에 재활용 가능' },
+                  { title: '후속 Q&A 세션', desc: '특강 2주 후, 적용 과정에서 막힌 부분 코칭' },
                 ].map((item, i) => (
                   <div key={i} className="border-b border-border-dark pb-6 last:border-b-0">
                     <p className="font-bold text-white mb-2">{item.title}</p>
@@ -116,17 +116,17 @@ export default function AXBuild() {
           <div className="max-w-3xl mb-16">
             <p className="section-eyebrow">Process</p>
             <h2 className="section-title">
-              Day 1부터 Day 20까지,<br />
-              검증된 4단계 프로세스.
+              사전 진단부터 사후 코칭까지,<br />
+              4단계로 굳히는 AI 리터러시.
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-px bg-border-dark">
             {[
-              { day: 'Day 1~3', label: 'Discovery', title: '요구사항 분석', desc: '현재 워크플로우, 시스템, 데이터 흐름 파악' },
-              { day: 'Day 4~10', label: 'Build', title: 'Agent 개발', desc: '맞춤형 AI Agent 설계 및 구현' },
-              { day: 'Day 11~16', label: 'Test', title: '테스트·수정', desc: '실제 데이터로 검증, 예외 케이스 처리' },
-              { day: 'Day 17~20', label: 'Deploy', title: '배포·핸드오버', desc: '운영 환경 배포, 매뉴얼 전달, 교육' },
+              { day: 'Pre', label: 'Diagnose', title: '직무·니즈 진단', desc: '참가자 직무 구성과 현업 페인 포인트를 사전 인터뷰로 파악' },
+              { day: 'Day 1', label: 'Lecture', title: 'AI 핵심 특강', desc: '생성형 AI 작동 원리, 프롬프트 기본기, 핵심 도구 데모' },
+              { day: 'Day 2', label: 'Workshop', title: '직무별 실습', desc: '실제 본인 업무 케이스로 자동화·생산성 워크플로우 구축' },
+              { day: 'Post', label: 'Coach', title: '2주 후 코칭', desc: '현업 적용 시 막힌 부분 Q&A, 추가 시나리오 코칭' },
             ].map((step, i) => (
               <div key={i} className="bg-bg-dark-2 p-10">
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-2">{step.label}</p>
@@ -144,15 +144,15 @@ export default function AXBuild() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <p className="section-eyebrow text-bg-dark/60">Best Fit</p>
-            <h2 className="section-title text-bg-dark">AX Build가 적합한 경우</h2>
+            <h2 className="section-title text-bg-dark">AX Learn이 적합한 경우</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              { title: '빠른 구축이 우선인 경우', desc: '30일 내 운영 가능한 결과물이 필요한 경우' },
-              { title: '기술팀이 부족한 경우', desc: '내부 개발 인력이 없거나 다른 우선순위에 집중되어 있는 경우' },
-              { title: '즉시 효과가 필요한 경우', desc: '경영진에게 단기 ROI를 보여줘야 하는 경우' },
-              { title: '스타트업·중소기업', desc: '리소스 효율적으로 AI 자동화를 도입하고 싶은 경우' },
+              { title: '비개발자 직군 임직원', desc: '기획·마케팅·영업·HR·운영 등 코드와 거리가 먼 현업이 AI를 직접 쓰게 하고 싶은 경우' },
+              { title: '전사 AI 도입 사전 교육', desc: 'AX Build/AX Grow 프로젝트 착수 전, 조직 전체의 AI 리터러시 기준선을 맞춰두고 싶을 때' },
+              { title: '사내 워크샵·연수', desc: '정기 사내 교육·리더십 워크샵·신규 입사자 온보딩에 AI 모듈을 넣고 싶은 경우' },
+              { title: '실무 즉시 적용이 목적', desc: '추상적 AI 이론이 아닌, 다음 주 업무 보고부터 쓸 수 있는 활용법이 필요한 경우' },
             ].map((item, i) => (
               <div key={i} className="border-l-2 border-bg-dark pl-6 py-2">
                 <h3 className="text-xl font-bold text-bg-dark mb-3">{item.title}</h3>
@@ -169,15 +169,15 @@ export default function AXBuild() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Get Started</p>
           <h2 className="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight mb-8">
-            20일 후, 운영 가능한<br />
-            AI Agent를 받습니다.
+            이틀 만에, 비개발자도<br />
+            AI를 업무 도구로 씁니다.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto">
-            지금 무료 상담을 신청하세요. 첫 미팅에서 자동화 가능 영역과 예상 ROI를 분석해 드립니다.
+            지금 사내 특강을 신청하세요. 참가자 직무와 인원에 맞춰 커리큘럼을 설계해 드립니다.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">
-              Apply for AX Build →
+              Apply for AX Learn →
             </Link>
             <Link href="/ax-grow" className="inline-flex items-center justify-center border border-white/30 text-white font-semibold py-4 px-10 hover:bg-white/10 transition text-lg">
               Compare with AX Grow

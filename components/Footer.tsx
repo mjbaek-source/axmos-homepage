@@ -9,8 +9,8 @@ export default function Footer() {
           <div className="md:col-span-2">
             <Logo variant="dark" className="h-10 w-auto mb-6" />
             <p className="text-text-light text-sm leading-relaxed max-w-md">
-              The AI Operating System for Korean enterprises.<br />
-              Implement AI automation in 3 weeks—without replacing your existing systems.
+              한국 기업을 위한 AI 운영체제.<br />
+              기존 시스템을 교체하지 않고, 3주 안에 AI 자동화를 도입합니다.
             </p>
           </div>
 
@@ -19,7 +19,9 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-text-light">
               <li><Link href="/ax-build" className="hover:text-white transition">AX Build</Link></li>
               <li><Link href="/ax-grow" className="hover:text-white transition">AX Grow</Link></li>
-              <li><Link href="/cases" className="hover:text-white transition">Customers</Link></li>
+              <li><Link href="/ax-learn" className="hover:text-white transition">AX Learn</Link></li>
+              <li><Link href="/ax-insight" className="hover:text-white transition">AX Insight</Link></li>
+              <li><Link href="/cases" className="hover:text-white transition">AX Cases</Link></li>
             </ul>
           </div>
 

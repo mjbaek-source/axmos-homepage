@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         brand: '#1F3864',
         'brand-light': '#2E75B6',
+        'ax-accent': '#22D3EE', // 포인트 컬러 — Electric Cyan (브랜드 그라데이션 끝지점)
         'accent-before': '#E24B4A',
         'accent-after': '#1E88E5',
         'bg-light': '#F8F9FA',

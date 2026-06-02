@@ -79,14 +79,14 @@ export default function ContactForm() {
       {/* HERO */}
       <section className="relative bg-bg-dark text-white overflow-hidden">
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-45"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=2400&q=80')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/60 via-bg-dark/80 to-bg-dark"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/30 via-bg-dark/55 to-bg-dark/95"></div>
 
         <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
           <p className="section-eyebrow">Get in Touch</p>
@@ -184,10 +184,11 @@ export default function ContactForm() {
                 <label className="block font-semibold text-bg-dark mb-4 text-sm uppercase tracking-wider">
                   Engagement Model *
                 </label>
-                <div className="grid md:grid-cols-3 gap-3">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
                   {[
                     { value: 'AX Build', title: 'AX Build', desc: 'AX.presso 팀이 직접 구축' },
                     { value: 'AX Grow', title: 'AX Grow', desc: '팀이 함께 배우며 구축' },
+                    { value: 'AX Learn', title: 'AX Learn', desc: '비개발자 AI 특강' },
                     { value: '아직 모르겠음', title: '아직 모르겠음', desc: '상담 후 결정하고 싶음' },
                   ].map((opt) => (
                     <label
