@@ -25,6 +25,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-text-light">
               <li><Link href="/ax-build" className="hover:text-white transition">AX Build</Link></li>
               <li><Link href="/ax-grow" className="hover:text-white transition">AX Grow</Link></li>
+              <li><Link href="/ax-learn" className="hover:text-white transition">AX Learn</Link></li>
               <li><Link href="/cases" className="hover:text-white transition">Customers</Link></li>
             </ul>
           </div>

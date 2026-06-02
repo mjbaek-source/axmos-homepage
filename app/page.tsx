@@ -487,11 +487,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <p className="section-eyebrow">Engagement Models</p>
-            <h2 className="section-title">두 가지 시작 방법</h2>
+            <h2 className="section-title">세 가지 시작 방법</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Link href="/ax-build" className="group bg-bg-dark p-12 border border-border-dark hover:border-white transition">
+          <div className="grid md:grid-cols-3 gap-8">
+            <Link href="/ax-build" className="group bg-bg-dark p-10 border border-border-dark hover:border-white transition">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">For Speed</p>
               <h3 className="text-3xl font-bold mb-4">AX Build</h3>
               <p className="text-text-light mb-8 leading-relaxed">
@@ -516,7 +516,7 @@ export default function Home() {
               </p>
             </Link>
 
-            <Link href="/ax-grow" className="group bg-bg-dark p-12 border border-border-dark hover:border-white transition">
+            <Link href="/ax-grow" className="group bg-bg-dark p-10 border border-border-dark hover:border-white transition">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">For Capability</p>
               <h3 className="text-3xl font-bold mb-4">AX Grow</h3>
               <p className="text-text-light mb-8 leading-relaxed">
@@ -534,6 +534,31 @@ export default function Home() {
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
                   <span className="text-text-muted">추천 대상</span>
                   <span className="font-semibold">팀 역량 강화</span>
+                </div>
+              </div>
+              <p className="text-sm font-semibold border-b border-white pb-1 inline-block group-hover:opacity-60 transition">
+                Learn more →
+              </p>
+            </Link>
+
+            <Link href="/ax-learn" className="group bg-bg-dark p-10 border border-border-dark hover:border-white transition">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">For Literacy</p>
+              <h3 className="text-3xl font-bold mb-4">AX Learn</h3>
+              <p className="text-text-light mb-8 leading-relaxed">
+                비개발자 임직원이 AI를 업무에 직접 씁니다. 리터러시의 길.
+              </p>
+              <div className="space-y-3 mb-10">
+                <div className="flex justify-between text-sm border-b border-border-dark pb-3">
+                  <span className="text-text-muted">기간</span>
+                  <span className="font-semibold">1~2일</span>
+                </div>
+                <div className="flex justify-between text-sm border-b border-border-dark pb-3">
+                  <span className="text-text-muted">산출물</span>
+                  <span className="font-semibold">직무 맞춤 활용 가이드</span>
+                </div>
+                <div className="flex justify-between text-sm border-b border-border-dark pb-3">
+                  <span className="text-text-muted">추천 대상</span>
+                  <span className="font-semibold">비개발자·전사 교육</span>
                 </div>
               </div>
               <p className="text-sm font-semibold border-b border-white pb-1 inline-block group-hover:opacity-60 transition">
@@ -563,7 +588,7 @@ export default function Home() {
               },
               {
                 q: '개발 인력이 없어도 되나요?',
-                a: 'AX Build는 AXMOS 팀이 모두 구축합니다. AX Grow를 선택하시면 당신 팀이 함께 배우면서 만듭니다. 기술팀이 없어도 운영 가능한 결과물을 받을 수 있습니다.',
+                a: 'AX Build는 AXMOS 팀이 모두 구축합니다. AX Grow를 선택하시면 당신 팀이 함께 배우면서 만듭니다. 구축 프로젝트 전에 임직원 AI 리터러시부터 다지고 싶다면 AX Learn 특강을 먼저 받으셔도 됩니다. 기술팀이 없어도 운영 가능한 결과물을 받을 수 있습니다.',
               },
               {
                 q: '비용은 얼마나 되나요?',

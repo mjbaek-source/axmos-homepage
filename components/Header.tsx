@@ -28,6 +28,9 @@ export default function Header() {
           <Link href="/ax-grow" className="text-text-light hover:text-white text-sm font-medium transition">
             AX Grow
           </Link>
+          <Link href="/ax-learn" className="text-text-light hover:text-white text-sm font-medium transition">
+            AX Learn
+          </Link>
           <Link href="/cases" className="text-text-light hover:text-white text-sm font-medium transition">
             Customers
           </Link>
@@ -52,6 +55,9 @@ export default function Header() {
           </Link>
           <Link href="/ax-grow" className="block text-text-light hover:text-white text-sm font-medium transition">
             AX Grow
+          </Link>
+          <Link href="/ax-learn" className="block text-text-light hover:text-white text-sm font-medium transition">
+            AX Learn
           </Link>
           <Link href="/cases" className="block text-text-light hover:text-white text-sm font-medium transition">
             Customers
