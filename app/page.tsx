@@ -66,8 +66,8 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-44">
           <p className="section-eyebrow animate-slideUp">The Enterprise AI Operating System</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tight mb-8 max-w-5xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
-            The AI operating layer<br />
-            <span className="text-text-light">for enterprise execution.</span>
+            Keep your systems.<br />
+            <span className="text-text-light">Change everything else.</span>
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl mb-10 leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
             AXMOS connects the systems you already run — Slack, Gmail, Excel, ERP, CRM — into one
