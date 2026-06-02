@@ -94,7 +94,7 @@ export default function ContactForm() {
             Request a consultation.
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl leading-relaxed">
-            The first session maps your automation surface and defines the operational ROI.
+            The first session maps what&apos;s worth automating, and what it&apos;s worth to you.
             We respond within 2 business days.
           </p>
         </div>

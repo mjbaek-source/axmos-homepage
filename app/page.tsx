@@ -70,17 +70,17 @@ export default function Home() {
             <span className="text-text-light">for enterprise execution.</span>
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl mb-10 leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
-            AXMOS connects your existing systems, data, and workflows into a single operational
-            intelligence layer. Deploy production-ready AI agents in weeks — without replacing the
-            infrastructure your business already runs on.
+            AXMOS connects the systems you already run — Slack, Gmail, Excel, ERP, CRM — into one
+            execution layer, and puts AI agents to work across them. In production in weeks,
+            with nothing ripped out.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-slideUp" style={{ animationDelay: '0.3s' }}>
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-8 hover:bg-gray-200 transition">
-              Schedule a Demo →
+              Request a consultation →
             </Link>
             <Link href="/cases" className="inline-flex items-center justify-center border border-white/30 text-white font-semibold py-4 px-8 hover:bg-white/10 transition">
-              See AX Cases
+              See the deployments
             </Link>
           </div>
 
@@ -145,8 +145,9 @@ export default function Home() {
               It is execution.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
-              Enterprise operations are too fragmented for the speed of modern business.
-              The information exists — but it is scattered, disconnected, and slow to act on.
+              The data already exists. It just sits in ten different tools, and someone still has to
+              read it, move it, and act on it by hand. That gap — between knowing and doing — is where
+              the time goes.
             </p>
           </div>
 
@@ -186,10 +187,10 @@ export default function Home() {
             <div>
               <p className="section-eyebrow text-bg-dark/60">The Solution</p>
               <h2 className="section-title text-bg-dark mb-8">
-                AI built around your operating reality.
+                AI that meets your business where it is.
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                No rip-and-replace. No data migration. AXMOS deploys directly onto the systems and
+                No rip-and-replace. No data migration. AXMOS deploys directly onto the tools and
                 workflows you already operate, with AI agents executing where the work actually happens.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-10">
@@ -290,8 +291,8 @@ export default function Home() {
             <div className="max-w-2xl">
               <p className="section-eyebrow text-bg-dark/60">Customer Stories</p>
               <h2 className="section-title text-bg-dark">
-                Deployed in production,<br />
-                across the enterprise.
+                Already running,<br />
+                in production.
               </h2>
             </div>
             <Link href="/cases" className="text-bg-dark text-sm font-semibold border-b-2 border-bg-dark pb-1 hover:opacity-60 transition">
@@ -355,12 +356,12 @@ export default function Home() {
           <div className="max-w-3xl mb-20">
             <p className="section-eyebrow">Why AXMOS</p>
             <h2 className="section-title mb-6">
-              Built for complex, high-stakes enterprise environments.
+              Built for the way enterprises actually operate.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
-              AXMOS is not generic SaaS deployed at the edge of your organization. It operates
-              at the core — engineered for the workflows, security posture, and regulatory
-              constraints of mission-critical operations.
+              Not generic SaaS bolted on at the edge. AXMOS runs where the real work happens —
+              engineered for the messy workflows, the security reviews, and the compliance
+              requirements that come with running a real business.
             </p>
           </div>
 
@@ -647,12 +648,12 @@ export default function Home() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Get Started</p>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] tracking-tight mb-8">
-            Move from AI strategy<br />
-            to operational deployment.
+            From AI strategy<br />
+            to AI in production.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto leading-relaxed">
-            Request a consultation — we respond within 2 business days. The first session maps your
-            automation surface and defines the operational ROI.
+            Request a consultation — we respond within 2 business days. The first session maps what&apos;s
+            worth automating, and what it&apos;s worth to you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">

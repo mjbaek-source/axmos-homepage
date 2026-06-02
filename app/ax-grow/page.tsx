@@ -170,8 +170,8 @@ export default function AXGrow() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Get Started</p>
           <h2 className="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight mb-8">
-            In 16 days, AI capability<br />
-            becomes institutional.
+            In 16 days, the capability<br />
+            stays with your team.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto">
             Request a consultation. We begin with a diagnostic of your organization&apos;s AI capability — strengths and gaps.
