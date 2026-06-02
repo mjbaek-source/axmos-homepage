@@ -85,15 +85,15 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-8 mt-20 max-w-3xl animate-slideUp" style={{ animationDelay: '0.4s' }}>
             <div>
               <p className="text-3xl md:text-4xl font-black mb-2">3주</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">Average Implementation</p>
+              <p className="text-xs text-text-muted uppercase tracking-wider">평균 구축 기간</p>
             </div>
             <div>
               <p className="text-3xl md:text-4xl font-black mb-2">99%</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">Time Reduction</p>
+              <p className="text-xs text-text-muted uppercase tracking-wider">최대 시간 단축률</p>
             </div>
             <div>
               <p className="text-3xl md:text-4xl font-black mb-2">9+</p>
-              <p className="text-xs text-text-muted uppercase tracking-wider">Enterprise Customers</p>
+              <p className="text-xs text-text-muted uppercase tracking-wider">엔터프라이즈 고객사</p>
             </div>
           </div>
         </div>
@@ -183,7 +183,8 @@ export default function Home() {
             <div>
               <p className="section-eyebrow text-bg-dark/60">The Solution</p>
               <h2 className="section-title text-bg-dark mb-8">
-                The AI OS that adapts to your business—not the other way around.
+                당신의 비즈니스에 맞추는 AI OS<br />
+                — 반대가 아니라.
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 AXMOS는 기존 시스템을 교체하지 않습니다. 데이터를 옮기지도 않습니다.
