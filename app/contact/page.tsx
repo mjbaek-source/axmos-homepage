@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ContactForm from './form';
 
 export const metadata: Metadata = {
-  title: 'Schedule a Demo — AXMOS',
+  title: 'Request a Consultation — AXMOS',
   description: 'Start the work of reducing work with AXMOS. Try enterprise AI automation with zero cost and zero risk.',
   keywords: ['Schedule a demo', 'Contact AXMOS', 'AI automation', 'Free consultation'],
 };

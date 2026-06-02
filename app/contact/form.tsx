@@ -252,7 +252,7 @@ export default function ContactForm() {
                   </>
                 ) : (
                   <>
-                    Schedule a Demo
+                    Request a consultation
                     <span>→</span>
                   </>
                 )}
