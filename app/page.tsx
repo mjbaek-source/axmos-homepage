@@ -66,12 +66,13 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-44">
           <p className="section-eyebrow animate-slideUp">The Enterprise AI Operating System</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tight mb-8 max-w-5xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
-            Same work.<br />
-            <span className="text-text-light">None of the grind.</span>
+            The AI operating layer<br />
+            <span className="text-text-light">for enterprise execution.</span>
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl mb-10 leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
-            Your stack stays exactly where it is. AXMOS layers on top — wiring it together,
-            automating the busywork, and shipping real results in three weeks, not next quarter.
+            AXMOS connects your existing systems, data, and workflows into a single operational
+            intelligence layer. Deploy production-ready AI agents in weeks — without replacing the
+            infrastructure your business already runs on.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-slideUp" style={{ animationDelay: '0.3s' }}>
@@ -140,38 +141,38 @@ export default function Home() {
           <div className="max-w-3xl mb-20">
             <p className="section-eyebrow">The Problem</p>
             <h2 className="section-title mb-6">
-              You&apos;re running on<br />
-              yesterday&apos;s clock speed.
+              The bottleneck is no longer data.<br />
+              It is execution.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
-              While your team reads email one by one, copies data into Excel, and chases reports through chat,
-              the competition has already moved.
+              Enterprise operations are too fragmented for the speed of modern business.
+              The information exists — but it is scattered, disconnected, and slow to act on.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border-dark">
             <div className="bg-bg-dark-2 p-10">
               <p className="text-5xl font-black text-white mb-4">01</p>
-              <h3 className="text-xl font-bold mb-4">Busywork is eating your best people</h3>
+              <h3 className="text-xl font-bold mb-4">Manual operations consume your workforce</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                Reconciliation, sorting, cleanup, reporting. The same loop every day quietly burns
-                your most valuable hours and keeps your talent off the work that matters.
+                Reconciliation, classification, cleanup, reporting. Repetitive operational load
+                absorbs your most valuable capacity and keeps skilled teams off high-leverage work.
               </p>
             </div>
             <div className="bg-bg-dark-2 p-10">
               <p className="text-5xl font-black text-white mb-4">02</p>
-              <h3 className="text-xl font-bold mb-4">Your data lives in ten places at once</h3>
+              <h3 className="text-xl font-bold mb-4">Critical data is fragmented across systems</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                Slack, Gmail, Excel, CRM, ERP — scattered and disconnected.
-                Every decision gets made with half the picture.
+                Slack, Gmail, Excel, CRM, ERP — siloed and disconnected.
+                Decisions are made on partial information, with no unified operational view.
               </p>
             </div>
             <div className="bg-bg-dark-2 p-10">
               <p className="text-5xl font-black text-white mb-4">03</p>
-              <h3 className="text-xl font-bold mb-4">By the time AI ships, it&apos;s already stale</h3>
+              <h3 className="text-xl font-bold mb-4">Traditional AI delivery is too slow to matter</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                Plan, build, validate, deploy — 6 to 12 months. The business moves on before launch,
-                and the AI you waited for is obsolete on arrival.
+                Plan, build, validate, deploy — 6 to 12 months. Operating conditions shift before launch,
+                and the system reaches production already misaligned with the business.
               </p>
             </div>
           </div>
@@ -185,21 +186,21 @@ export default function Home() {
             <div>
               <p className="section-eyebrow text-bg-dark/60">The Solution</p>
               <h2 className="section-title text-bg-dark mb-8">
-                Don&apos;t bend your business to AI. Bend AI to your business.
+                AI built around your operating reality.
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                No rip-and-replace. No data migration. AXMOS rides on top of the tools
-                and workflows you already run, with AI Agents doing the heavy lifting.
+                No rip-and-replace. No data migration. AXMOS deploys directly onto the systems and
+                workflows you already operate, with AI agents executing where the work actually happens.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-10">
-                It reads your Slack, sorts your Gmail, cleans up your Excel,
-                and keeps your CRM current. <strong>Production-ready in three weeks.</strong>
+                It reads across Slack, classifies Gmail, structures Excel, and keeps your CRM
+                current — connected as one execution layer. <strong>In production within three weeks.</strong>
               </p>
               <div className="space-y-4">
                 {[
-                  { label: 'Install', desc: 'Analyze existing systems — Week 1' },
-                  { label: 'Build', desc: 'Design and develop the AI Agent — Week 2' },
-                  { label: 'Operate', desc: 'Validate, deploy, run — Week 3' },
+                  { label: 'Integrate', desc: 'Map systems, data, and operational workflows — Week 1' },
+                  { label: 'Deploy', desc: 'Build and configure mission-critical AI agents — Week 2' },
+                  { label: 'Operate', desc: 'Validate, deploy to production, monitor — Week 3' },
                 ].map((step, i) => (
                   <div key={i} className="flex items-start gap-4 border-l-2 border-bg-dark pl-6 py-2">
                     <div>
@@ -223,7 +224,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-bg-dark/80 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 p-10 text-white">
                 <p className="text-xs font-bold uppercase tracking-[0.2em] mb-2 opacity-80">Live Dashboard</p>
-                <p className="text-2xl font-bold">See the impact land, live.</p>
+                <p className="text-2xl font-bold">Operational impact, measured in real time.</p>
               </div>
             </div>
           </div>
@@ -256,9 +257,9 @@ export default function Home() {
             <div className="md:col-span-2">
               <p className="section-eyebrow">Customer Voice</p>
               <blockquote className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-8">
-                &ldquo;Due diligence on 100+ portfolio vendors used to eat 3 to 5 days.
-                Now it&apos;s done in an hour. This isn&apos;t time saved —
-                it&apos;s a different speed of decision-making entirely.&rdquo;
+                &ldquo;Due diligence across 100+ portfolio vendors took 3 to 5 days.
+                It now completes in under an hour. This is not incremental efficiency —
+                it is a structural change in how fast we operate.&rdquo;
               </blockquote>
               <div className="flex items-center gap-6 pt-8 border-t border-border-dark">
                 <div>
@@ -289,8 +290,8 @@ export default function Home() {
             <div className="max-w-2xl">
               <p className="section-eyebrow text-bg-dark/60">Customer Stories</p>
               <h2 className="section-title text-bg-dark">
-                The best operators<br />
-                already move faster.
+                Deployed in production,<br />
+                across the enterprise.
               </h2>
             </div>
             <Link href="/cases" className="text-bg-dark text-sm font-semibold border-b-2 border-bg-dark pb-1 hover:opacity-60 transition">
@@ -303,21 +304,21 @@ export default function Home() {
               {
                 company: 'TransLink Investment',
                 industry: 'Finance · VC',
-                title: 'Due diligence on autopilot — decisions 99% faster',
+                title: 'Automated due diligence — 99% faster decision cycles',
                 metric: '3–5 days → 1 hour',
                 image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80',
               },
               {
                 company: 'ChainLogis',
                 industry: 'Logistics · Marketing',
-                title: 'Sorting and publishing, automated — 20× the output',
+                title: 'Automated classification and publishing — 20× throughput',
                 metric: '2–4 hours → 3 min',
                 image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
               },
               {
                 company: 'UHA Company',
                 industry: 'E-commerce · Settlement',
-                title: 'Order reconciliation, automated — 60 hours back every month',
+                title: 'Automated order reconciliation — 60 operational hours recovered monthly',
                 metric: '2–3 hours → 30 sec',
                 image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80',
               },
@@ -354,11 +355,12 @@ export default function Home() {
           <div className="max-w-3xl mb-20">
             <p className="section-eyebrow">Why AXMOS</p>
             <h2 className="section-title mb-6">
-              Built for how real enterprises actually run.
+              Built for complex, high-stakes enterprise environments.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
-              AXMOS isn&apos;t generic SaaS bolted onto your org. It&apos;s built around the real workflows,
-              security demands, and regulatory reality your teams operate in every day.
+              AXMOS is not generic SaaS deployed at the edge of your organization. It operates
+              at the core — engineered for the workflows, security posture, and regulatory
+              constraints of mission-critical operations.
             </p>
           </div>
 
@@ -366,23 +368,23 @@ export default function Home() {
             {[
               {
                 label: 'Integration',
-                title: 'Rides on your stack',
-                desc: 'Slack, Gmail, Excel, ERP, CRM. It works with what you already have — nothing to rip out.',
+                title: 'Deploys onto your existing stack',
+                desc: 'Slack, Gmail, Excel, ERP, CRM — unified into one execution layer. No infrastructure replacement required.',
               },
               {
                 label: 'Speed',
-                title: 'Live in 3 weeks',
-                desc: 'From plan to production in three weeks, on average. ROI you can point to inside the first month.',
+                title: 'Production in 3 weeks',
+                desc: 'From integration to deployment in three weeks, on average. Measurable operational ROI within the first month.',
               },
               {
                 label: 'Intelligence',
-                title: 'It actually gets the work',
-                desc: 'Not brittle RPA. AI Agents that learn your business context and handle the edge cases that break scripts.',
+                title: 'Context-aware execution',
+                desc: 'Beyond brittle RPA. AI agents that model business context and resolve the edge cases that break rule-based automation.',
               },
               {
                 label: 'Security',
                 title: 'Enterprise-grade by default',
-                desc: 'Data stays in sovereign, region-isolated cloud — full stop. Run to each enterprise&apos;s security and compliance bar.',
+                desc: 'Data processed in sovereign, region-isolated cloud — never pooled or shared. Operated to your security and compliance posture.',
               },
             ].map((item, i) => (
               <div key={i} className="bg-bg-dark p-10">
@@ -429,9 +431,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <p className="section-eyebrow text-bg-dark/60">Results</p>
-            <h2 className="section-title text-bg-dark">The numbers, not the pitch</h2>
+            <h2 className="section-title text-bg-dark">Measured operational outcomes</h2>
             <p className="text-lg text-gray-700 leading-relaxed mt-4">
-              Real results from real customers running on AXMOS.
+              Production results from enterprises operating on AXMOS.
             </p>
           </div>
 
@@ -585,12 +587,12 @@ export default function Home() {
           <div className="space-y-px bg-gray-200">
             {[
               {
-                q: 'Can our workflows actually be automated?',
-                a: 'Almost certainly. If it has a pattern and it repeats, AI can take it. We&apos;ll tell you exactly what&apos;s in scope after a free assessment — no hand-waving.',
+                q: 'Can our workflows be automated?',
+                a: 'In most cases, yes. Any operation with a repeatable pattern is a candidate for AI execution. We define precise scope after an initial assessment — no speculative claims.',
               },
               {
                 q: 'Do we have to replace our existing systems?',
-                a: 'No. AXMOS sits on top of what you already run. Slack, Gmail, Excel, ERP, CRM — keep all of it. The AI Agents connect the data and do the work in between.',
+                a: 'No. AXMOS deploys on top of your existing infrastructure. Slack, Gmail, Excel, ERP, CRM — all retained. AI agents connect the data and execute across them as one operational layer.',
               },
               {
                 q: 'Do we need our own engineering team?',
@@ -645,12 +647,12 @@ export default function Home() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Get Started</p>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] tracking-tight mb-8">
-            Three weeks from now,<br />
-            your team moves differently.
+            Move from AI strategy<br />
+            to operational deployment.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto leading-relaxed">
-            Book a free consult — we reply within 2 business days. In the first meeting we map
-            what&apos;s automatable and put a number on the ROI.
+            Request a consultation — we respond within 2 business days. The first session maps your
+            automation surface and defines the operational ROI.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">

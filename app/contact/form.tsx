@@ -91,11 +91,11 @@ export default function ContactForm() {
         <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
           <p className="section-eyebrow">Get in Touch</p>
           <h1 className="text-5xl md:text-7xl font-black leading-[0.95] tracking-tight mb-6 max-w-3xl">
-            Schedule a Demo.
+            Request a consultation.
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl leading-relaxed">
-            First meeting, we map what&apos;s automatable and put a number on the ROI.
-            We reply within 2 business days.
+            The first session maps your automation surface and defines the operational ROI.
+            We respond within 2 business days.
           </p>
         </div>
       </section>

@@ -28,8 +28,8 @@ export default function AXBuild() {
             AX Build
           </h1>
           <p className="text-xl md:text-2xl text-text-light max-w-3xl leading-relaxed mb-10">
-            We design it, build it, ship it — end to end.<br />
-            The fastest line to a production-ready AI Agent.
+            AXMOS designs, builds, and deploys — end to end.<br />
+            The fastest path to a mission-critical AI agent in production.
           </p>
 
           <div className="grid grid-cols-3 gap-8 max-w-3xl border-t border-border-dark pt-12">
@@ -169,11 +169,11 @@ export default function AXBuild() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Get Started</p>
           <h2 className="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight mb-8">
-            20 days in, you&apos;re running<br />
-            a real AI Agent.
+            A production AI agent,<br />
+            operational in 20 days.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto">
-            Book a free consult. First meeting, we map what&apos;s automatable and put a number on the ROI.
+            Request a consultation. The first session maps your automation surface and defines the operational ROI.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">

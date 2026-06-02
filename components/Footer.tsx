@@ -16,7 +16,7 @@ export default function Footer() {
             />
             <p className="text-text-light text-sm leading-relaxed max-w-md">
               The Enterprise AI Operating System.<br />
-              AI automation in 3 weeks — without ripping out a single system you already run.
+              Production AI in 3 weeks — deployed onto the infrastructure you already run.
             </p>
           </div>
 

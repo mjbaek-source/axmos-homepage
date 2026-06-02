@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   metadataBase: new URL('https://axmos-en.vercel.app'),
   title: 'AXMOS — The Enterprise AI Operating System',
-  description: 'Your existing systems and tools — untouched. AXMOS connects, automates, and accelerates them. Measurable results in 3 weeks.',
+  description: 'AXMOS connects your existing systems, data, and workflows into a single operational intelligence layer. Deploy production-ready AI agents in weeks.',
   keywords: ['AI automation', 'enterprise AI', 'AI Agent', 'AI Operating System', 'AI agents for enterprise', 'workflow automation'],
   authors: [{ name: 'AXMOS' }],
   creator: 'AXMOS',
@@ -19,12 +19,12 @@ export const metadata: Metadata = {
     url: 'https://axmos-en.vercel.app',
     siteName: 'AXMOS',
     title: 'AXMOS — The Enterprise AI Operating System',
-    description: 'Your stack stays. AXMOS layers on top — wiring it together, automating the busywork, and shipping real results in 3 weeks.',
+    description: 'AXMOS connects your systems, data, and workflows into one operational intelligence layer. Production-ready AI agents in weeks.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AXMOS — The Enterprise AI Operating System',
-    description: 'Your existing systems — untouched. AXMOS connects, automates, and accelerates them.',
+    description: 'The operational intelligence layer for enterprise execution. Production AI agents, deployed onto your existing infrastructure.',
   },
 };
 

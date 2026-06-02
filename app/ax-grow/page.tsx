@@ -28,8 +28,8 @@ export default function AXGrow() {
             AX Grow
           </h1>
           <p className="text-xl md:text-2xl text-text-light max-w-3xl leading-relaxed mb-10">
-            Built with your team, not for them.<br />
-            The path to owning AI capability in-house.
+            Capability built with your team, not delivered to it.<br />
+            The path to owning AI execution in-house.
           </p>
 
           <div className="grid grid-cols-3 gap-8 max-w-3xl border-t border-border-dark pt-12">
@@ -170,11 +170,11 @@ export default function AXGrow() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Get Started</p>
           <h2 className="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight mb-8">
-            16 days in, your team<br />
-            isn&apos;t the same team.
+            In 16 days, AI capability<br />
+            becomes institutional.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto">
-            Book a free consult. We start by reading your org&apos;s AI capability — strengths, gaps, and all.
+            Request a consultation. We begin with a diagnostic of your organization&apos;s AI capability — strengths and gaps.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">

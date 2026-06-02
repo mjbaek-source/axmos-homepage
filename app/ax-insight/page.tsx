@@ -84,8 +84,8 @@ export default function AXInsight() {
             AX Insight
           </h1>
           <p className="text-xl md:text-2xl text-text-light max-w-3xl leading-relaxed mb-10">
-            Notes from the front lines of enterprise AI.<br />
-            Cases, guides, tool reviews — nothing you can&apos;t use on Monday.
+            Field intelligence from enterprise AI deployments.<br />
+            Case studies, operational guides, and tool analysis — built for practitioners.
           </p>
         </div>
       </section>
@@ -140,11 +140,11 @@ export default function AXInsight() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Suggest a Topic</p>
           <h2 className="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight mb-8">
-            Have a question?<br />
-            We&apos;ll cover it first.
+            Have an operational<br />
+            challenge worth examining?
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto">
-            Send us the automation, tool, or role question you&apos;re stuck on. We prioritize it as a written article.
+            Submit the automation, tooling, or organizational question you&apos;re working through. We prioritize it for analysis.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">

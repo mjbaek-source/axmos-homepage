@@ -121,11 +121,11 @@ export default function CasesPage() {
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-40">
           <p className="section-eyebrow animate-slideUp">Customer Stories</p>
           <h1 className="text-5xl md:text-7xl font-black leading-[0.95] tracking-tight mb-8 max-w-4xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
-            Proof, not promises.
+            Operational results,<br />in production.
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
             Finance, logistics, healthcare, accounting, e-commerce. Nine industries,
-            nine companies, one pattern — automation impact you can measure.
+            nine deployments, one pattern — measurable operational impact.
           </p>
 
           {/* Stats */}
@@ -241,11 +241,11 @@ export default function CasesPage() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Get Started</p>
           <h2 className="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight mb-8">
-            Your workflow is next.
+            Your operations are next.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto leading-relaxed">
-            Measurable results in three weeks. Book a free consult and we&apos;ll map what&apos;s
-            automatable — and what it&apos;s worth — together.
+            Measurable results in three weeks. Request a consultation and we will map your
+            automation surface and its operational value.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">
