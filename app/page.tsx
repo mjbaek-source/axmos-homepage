@@ -64,7 +64,7 @@ export default function Home() {
         ></div>
 
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-44">
-          <p className="section-eyebrow animate-slideUp">The AI Operating System for Korean Enterprises</p>
+          <p className="section-eyebrow animate-slideUp">The Enterprise AI Operating System</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tight mb-8 max-w-5xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
             Same work.<br />
             <span className="text-text-light">None of the grind.</span>
@@ -104,7 +104,7 @@ export default function Home() {
       {/* TRUSTED BY — Customer logos */}
       <section className="bg-bg-dark border-t border-border-dark py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <p className="section-eyebrow text-center mb-12">Trusted by Korean Enterprises</p>
+          <p className="section-eyebrow text-center mb-12">Trusted by industry leaders</p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-12 gap-y-10 items-center justify-items-center">
             {[
               { name: 'TransLink Investment', logo: '/logos/translink.png', height: 28 },
@@ -354,11 +354,11 @@ export default function Home() {
           <div className="max-w-3xl mb-20">
             <p className="section-eyebrow">Why AXMOS</p>
             <h2 className="section-title mb-6">
-              Built for how Korean business actually runs.
+              Built for how real enterprises actually run.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
-              AXMOS isn&apos;t a global SaaS bolted onto your org. It&apos;s built around the real workflows,
-              security demands, and regulatory reality of Korean enterprises.
+              AXMOS isn&apos;t generic SaaS bolted onto your org. It&apos;s built around the real workflows,
+              security demands, and regulatory reality your teams operate in every day.
             </p>
           </div>
 
@@ -382,7 +382,7 @@ export default function Home() {
               {
                 label: 'Security',
                 title: 'Enterprise-grade by default',
-                desc: 'Data stays in Korean cloud, full stop. Run to each enterprise&apos;s security and compliance bar.',
+                desc: 'Data stays in sovereign, region-isolated cloud — full stop. Run to each enterprise&apos;s security and compliance bar.',
               },
             ].map((item, i) => (
               <div key={i} className="bg-bg-dark p-10">
@@ -602,7 +602,7 @@ export default function Home() {
               },
               {
                 q: 'How is data security handled?',
-                a: 'AXMOS follows a data-sovereignty principle: all customer data is processed in Korean cloud only. We operate according to each enterprise’s security and compliance requirements, and execute NDAs and data-processing agreements as part of onboarding.',
+                a: 'AXMOS follows a strict data-sovereignty principle: customer data is processed in sovereign, region-isolated cloud infrastructure — never pooled or shared. We operate to each enterprise’s security and compliance requirements, and execute NDAs and data-processing agreements as part of onboarding.',
               },
               {
                 q: 'What about post-launch support?',

@@ -15,7 +15,7 @@ export default function Footer() {
               className="brightness-0 invert mb-6"
             />
             <p className="text-text-light text-sm leading-relaxed max-w-md">
-              The AI Operating System for Korean enterprises.<br />
+              The Enterprise AI Operating System.<br />
               AI automation in 3 weeks — without ripping out a single system you already run.
             </p>
           </div>
@@ -42,7 +42,7 @@ export default function Footer() {
 
         <div className="border-t border-border-dark pt-8 flex flex-col md:flex-row justify-between text-xs text-text-muted">
           <p>&copy; 2026 AXMOS. All rights reserved.</p>
-          <p>Built for Korean enterprises. Powered by Codepresso.</p>
+          <p>Built for the enterprise. Powered by Codepresso.</p>
         </div>
       </div>
     </footer>

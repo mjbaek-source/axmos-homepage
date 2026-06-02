@@ -6,9 +6,9 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://axmos-en.vercel.app'),
-  title: 'AXMOS — The AI Operating System for Korean Enterprises',
+  title: 'AXMOS — The Enterprise AI Operating System',
   description: 'Your existing systems and tools — untouched. AXMOS connects, automates, and accelerates them. Measurable results in 3 weeks.',
-  keywords: ['AI automation', 'enterprise AI', 'AI Agent', 'AI Operating System', 'Korean enterprises', 'workflow automation'],
+  keywords: ['AI automation', 'enterprise AI', 'AI Agent', 'AI Operating System', 'AI agents for enterprise', 'workflow automation'],
   authors: [{ name: 'AXMOS' }],
   creator: 'AXMOS',
   publisher: 'AXMOS',
@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://axmos-en.vercel.app',
     siteName: 'AXMOS',
-    title: 'AXMOS — The AI Operating System for Korean Enterprises',
+    title: 'AXMOS — The Enterprise AI Operating System',
     description: 'Your stack stays. AXMOS layers on top — wiring it together, automating the busywork, and shipping real results in 3 weeks.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AXMOS — The AI Operating System for Korean Enterprises',
+    title: 'AXMOS — The Enterprise AI Operating System',
     description: 'Your existing systems — untouched. AXMOS connects, automates, and accelerates them.',
   },
 };

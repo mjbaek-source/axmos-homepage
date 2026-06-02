@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'AX Insight — From the Field',
-  description: 'Insights drawn from the front lines of AI adoption in Korean enterprises. Case studies, non-developer guides, tool reviews, AX perspective.',
+  description: 'Insights drawn from the front lines of enterprise AI adoption. Case studies, non-developer guides, tool reviews, AX perspective.',
   keywords: ['AX Insight', 'AI blog', 'AI adoption case studies', 'AI for non-developers', 'AX perspective', 'AXMOS blog'],
 };
 
@@ -21,7 +21,7 @@ const TOPICS = [
   {
     label: 'AX Perspective',
     title: 'AX Perspective',
-    desc: 'How organizations, operations, and roles shift in the AI era. Patterns we&apos;ve seen across 50+ Korean enterprises.',
+    desc: 'How organizations, operations, and roles shift in the AI era. Patterns we&apos;ve seen across 50+ enterprise deployments.',
   },
   {
     label: 'Tools & Tutorials',
@@ -43,12 +43,12 @@ const UPCOMING = [
   },
   {
     category: 'AX Perspective',
-    title: 'Why most Korean enterprise AI adoption stalls at PoC',
+    title: 'Why most enterprise AI adoption stalls at PoC',
     excerpt: 'Common failure patterns from field interviews — and the shared traits of organizations that broke through.',
   },
   {
     category: 'Tools & Tutorials',
-    title: 'Why you should use ChatGPT and Claude differently for Korean-language work',
+    title: 'When to reach for ChatGPT vs Claude — a practical split',
     excerpt: 'Strengths and weaknesses compared across real workflow cases. Which jobs go to which model.',
   },
   {
@@ -84,7 +84,7 @@ export default function AXInsight() {
             AX Insight
           </h1>
           <p className="text-xl md:text-2xl text-text-light max-w-3xl leading-relaxed mb-10">
-            Notes from the front lines of enterprise AI in Korea.<br />
+            Notes from the front lines of enterprise AI.<br />
             Cases, guides, tool reviews — nothing you can&apos;t use on Monday.
           </p>
         </div>

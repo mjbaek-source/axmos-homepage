@@ -1,12 +1,12 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'AXMOS — The AI Operating System for Korean Enterprises';
+export const alt = 'AXMOS — The Enterprise AI Operating System';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-// 동일 도메인의 실제 로고 PNG를 OG 카드에 임베드 (역동적 X + 네이비→시안 그라데이션 보존)
-const LOGO_URL = 'https://axmos-legacy.vercel.app/logo.png';
+// 실제 로고 PNG를 OG 카드에 임베드 (역동적 X + 네이비→시안 그라데이션 보존)
+const LOGO_URL = 'https://axmos-en.vercel.app/logo.png';
 
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -57,7 +57,7 @@ export default function OpengraphImage() {
             maxWidth: 1000,
           }}
         >
-          The AI Operating System for Korean Enterprises
+          The Enterprise AI Operating System
         </div>
 
         <div
