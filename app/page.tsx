@@ -67,7 +67,7 @@ export default function Home() {
           <p className="section-eyebrow animate-slideUp">The AI Operating System for Korean Enterprises</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tight mb-8 max-w-5xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
             시스템은 그대로,<br />
-            <span className="text-text-light">나머지는 다 바뀝니다.</span>
+            <span className="text-text-light">실행만 더 빠르게.</span>
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl mb-10 leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
             기존 시스템과 도구는 건드리지 않습니다. AX.presso가 그 위에서 연결하고, 자동화하고, 가속합니다.
