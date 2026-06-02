@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* 포인트 컬러 — Electric Cyan. 한 곳에서 관리 */
+  --ax-accent: #22D3EE;
+  --ax-accent-rgb: 34, 211, 238;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,14 +62,42 @@ body {
   }
 }
 
-/* AX 커스텀 커서 — 홈 전용. 네이티브 커서 위에 ring 따라오기, mix-blend로 배경 자동 반전 */
+/* AX 커스텀 커서 — 홈 전용
+   레이어 구조:
+   1) ax-cursor-glow: 시안 라디얼 글로우(블러), mix-blend 없음 → 미래지향 포인트
+   2) ax-cursor-ring: 화이트 링, mix-blend-difference → 다크/라이트 자동 반전 */
+.ax-cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9998;
+  background: radial-gradient(circle,
+              rgba(var(--ax-accent-rgb), 0.45) 0%,
+              rgba(var(--ax-accent-rgb), 0.18) 35%,
+              transparent 70%);
+  filter: blur(6px);
+  will-change: transform, width, height;
+  transition: width 0.22s cubic-bezier(0.2, 0.8, 0.2, 1),
+              height 0.22s cubic-bezier(0.2, 0.8, 0.2, 1),
+              opacity 0.15s ease;
+}
+.ax-cursor-glow.hover {
+  width: 130px;
+  height: 130px;
+}
+.ax-cursor-glow.hidden { opacity: 0; }
+
 .ax-cursor-ring {
   position: fixed;
   top: 0;
   left: 0;
   width: 32px;
   height: 32px;
-  border: 1.5px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 9999px;
   pointer-events: none;
   z-index: 9999;
@@ -79,9 +113,8 @@ body {
   height: 60px;
   background-color: rgba(255, 255, 255, 0.14);
 }
-.ax-cursor-ring.hidden {
-  opacity: 0;
-}
+.ax-cursor-ring.hidden { opacity: 0; }
+
 @media (pointer: coarse) {
-  .ax-cursor-ring { display: none; }
+  .ax-cursor-glow, .ax-cursor-ring { display: none; }
 }

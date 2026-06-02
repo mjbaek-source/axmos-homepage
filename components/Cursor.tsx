@@ -9,9 +9,12 @@ export default function Cursor() {
     if (window.matchMedia('(pointer: coarse)').matches) return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
+    const glow = document.createElement('div');
+    glow.className = 'ax-cursor-glow hidden';
     const ring = document.createElement('div');
     ring.className = 'ax-cursor-ring hidden';
-    document.body.appendChild(ring);
+    document.body.appendChild(glow); // 글로우가 아래 (z-index 9998)
+    document.body.appendChild(ring); // 링이 위 (z-index 9999)
 
     let mx = 0;
     let my = 0;
@@ -27,6 +30,7 @@ export default function Cursor() {
         rx = mx;
         ry = my;
         ring.classList.remove('hidden');
+        glow.classList.remove('hidden');
         firstMove = false;
       }
     };
@@ -35,7 +39,9 @@ export default function Cursor() {
       // 스프링 lerp — 0.18 = 부드러운 추적, 너무 멀어지지 않음
       rx += (mx - rx) * 0.18;
       ry += (my - ry) * 0.18;
-      ring.style.transform = `translate3d(${rx}px, ${ry}px, 0) translate(-50%, -50%)`;
+      const t = `translate3d(${rx}px, ${ry}px, 0) translate(-50%, -50%)`;
+      ring.style.transform = t;
+      glow.style.transform = t;
       raf = requestAnimationFrame(tick);
     };
 
@@ -43,13 +49,25 @@ export default function Cursor() {
       !!el?.closest('a, button, [role="button"], input, textarea, select, label, summary');
 
     const onOver = (e: MouseEvent) => {
-      if (isInteractive(e.target as Element)) ring.classList.add('hover');
+      if (isInteractive(e.target as Element)) {
+        ring.classList.add('hover');
+        glow.classList.add('hover');
+      }
     };
     const onOut = (e: MouseEvent) => {
-      if (isInteractive(e.target as Element)) ring.classList.remove('hover');
+      if (isInteractive(e.target as Element)) {
+        ring.classList.remove('hover');
+        glow.classList.remove('hover');
+      }
     };
-    const onDocEnter = () => ring.classList.remove('hidden');
-    const onDocLeave = () => ring.classList.add('hidden');
+    const onDocEnter = () => {
+      ring.classList.remove('hidden');
+      glow.classList.remove('hidden');
+    };
+    const onDocLeave = () => {
+      ring.classList.add('hidden');
+      glow.classList.add('hidden');
+    };
 
     window.addEventListener('mousemove', onMove);
     document.addEventListener('mouseover', onOver);
@@ -66,6 +84,7 @@ export default function Cursor() {
       document.removeEventListener('mouseleave', onDocLeave);
       cancelAnimationFrame(raf);
       ring.remove();
+      glow.remove();
     };
   }, []);
 

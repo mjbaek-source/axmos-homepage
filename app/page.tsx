@@ -59,7 +59,7 @@ export default function Home() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: 'radial-gradient(circle at 78% 22%, rgba(46,117,182,0.22), transparent 55%), radial-gradient(circle at 15% 85%, rgba(46,117,182,0.10), transparent 50%)',
+            backgroundImage: 'radial-gradient(circle at 78% 22%, rgba(34,211,238,0.28), transparent 55%), radial-gradient(circle at 15% 85%, rgba(46,117,182,0.12), transparent 50%)',
           }}
         ></div>
 
