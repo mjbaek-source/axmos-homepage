@@ -84,8 +84,8 @@ export default function AXInsight() {
             AX Insight
           </h1>
           <p className="text-xl md:text-2xl text-text-light max-w-3xl leading-relaxed mb-10">
-            Insights drawn from the front lines of AI adoption in Korean enterprises.<br />
-            Cases, guides, tool reviews — only what you can apply immediately.
+            Notes from the front lines of enterprise AI in Korea.<br />
+            Cases, guides, tool reviews — nothing you can&apos;t use on Monday.
           </p>
         </div>
       </section>

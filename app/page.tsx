@@ -67,11 +67,11 @@ export default function Home() {
           <p className="section-eyebrow animate-slideUp">The AI Operating System for Korean Enterprises</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tight mb-8 max-w-5xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
             Same work.<br />
-            <span className="text-text-light">Faster execution.</span>
+            <span className="text-text-light">None of the grind.</span>
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl mb-10 leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
-            Your existing systems and tools — untouched. AXMOS connects, automates, and accelerates them.
-            Measurable results in 3 weeks.
+            Your stack stays exactly where it is. AXMOS layers on top — wiring it together,
+            automating the busywork, and shipping real results in three weeks, not next quarter.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-slideUp" style={{ animationDelay: '0.3s' }}>
@@ -140,38 +140,38 @@ export default function Home() {
           <div className="max-w-3xl mb-20">
             <p className="section-eyebrow">The Problem</p>
             <h2 className="section-title mb-6">
-              Korean enterprises still run<br />
-              at the speed of decades ago.
+              You&apos;re running on<br />
+              yesterday&apos;s clock speed.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
-              While you read emails one by one, move data into Excel, and pass reports through messengers,
-              your competitors are already a step ahead.
+              While your team reads email one by one, copies data into Excel, and chases reports through chat,
+              the competition has already moved.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border-dark">
             <div className="bg-bg-dark-2 p-10">
               <p className="text-5xl font-black text-white mb-4">01</p>
-              <h3 className="text-xl font-bold mb-4">Repetitive work drains your people</h3>
+              <h3 className="text-xl font-bold mb-4">Busywork is eating your best people</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                Reconciliation, classification, cleanup, reporting. The daily inefficiencies
-                eat into your talent&apos;s time and pull them away from core work.
+                Reconciliation, sorting, cleanup, reporting. The same loop every day quietly burns
+                your most valuable hours and keeps your talent off the work that matters.
               </p>
             </div>
             <div className="bg-bg-dark-2 p-10">
               <p className="text-5xl font-black text-white mb-4">02</p>
-              <h3 className="text-xl font-bold mb-4">Your systems are siloed</h3>
+              <h3 className="text-xl font-bold mb-4">Your data lives in ten places at once</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                Slack, Gmail, Excel, CRM, ERP. Data is scattered across tools,
-                and decisions get made with broken connections in between.
+                Slack, Gmail, Excel, CRM, ERP — scattered and disconnected.
+                Every decision gets made with half the picture.
               </p>
             </div>
             <div className="bg-bg-dark-2 p-10">
               <p className="text-5xl font-black text-white mb-4">03</p>
-              <h3 className="text-xl font-bold mb-4">AI adoption takes too long</h3>
+              <h3 className="text-xl font-bold mb-4">By the time AI ships, it&apos;s already stale</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                Plan, build, validate, deploy — 6 to 12 months. By the time you ship,
-                the business has moved on and the AI is already outdated.
+                Plan, build, validate, deploy — 6 to 12 months. The business moves on before launch,
+                and the AI you waited for is obsolete on arrival.
               </p>
             </div>
           </div>
@@ -185,15 +185,15 @@ export default function Home() {
             <div>
               <p className="section-eyebrow text-bg-dark/60">The Solution</p>
               <h2 className="section-title text-bg-dark mb-8">
-                Don&apos;t change the business. Let AI adapt to it.
+                Don&apos;t bend your business to AI. Bend AI to your business.
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                AXMOS doesn&apos;t replace your existing systems. It doesn&apos;t move your data either.
-                Instead, it layers AI Agents on top of your tools and workflows.
+                No rip-and-replace. No data migration. AXMOS rides on top of the tools
+                and workflows you already run, with AI Agents doing the heavy lifting.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-10">
-                It reads Slack messages, classifies Gmail, organizes Excel,
-                and updates your CRM. <strong>You get a production-ready result in 3 weeks.</strong>
+                It reads your Slack, sorts your Gmail, cleans up your Excel,
+                and keeps your CRM current. <strong>Production-ready in three weeks.</strong>
               </p>
               <div className="space-y-4">
                 {[
@@ -223,7 +223,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-bg-dark/80 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 p-10 text-white">
                 <p className="text-xs font-bold uppercase tracking-[0.2em] mb-2 opacity-80">Live Dashboard</p>
-                <p className="text-2xl font-bold">Track automation impact in real time.</p>
+                <p className="text-2xl font-bold">See the impact land, live.</p>
               </div>
             </div>
           </div>
@@ -256,9 +256,9 @@ export default function Home() {
             <div className="md:col-span-2">
               <p className="section-eyebrow">Customer Voice</p>
               <blockquote className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-8">
-                &ldquo;Due-diligence reviews for 100+ portfolio vendors used to take 3 to 5 days.
-                With AXMOS, the same work finishes in an hour. It&apos;s not just time saved —
-                the speed of decision-making itself has changed.&rdquo;
+                &ldquo;Due diligence on 100+ portfolio vendors used to eat 3 to 5 days.
+                Now it&apos;s done in an hour. This isn&apos;t time saved —
+                it&apos;s a different speed of decision-making entirely.&rdquo;
               </blockquote>
               <div className="flex items-center gap-6 pt-8 border-t border-border-dark">
                 <div>
@@ -289,8 +289,8 @@ export default function Home() {
             <div className="max-w-2xl">
               <p className="section-eyebrow text-bg-dark/60">Customer Stories</p>
               <h2 className="section-title text-bg-dark">
-                Industry leaders move<br />
-                faster with AXMOS.
+                The best operators<br />
+                already move faster.
               </h2>
             </div>
             <Link href="/cases" className="text-bg-dark text-sm font-semibold border-b-2 border-bg-dark pb-1 hover:opacity-60 transition">
@@ -303,21 +303,21 @@ export default function Home() {
               {
                 company: 'TransLink Investment',
                 industry: 'Finance · VC',
-                title: 'Due-diligence automation accelerates decisions by 99%',
+                title: 'Due diligence on autopilot — decisions 99% faster',
                 metric: '3–5 days → 1 hour',
                 image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80',
               },
               {
                 company: 'ChainLogis',
                 industry: 'Logistics · Marketing',
-                title: 'Announcement classification and publishing — 20× output',
+                title: 'Sorting and publishing, automated — 20× the output',
                 metric: '2–4 hours → 3 min',
                 image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
               },
               {
                 company: 'UHA Company',
                 industry: 'E-commerce · Settlement',
-                title: 'Order reconciliation automation — 60 hrs/mo of operational headroom',
+                title: 'Order reconciliation, automated — 60 hours back every month',
                 metric: '2–3 hours → 30 sec',
                 image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80',
               },
@@ -354,11 +354,11 @@ export default function Home() {
           <div className="max-w-3xl mb-20">
             <p className="section-eyebrow">Why AXMOS</p>
             <h2 className="section-title mb-6">
-              Built for the speed and complexity of Korean business.
+              Built for how Korean business actually runs.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
-              AXMOS isn&apos;t a global SaaS. It&apos;s designed around the real workflows,
-              security requirements, and regulatory environment of Korean enterprises.
+              AXMOS isn&apos;t a global SaaS bolted onto your org. It&apos;s built around the real workflows,
+              security demands, and regulatory reality of Korean enterprises.
             </p>
           </div>
 
@@ -366,23 +366,23 @@ export default function Home() {
             {[
               {
                 label: 'Integration',
-                title: 'AI on top of your stack',
-                desc: 'Slack, Gmail, Excel, ERP, CRM. Works on your existing tools — no new systems required.',
+                title: 'Rides on your stack',
+                desc: 'Slack, Gmail, Excel, ERP, CRM. It works with what you already have — nothing to rip out.',
               },
               {
                 label: 'Speed',
                 title: 'Live in 3 weeks',
-                desc: 'Plan to deploy in 3 weeks on average. See measurable ROI within the first month.',
+                desc: 'From plan to production in three weeks, on average. ROI you can point to inside the first month.',
               },
               {
                 label: 'Intelligence',
-                title: 'Semantic business understanding',
-                desc: 'Not simple RPA. AI Agents that learn your business context and handle edge cases.',
+                title: 'It actually gets the work',
+                desc: 'Not brittle RPA. AI Agents that learn your business context and handle the edge cases that break scripts.',
               },
               {
                 label: 'Security',
-                title: 'Enterprise-grade security',
-                desc: 'All data processed in Korean cloud only. Operated to match each enterprise&apos;s security and compliance requirements.',
+                title: 'Enterprise-grade by default',
+                desc: 'Data stays in Korean cloud, full stop. Run to each enterprise&apos;s security and compliance bar.',
               },
             ].map((item, i) => (
               <div key={i} className="bg-bg-dark p-10">
@@ -400,8 +400,8 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 text-center">
           <p className="section-eyebrow text-bg-dark/60">Customer Voice</p>
           <blockquote className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-bg-dark mb-12 max-w-4xl mx-auto">
-            &ldquo;In our first month, we recovered 80 hours.
-            That&apos;s the equivalent of hiring one additional full-time employee.&rdquo;
+            &ldquo;We got 80 hours back in the first month.
+            That&apos;s a full-time hire we didn&apos;t have to make.&rdquo;
           </blockquote>
 
           <div className="flex flex-col items-center gap-4">
@@ -429,7 +429,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <p className="section-eyebrow text-bg-dark/60">Results</p>
-            <h2 className="section-title text-bg-dark">Validated performance data</h2>
+            <h2 className="section-title text-bg-dark">The numbers, not the pitch</h2>
             <p className="text-lg text-gray-700 leading-relaxed mt-4">
               Real results from real customers running on AXMOS.
             </p>
@@ -585,12 +585,12 @@ export default function Home() {
           <div className="space-y-px bg-gray-200">
             {[
               {
-                q: 'Can our company’s workflows be automated too?',
-                a: 'Most likely yes. If your workflow has predictable patterns and repeats, AI can automate it. We confirm exactly what’s in scope after a free assessment.',
+                q: 'Can our workflows actually be automated?',
+                a: 'Almost certainly. If it has a pattern and it repeats, AI can take it. We&apos;ll tell you exactly what&apos;s in scope after a free assessment — no hand-waving.',
               },
               {
-                q: 'Do we need to replace our existing systems?',
-                a: 'No. AXMOS sits on top of your existing systems. Slack, Gmail, Excel, ERP, CRM — keep the tools you already use. AI Agents connect the data and automate the work.',
+                q: 'Do we have to replace our existing systems?',
+                a: 'No. AXMOS sits on top of what you already run. Slack, Gmail, Excel, ERP, CRM — keep all of it. The AI Agents connect the data and do the work in between.',
               },
               {
                 q: 'Do we need our own engineering team?',
@@ -645,12 +645,12 @@ export default function Home() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Get Started</p>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] tracking-tight mb-8">
-            In 3 weeks, your team<br />
-            works at an entirely different speed.
+            Three weeks from now,<br />
+            your team moves differently.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto leading-relaxed">
-            Request a free consultation today. We reply within 2 business days.
-            In the first meeting we map automation opportunities and project ROI.
+            Book a free consult — we reply within 2 business days. In the first meeting we map
+            what&apos;s automatable and put a number on the ROI.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">

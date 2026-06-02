@@ -94,7 +94,7 @@ export default function ContactForm() {
             Schedule a Demo.
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl leading-relaxed">
-            In the first meeting we map automation opportunities and project expected ROI.
+            First meeting, we map what&apos;s automatable and put a number on the ROI.
             We reply within 2 business days.
           </p>
         </div>

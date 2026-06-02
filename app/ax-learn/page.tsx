@@ -28,8 +28,8 @@ export default function AXLearn() {
             AX Learn
           </h1>
           <p className="text-xl md:text-2xl text-text-light max-w-3xl leading-relaxed mb-10">
-            No code. Your job, as is.<br />
-            A workshop program that helps non-developer employees actually use AI at work.
+            No code. Your job, exactly as it is.<br />
+            The workshop that gets non-developers actually using AI at work.
           </p>
 
           <div className="grid grid-cols-3 gap-8 max-w-3xl border-t border-border-dark pt-12">
@@ -169,11 +169,11 @@ export default function AXLearn() {
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Get Started</p>
           <h2 className="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight mb-8">
-            In two days, non-developers<br />
-            start using AI as a work tool.
+            Two days. Suddenly everyone<br />
+            speaks AI.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto">
-            Request an in-company workshop. We&apos;ll tailor the curriculum to participant roles and team size.
+            Book an in-house workshop. We&apos;ll shape the curriculum around your team&apos;s roles and size.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center bg-white text-bg-dark font-semibold py-4 px-10 hover:bg-gray-200 transition text-lg">

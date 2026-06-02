@@ -16,7 +16,7 @@ export default function Footer() {
             />
             <p className="text-text-light text-sm leading-relaxed max-w-md">
               The AI Operating System for Korean enterprises.<br />
-              Roll out AI automation in 3 weeks — without replacing your existing systems.
+              AI automation in 3 weeks — without ripping out a single system you already run.
             </p>
           </div>
 

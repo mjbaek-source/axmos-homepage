@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://axmos-en.vercel.app',
     siteName: 'AXMOS',
     title: 'AXMOS — The AI Operating System for Korean Enterprises',
-    description: 'Your existing systems and tools — untouched. AXMOS connects, automates, and accelerates them. Measurable results in 3 weeks.',
+    description: 'Your stack stays. AXMOS layers on top — wiring it together, automating the busywork, and shipping real results in 3 weeks.',
   },
   twitter: {
     card: 'summary_large_image',
