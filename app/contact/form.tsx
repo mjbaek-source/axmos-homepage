@@ -234,8 +234,8 @@ export default function ContactForm() {
                     className="w-5 h-5 mt-0.5 cursor-pointer accent-bg-dark"
                   />
                   <span className="text-sm text-gray-700 leading-relaxed">
-                    I consent to AXMOS collecting and processing the information above
-                    for consultation purposes. It will not be shared with third parties. *
+                    I agree to the collection and use of my information for consultation purposes,
+                    as described in the <Link href="/privacy" className="font-semibold text-bg-dark underline hover:opacity-60 transition">Privacy Policy</Link>. *
                   </span>
                 </label>
               </div>
