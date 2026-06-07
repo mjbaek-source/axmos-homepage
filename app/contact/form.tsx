@@ -234,8 +234,8 @@ export default function ContactForm() {
                     className="w-5 h-5 mt-0.5 cursor-pointer accent-bg-dark"
                   />
                   <span className="text-sm text-gray-700 leading-relaxed">
-                    개인정보 수집·이용에 동의합니다. 수집된 정보는 상담 목적으로만 사용되며,
-                    제3자에게 제공되지 않습니다. *
+                    <Link href="/privacy" className="font-semibold text-bg-dark underline hover:opacity-60 transition">개인정보처리방침</Link>에 따른
+                    개인정보 수집·이용에 동의합니다. 수집된 정보는 상담 목적으로만 사용됩니다. *
                   </span>
                 </label>
               </div>

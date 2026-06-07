@@ -40,9 +40,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border-dark pt-8 flex flex-col md:flex-row justify-between text-xs text-text-muted">
+        <div className="border-t border-border-dark pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-3 text-xs text-text-muted">
           <p>&copy; 2026 AXMOS. All rights reserved.</p>
-          <p>Built for Korean enterprises. Powered by Codepresso.</p>
+          <div className="flex items-center gap-5">
+            <Link href="/privacy" className="hover:text-white transition">개인정보처리방침</Link>
+            <span>Built for Korean enterprises. Powered by Codepresso.</span>
+          </div>
         </div>
       </div>
     </footer>
