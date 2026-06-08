@@ -67,8 +67,8 @@ export default function AXGrow() {
                   },
                   {
                     label: '02',
-                    title: 'In-house builderthon',
-                    desc: 'Your team designs, develops, and deploys a real AI Agent alongside our coaches. Learning IS the deliverable.',
+                    title: 'Co-build with our engineers',
+                    desc: 'Our engineers pair directly with your team to design, develop, and deploy a real AI Agent. Available as a focused sprint (builderthon) if you prefer.',
                   },
                   {
                     label: '03',
@@ -95,7 +95,7 @@ export default function AXGrow() {
               <div className="space-y-8">
                 {[
                   { title: 'AI capability diagnostic', desc: 'Assessment of your current AI readiness and gaps' },
-                  { title: 'Builderthon outcome', desc: 'A production-ready AI Agent built by your team' },
+                  { title: 'An AI Agent, built together', desc: 'A production-ready AI Agent your team built alongside our engineers' },
                   { title: 'AX rollout roadmap', desc: 'Company-wide AI adoption strategy, roadmap, and governance model' },
                   { title: 'Enablement training', desc: 'Tailored programs for ICs, managers, and executives' },
                 ].map((item, i) => (
@@ -124,9 +124,9 @@ export default function AXGrow() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-px bg-border-dark">
             {[
               { day: 'Day 1', label: 'Design', title: 'Curriculum design', desc: 'Diagnose first, then tailor the curriculum to your team' },
-              { day: 'Day 2–3', label: 'Setup', title: 'Operations setup', desc: 'Prepare the builderthon environment' },
+              { day: 'Day 2–3', label: 'Setup', title: 'Co-build setup', desc: 'Prepare the pair-build environment' },
               { day: 'Day 4–5', label: 'Train', title: 'AI applied training', desc: 'Intensive, domain-grounded sessions' },
-              { day: 'Day 6–15', label: 'Build', title: 'In-house builderthon', desc: 'Your team builds the AI Agent end to end' },
+              { day: 'Day 6–15', label: 'Build', title: 'Pair build', desc: 'Your team builds the AI Agent with our engineers · builderthon format optional' },
               { day: 'Day 16', label: 'Share', title: 'Outcome readout', desc: 'Present results and share the rollout roadmap' },
             ].map((step, i) => (
               <div key={i} className="bg-bg-dark-2 p-8">

@@ -150,7 +150,7 @@ export default function AXBuild() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               { title: 'Speed is the priority', desc: 'When you need a production-ready result within 30 days.' },
-              { title: 'Lean engineering team', desc: 'When you don&apos;t have internal devs — or they&apos;re heads-down on other priorities.' },
+              { title: 'Keep your engineers on core work', desc: 'Whether you have no internal devs, or you want the ones you have focused on the product and core business while we ship internal automation fast.' },
               { title: 'Quick ROI required', desc: 'When you need to show leadership short-term ROI fast.' },
               { title: 'Startups & SMBs', desc: 'When you want to roll out AI automation in a resource-efficient way.' },
             ].map((item, i) => (
