@@ -67,8 +67,8 @@ export default function AXGrow() {
                   },
                   {
                     label: '02',
-                    title: '사내 빌더톤으로 직접 구축',
-                    desc: '팀이 강사와 함께 실제 AI Agent를 설계·개발·배포합니다. 학습이 곧 결과물.',
+                    title: '엔지니어와 함께 직접 구축',
+                    desc: 'AXMOS 엔지니어가 페어로 붙어, 팀이 실제 AI Agent를 설계·개발·배포합니다. 원하면 집중 스프린트(빌더톤) 형식으로도 진행할 수 있습니다.',
                   },
                   {
                     label: '03',
@@ -95,7 +95,7 @@ export default function AXGrow() {
               <div className="space-y-8">
                 {[
                   { title: 'AI 역량 진단 리포트', desc: '조직의 현재 AI 역량과 갭(Gap) 분석' },
-                  { title: '사내 빌더톤 결과물', desc: '팀이 직접 만든 운영 가능한 AI Agent' },
+                  { title: '함께 만든 AI Agent', desc: '엔지니어와 페어로 구축한 운영 가능한 AI Agent' },
                   { title: 'AX 확산 로드맵', desc: '전사 AI 도입 전략·로드맵·거버넌스 모델' },
                   { title: '내재화 교육', desc: '실무자·매니저·임원 대상 맞춤 교육' },
                 ].map((item, i) => (
@@ -124,9 +124,9 @@ export default function AXGrow() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-px bg-border-dark">
             {[
               { day: 'Day 1', label: 'Design', title: '교육 설계', desc: '진단 후 팀에 맞춘 교육 설계' },
-              { day: 'Day 2~3', label: 'Setup', title: '운영 설계', desc: '빌더톤 운영 환경 준비' },
+              { day: 'Day 2~3', label: 'Setup', title: '공동 구축 환경 준비', desc: '페어 빌드 운영 환경 세팅' },
               { day: 'Day 4~5', label: 'Train', title: 'AI 실무 교육', desc: '도메인 기반 집중 교육' },
-              { day: 'Day 6~15', label: 'Build', title: '사내 빌더톤', desc: '팀이 직접 AI Agent 구축' },
+              { day: 'Day 6~15', label: 'Build', title: '페어 빌드 (공동 구축)', desc: '엔지니어와 함께 AI Agent 구축 · 빌더톤 형식 선택 가능' },
               { day: 'Day 16', label: 'Share', title: '성과 공유', desc: '결과물 발표 및 로드맵 공유' },
             ].map((step, i) => (
               <div key={i} className="bg-bg-dark-2 p-8">

@@ -150,7 +150,7 @@ export default function AXBuild() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               { title: '빠른 구축이 우선인 경우', desc: '30일 내 운영 가능한 결과물이 필요한 경우' },
-              { title: '기술팀이 부족한 경우', desc: '내부 개발 인력이 없거나 다른 우선순위에 집중되어 있는 경우' },
+              { title: '엔지니어를 핵심 업무에 집중시키고 싶은 경우', desc: '내부 개발팀이 없거나, 있어도 핵심 제품·현업에 집중시키고 내부 자동화는 빠르게 맡기고 싶은 경우' },
               { title: '즉시 효과가 필요한 경우', desc: '경영진에게 단기 ROI를 보여줘야 하는 경우' },
               { title: '스타트업·중소기업', desc: '리소스 효율적으로 AI 자동화를 도입하고 싶은 경우' },
             ].map((item, i) => (
