@@ -11,6 +11,7 @@ interface ContactData {
   phone?: string;
   track: string;
   task: string;
+  details?: string; // track-specific question answers (label: value per line)
 }
 
 async function sendEmail(data: ContactData) {
@@ -41,6 +42,7 @@ async function sendEmail(data: ContactData) {
             ${adminRow('Phone', data.phone || 'Not provided')}
             ${adminRow('Track', data.track)}
             ${adminRow('Workflow', data.task)}
+            ${data.details ? adminRow('Additional details', data.details.replace(/\n/g, '<br>')) : ''}
           </table>
           <p style="color:#737373;margin:24px 0 0 0;font-size:12px">Received at: ${new Date().toUTCString()}</p>
         </div>
@@ -142,7 +144,7 @@ async function saveToNotion(data: ContactData) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { company, name, email, phone, track, task } = body;
+    const { company, name, email, phone, track, task, details } = body;
 
     if (!company || !name || !email || !track || !task) {
       return NextResponse.json(
@@ -151,7 +153,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const data: ContactData = { company, name, email, phone, track, task };
+    const data: ContactData = { company, name, email, phone, track, task, details };
 
     // Run all three integrations in parallel — any failure does not block others
     const [emailResult, sheetsResult, notionResult] = await Promise.all([
