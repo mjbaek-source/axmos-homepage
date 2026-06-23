@@ -11,6 +11,7 @@ const navLinks = [
   { href: '/ax-learn', label: 'AX Learn' },
   { href: '/ax-insight', label: 'AX Insight' },
   { href: '/cases', label: 'AX Cases' },
+  { href: '/about', label: 'About' },
 ];
 
 // 언어 토글: 이 사이트(EN) → 한글판(axmos-legacy)의 같은 경로로 이동

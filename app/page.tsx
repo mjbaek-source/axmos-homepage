@@ -135,6 +135,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BACKED BY — Consortium members band */}
+      <section className="bg-bg-dark-2 text-white py-24 border-t border-border-dark">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+            <div className="max-w-2xl">
+              <p className="section-eyebrow">Backed by a Consortium</p>
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+                AXMOS is built by six companies across<br />AI, manufacturing, education, and investment.
+              </h2>
+            </div>
+            <Link href="/about" className="text-white text-sm font-semibold border-b-2 border-white pb-1 hover:opacity-60 transition whitespace-nowrap">
+              About the consortium →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-border-dark border border-border-dark">
+            {[
+              { name: 'Wilt VentureBuilder', role: 'Lead · Global' },
+              { name: 'PopupStudio', role: 'AI Core · OS' },
+              { name: 'CodePresso', role: 'Education · AX' },
+              { name: 'DreamAce', role: 'Manufacturing' },
+              { name: 'Brii', role: 'Work Agents' },
+              { name: 'TransLink', role: 'Investment' },
+            ].map((m, i) => (
+              <div key={i} className="bg-bg-dark-2 p-6 hover:bg-bg-dark transition">
+                <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-text-muted mb-2">{m.role}</p>
+                <p className="text-white font-bold text-sm md:text-base leading-snug">{m.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PAIN POINTS — Dark section, professional cards */}
       <section className="bg-bg-dark-2 text-white py-32 border-t border-border-dark">
         <div className="max-w-7xl mx-auto px-6">
@@ -392,6 +425,42 @@ export default function Home() {
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">{item.label}</p>
                 <h3 className="text-xl font-bold mb-4 leading-tight">{item.title}</h3>
                 <p className="text-sm text-text-light leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FDE — How we deliver */}
+      <section className="bg-bg-dark-2 text-white py-32 border-t border-border-dark">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-20">
+            <div className="max-w-3xl">
+              <p className="section-eyebrow">How We Deliver</p>
+              <h2 className="section-title mb-6">
+                Not a tool — a person on the floor.
+              </h2>
+              <p className="text-lg text-text-light leading-relaxed">
+                Every AXMOS project is owned by a Forward Deployed Engineer (FDE).
+                They go to the field, find the real problem, deploy the solution, and prove it with results.
+              </p>
+            </div>
+            <Link href="/about" className="text-white text-sm font-semibold border-b-2 border-white pb-1 hover:opacity-60 transition whitespace-nowrap">
+              Meet our FDEs →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border-dark">
+            {[
+              { step: 'STEP 1', label: 'Diagnose', desc: 'Observe the workflow on the ground to find the real problem.' },
+              { step: 'STEP 2', label: 'Align', desc: 'Build trust with stakeholders and agree on what to solve.' },
+              { step: 'STEP 3', label: 'Deploy', desc: 'Build and ship the solution fast on a standard core.' },
+              { step: 'STEP 4', label: 'Operate', desc: 'Prove impact with KPIs and embed it into the organization.' },
+            ].map((s, i) => (
+              <div key={i} className="bg-bg-dark-2 p-10">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">{s.step}</p>
+                <h3 className="text-2xl font-bold mb-4">{s.label}</h3>
+                <p className="text-sm text-text-light leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>

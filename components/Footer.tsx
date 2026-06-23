@@ -32,8 +32,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-5">Contact</h4>
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-5">Company</h4>
             <ul className="space-y-3 text-sm text-text-light">
+              <li><Link href="/about" className="hover:text-white transition">About · Consortium</Link></li>
               <li><Link href="/contact" className="hover:text-white transition">Get in touch</Link></li>
               <li>axmos@codepresso.io</li>
             </ul>
