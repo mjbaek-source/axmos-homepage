@@ -309,9 +309,6 @@ export default function Home() {
                   <p className="text-white font-semibold">30 hrs/mo</p>
                 </div>
               </div>
-              <p className="text-xs text-text-muted mt-6 italic">
-                💬 Interview text — placeholder. To be replaced after the actual interview.
-              </p>
             </div>
           </div>
         </div>
@@ -479,19 +476,18 @@ export default function Home() {
           <div className="flex flex-col items-center gap-4">
             <div className="w-20 h-20 bg-bg-dark rounded-full overflow-hidden relative">
               <div
-                className="absolute inset-0 opacity-70"
+                className="absolute inset-0"
                 style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80')`,
+                  backgroundImage: `url('/people/donghyun-kim.png')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
               />
             </div>
             <div>
-              <p className="text-bg-dark font-semibold">[Customer Name]</p>
+              <p className="text-bg-dark font-semibold">Donghyun Kim</p>
               <p className="text-sm text-gray-600">CEO, ChainLogis (DoobleHero)</p>
             </div>
-            <p className="text-xs text-text-muted italic mt-4">📷 Interview photo + text placeholder</p>
           </div>
         </div>
       </section>
