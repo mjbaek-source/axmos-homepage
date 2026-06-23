@@ -134,6 +134,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BACKED BY — Consortium members band */}
+      <section className="bg-bg-dark-2 text-white py-24 border-t border-border-dark">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+            <div className="max-w-2xl">
+              <p className="section-eyebrow">Backed by a Consortium</p>
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+                AXMOS는 AI·제조·교육·투자 6개사가<br />함께 만드는 컨소시엄입니다.
+              </h2>
+            </div>
+            <Link href="/about" className="text-white text-sm font-semibold border-b-2 border-white pb-1 hover:opacity-60 transition whitespace-nowrap">
+              About the consortium →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-border-dark border border-border-dark">
+            {[
+              { name: '윌트벤처빌더', role: '리드 · 글로벌' },
+              { name: '팝업스튜디오', role: 'AI 코어 · OS' },
+              { name: '코드프레소', role: '교육 · AX' },
+              { name: '드림에이스', role: '제조 · 실증' },
+              { name: '브리', role: '업무 에이전트' },
+              { name: '트랜스링크', role: '투자 · 진출' },
+            ].map((m, i) => (
+              <div key={i} className="bg-bg-dark-2 p-6 hover:bg-bg-dark transition">
+                <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-text-muted mb-2">{m.role}</p>
+                <p className="text-white font-bold text-sm md:text-base leading-snug">{m.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PAIN POINTS — Dark section, professional cards */}
       <section className="bg-bg-dark-2 text-white py-32 border-t border-border-dark">
         <div className="max-w-7xl mx-auto px-6">
@@ -389,6 +422,42 @@ export default function Home() {
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">{item.label}</p>
                 <h3 className="text-xl font-bold mb-4 leading-tight">{item.title}</h3>
                 <p className="text-sm text-text-light leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FDE — How we deliver */}
+      <section className="bg-bg-dark-2 text-white py-32 border-t border-border-dark">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-20">
+            <div className="max-w-3xl">
+              <p className="section-eyebrow">How We Deliver</p>
+              <h2 className="section-title mb-6">
+                도구가 아니라, 사람이 현장에 들어갑니다.
+              </h2>
+              <p className="text-lg text-text-light leading-relaxed">
+                AXMOS의 모든 프로젝트는 FDE(전방 배치 엔지니어)가 책임집니다.
+                현장에 직접 들어가 진짜 문제를 찾고, 솔루션을 이식하고, 성과로 증명합니다.
+              </p>
+            </div>
+            <Link href="/about" className="text-white text-sm font-semibold border-b-2 border-white pb-1 hover:opacity-60 transition whitespace-nowrap">
+              Meet our FDEs →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border-dark">
+            {[
+              { step: 'STEP 1', label: '진단', desc: '현장의 업무 흐름을 관찰해 진짜 문제를 찾습니다.' },
+              { step: 'STEP 2', label: '설득', desc: '이해관계자와 신뢰를 쌓고 해결할 문제에 합의합니다.' },
+              { step: 'STEP 3', label: '이식', desc: '표준 코어 위에서 솔루션을 빠르게 만들어 배포합니다.' },
+              { step: 'STEP 4', label: '작동', desc: 'KPI로 임팩트를 증명하고 조직에 내재화합니다.' },
+            ].map((s, i) => (
+              <div key={i} className="bg-bg-dark-2 p-10">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">{s.step}</p>
+                <h3 className="text-2xl font-bold mb-4">{s.label}</h3>
+                <p className="text-sm text-text-light leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
