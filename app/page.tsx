@@ -307,9 +307,6 @@ export default function Home() {
                   <p className="text-white font-semibold">월 30시간</p>
                 </div>
               </div>
-              <p className="text-xs text-text-muted mt-6 italic">
-                💬 인터뷰 텍스트 — placeholder. 실제 인터뷰 후 교체 예정.
-              </p>
             </div>
           </div>
         </div>
@@ -476,19 +473,18 @@ export default function Home() {
           <div className="flex flex-col items-center gap-4">
             <div className="w-20 h-20 bg-bg-dark rounded-full overflow-hidden relative">
               <div
-                className="absolute inset-0 opacity-70"
+                className="absolute inset-0"
                 style={{
-                  backgroundImage: `url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80')`,
+                  backgroundImage: `url('/people/donghyun-kim.png')`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
               />
             </div>
             <div>
-              <p className="text-bg-dark font-semibold">[고객사 대표명]</p>
+              <p className="text-bg-dark font-semibold">김동현</p>
               <p className="text-sm text-gray-600">CEO, 체인로지스 (두발히어로)</p>
             </div>
-            <p className="text-xs text-text-muted italic mt-4">📷 인터뷰 사진 + 텍스트 placeholder</p>
           </div>
         </div>
       </section>
