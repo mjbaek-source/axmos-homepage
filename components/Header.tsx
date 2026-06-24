@@ -43,7 +43,7 @@ export default function Header() {
             width={120}
             height={40}
             priority
-            className="brightness-0 invert"
+            className={BRAND.logoInvert ? 'brightness-0 invert' : ''}
           />
         </Link>
 

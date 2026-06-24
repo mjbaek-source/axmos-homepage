@@ -11,12 +11,14 @@ const CONFIG = {
     key: 'axmos' as const,
     name: 'AXMOS',
     logo: '/logo.png',
+    logoInvert: false, // 원본 색감(네이비→시안) 유지
   },
   axpresso: {
     key: 'axpresso' as const,
     name: 'ax.presso',
     logo: '/logo-axpresso.png',
+    logoInvert: true, // 어두운 배경에서 흰색으로 표시
   },
-} satisfies Record<BrandKey, { key: BrandKey; name: string; logo: string }>;
+} satisfies Record<BrandKey, { key: BrandKey; name: string; logo: string; logoInvert: boolean }>;
 
 export const BRAND = CONFIG[KEY];
