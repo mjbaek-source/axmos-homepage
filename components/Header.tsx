@@ -16,7 +16,7 @@ const navLinks = [
 ];
 
 // 언어 토글: 이 사이트(KR) → 영문판(axmos-en)의 같은 경로로 이동
-const ALT_LANG = { base: 'https://axmos-en.vercel.app', label: 'EN', aria: 'View in English' };
+const ALT_LANG = { base: BRAND.enUrl, label: 'EN', aria: 'View in English' };
 
 function GlobeIcon() {
   return (
