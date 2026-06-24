@@ -1,3 +1,4 @@
+import { BRAND } from '@/lib/brand';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
@@ -68,7 +69,7 @@ export default function AXGrow() {
                   {
                     label: '02',
                     title: '엔지니어와 함께 직접 구축',
-                    desc: 'AXMOS 엔지니어가 페어로 붙어, 팀이 실제 AI Agent를 설계·개발·배포합니다. 원하면 집중 스프린트(빌더톤) 형식으로도 진행할 수 있습니다.',
+                    desc: `${BRAND.name} 엔지니어가 페어로 붙어, 팀이 실제 AI Agent를 설계·개발·배포합니다. 원하면 집중 스프린트(빌더톤) 형식으로도 진행할 수 있습니다.`,
                   },
                   {
                     label: '03',

@@ -1,4 +1,5 @@
 'use client';
+import { BRAND } from '@/lib/brand';
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -37,8 +38,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo.png"
-            alt="AXMOS"
+            src={BRAND.logo}
+            alt={BRAND.name}
             width={120}
             height={40}
             priority

@@ -1,4 +1,5 @@
 'use client';
+import { BRAND } from '@/lib/brand';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -27,7 +28,7 @@ const TRACK_QUESTIONS: Record<string, TQ[]> = {
 };
 
 const TRACKS = [
-  { value: 'AX Build', title: 'AX Build', desc: 'AXMOS 팀이 직접 구축' },
+  { value: 'AX Build', title: 'AX Build', desc: `${BRAND.name} 팀이 직접 구축` },
   { value: 'AX Grow', title: 'AX Grow', desc: '팀이 함께 배우며 구축' },
   { value: 'AX Learn', title: 'AX Learn', desc: '비개발자 AI 특강' },
   { value: '아직 모르겠음', title: '아직 모르겠음', desc: '상담 후 결정하고 싶음' },

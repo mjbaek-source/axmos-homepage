@@ -1,4 +1,5 @@
 'use client';
+import { BRAND } from '@/lib/brand';
 
 import Link from 'next/link';
 import Cursor from '@/components/Cursor';
@@ -56,13 +57,13 @@ export default function About() {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-44">
-          <p className="section-eyebrow animate-slideUp">About AXMOS — The Consortium</p>
+          <p className="section-eyebrow animate-slideUp">About {BRAND.name} — The Consortium</p>
           <h1 className="text-5xl md:text-7xl font-black leading-[0.95] tracking-tight mb-8 max-w-4xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
             현장에 AI를 심어<br />
             <span className="text-text-light">일하는 방식을 바꿉니다.</span>
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
-            AXMOS는 AI·제조·교육·투자 역량을 가진 6개사가 모인 컨소시엄입니다.
+            {BRAND.name}는 AI·제조·교육·투자 역량을 가진 6개사가 모인 컨소시엄입니다.
             제조 현장에 바로 적용 가능한 AI 역량을 결집해, 한국 산업의 실행 속도를 바꿉니다.
           </p>
         </div>
@@ -77,7 +78,7 @@ export default function About() {
             지방 제조업의 디지털 전환과 지역 인재 양성을 동시에 이끈다.”
           </blockquote>
           <p className="text-text-light leading-relaxed max-w-3xl">
-            AXMOS(엑스모스)는 단일 제품이 아니라, 각 분야 최고의 역량을 가진 기업들이 모인 연합입니다.
+            {BRAND.name}는 단일 제품이 아니라, 각 분야 최고의 역량을 가진 기업들이 모인 연합입니다.
             AI 코어 기술부터 제조 현장 실증, 인재 교육, 글로벌 진출까지 — 가치사슬 전체를 한 팀이 책임집니다.
           </p>
         </div>
@@ -88,7 +89,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <p className="section-eyebrow text-bg-dark/60">The Consortium</p>
-            <h2 className="section-title text-bg-dark mb-6">AXMOS를 만드는 6개사</h2>
+            <h2 className="section-title text-bg-dark mb-6">{BRAND.name}를 만드는 6개사</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               리드부터 코어 기술, 제조 실증, 교육, 투자까지. 각자의 강점이 하나의 실행 단위로 모였습니다.
             </p>
@@ -115,7 +116,7 @@ export default function About() {
             <p className="text-lg text-text-light leading-relaxed">
               FDE(전방 배치 엔지니어)는 현장에 직접 들어가 문제를 진단하고,
               AI 솔루션을 설계·구축하여 작동시키는 사람입니다.
-              AXMOS의 모든 프로젝트는 FDE가 끝까지 책임집니다.
+              {BRAND.name}의 모든 프로젝트는 FDE가 끝까지 책임집니다.
             </p>
           </div>
 
@@ -156,7 +157,7 @@ export default function About() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="mb-12">
             <p className="section-eyebrow text-bg-dark/60">In the Media</p>
-            <h2 className="section-title text-bg-dark">미디어 속 AXMOS</h2>
+            <h2 className="section-title text-bg-dark">미디어 속 {BRAND.name}</h2>
           </div>
 
           <div className="space-y-px bg-gray-200 border border-gray-200">
@@ -178,7 +179,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="section-eyebrow">Work with us</p>
           <h2 className="text-4xl md:text-6xl font-black leading-[0.95] tracking-tight mb-8">
-            AXMOS와 함께<br />현장을 바꿔보세요.
+            {BRAND.name}와 함께<br />현장을 바꿔보세요.
           </h2>
           <p className="text-lg text-text-light mb-12 max-w-2xl mx-auto leading-relaxed">
             도입 상담부터 제조 현장 실증, 파트너십까지. 어떤 이야기든 환영합니다.

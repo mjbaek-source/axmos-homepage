@@ -1,8 +1,9 @@
+import { BRAND } from '@/lib/brand';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '개인정보처리방침 — AXMOS',
-  description: 'AXMOS 개인정보처리방침. 수집 항목, 이용 목적, 보유 기간, 처리위탁, 쿠키 사용 및 정보주체의 권리 안내.',
+  title: `개인정보처리방침 — ${BRAND.name}`,
+  description: `${BRAND.name} 개인정보처리방침. 수집 항목, 이용 목적, 보유 기간, 처리위탁, 쿠키 사용 및 정보주체의 권리 안내.`,
   robots: 'index, follow',
 };
 
@@ -10,7 +11,7 @@ const sections = [
   {
     h: '1. 총칙',
     body: [
-      '코드프레소(이하 "회사")는 AXMOS 서비스(이하 "서비스")를 운영하며, 「개인정보 보호법」 등 관련 법령을 준수하여 이용자의 개인정보를 보호하고 있습니다.',
+      `코드프레소(이하 "회사")는 ${BRAND.name} 서비스(이하 "서비스")를 운영하며, 「개인정보 보호법」 등 관련 법령을 준수하여 이용자의 개인정보를 보호하고 있습니다.`,
       '본 개인정보처리방침은 서비스 웹사이트를 통해 수집되는 개인정보의 처리에 관한 사항을 안내합니다.',
     ],
   },

@@ -1,3 +1,4 @@
+import { BRAND } from '@/lib/brand';
 import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
@@ -7,25 +8,25 @@ import CookieConsent from '@/components/CookieConsent';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://axmos-legacy.vercel.app'),
-  title: 'AXMOS — The AI Operating System for Korean Enterprises',
-  description: '기존 시스템과 도구는 그대로. AXMOS가 연결하고 자동화합니다. 3주 안에 가시적인 결과를 만듭니다.',
+  title: `${BRAND.name} — The AI Operating System for Korean Enterprises`,
+  description: `기존 시스템과 도구는 그대로. ${BRAND.name}가 연결하고 자동화합니다. 3주 안에 가시적인 결과를 만듭니다.`,
   keywords: ['AI 자동화', '업무 자동화', 'AI Agent', 'AI Operating System', 'Enterprise AI', '한국 기업 AI', 'AI 솔루션'],
-  authors: [{ name: 'AXMOS' }],
-  creator: 'AXMOS',
-  publisher: 'AXMOS',
+  authors: [{ name: BRAND.name }],
+  creator: BRAND.name,
+  publisher: BRAND.name,
   robots: 'index, follow',
   openGraph: {
     type: 'website',
     locale: 'ko_KR',
     url: 'https://axmos-legacy.vercel.app',
-    siteName: 'AXMOS',
-    title: 'AXMOS — The AI Operating System for Korean Enterprises',
-    description: '기존 시스템과 도구는 그대로. AXMOS가 연결하고 자동화합니다. 3주 안에 가시적인 결과를 만듭니다.',
+    siteName: BRAND.name,
+    title: `${BRAND.name} — The AI Operating System for Korean Enterprises`,
+    description: `기존 시스템과 도구는 그대로. ${BRAND.name}가 연결하고 자동화합니다. 3주 안에 가시적인 결과를 만듭니다.`,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AXMOS — The AI Operating System for Korean Enterprises',
-    description: '기존 시스템은 그대로. AXMOS가 연결하고 자동화합니다.',
+    title: `${BRAND.name} — The AI Operating System for Korean Enterprises`,
+    description: `기존 시스템은 그대로. ${BRAND.name}가 연결하고 자동화합니다.`,
   },
 };
 

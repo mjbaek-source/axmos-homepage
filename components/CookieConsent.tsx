@@ -1,4 +1,5 @@
 'use client';
+import { BRAND } from '@/lib/brand';
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -26,7 +27,7 @@ export default function CookieConsent() {
     <div className="fixed bottom-0 left-0 right-0 z-[100] bg-bg-dark-2 border-t border-border-dark">
       <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
         <p className="text-sm text-text-light leading-relaxed flex-1">
-          AXMOS는 서비스 개선과 분석을 위해 쿠키를 사용합니다. 분석용(비필수) 쿠키는 동의하신 경우에만 사용되며,
+          {BRAND.name}는 서비스 개선과 분석을 위해 쿠키를 사용합니다. 분석용(비필수) 쿠키는 동의하신 경우에만 사용되며,
           자세한 내용은{' '}
           <Link href="/privacy" className="text-white underline hover:opacity-70 transition">
             개인정보처리방침
