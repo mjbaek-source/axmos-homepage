@@ -13,7 +13,7 @@ export default function Footer() {
               alt={BRAND.name}
               width={140}
               height={47}
-              className="brightness-0 invert mb-6"
+              className={BRAND.logoInvert ? 'brightness-0 invert mb-6' : 'mb-6'}
             />
             <p className="text-text-light text-sm leading-relaxed max-w-md">
               The Enterprise AI Operating System.<br />
