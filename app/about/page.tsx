@@ -162,6 +162,18 @@ export default function About() {
             <h2 className="section-title text-bg-dark">{BRAND.name} in the press</h2>
           </div>
 
+          {/* Featured video */}
+          <div className="relative aspect-video w-full mb-10 overflow-hidden bg-bg-dark border border-gray-200">
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/y0ya0XKTZrc"
+              title={`${BRAND.name} intro`}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+
           <div className="space-y-px bg-gray-200 border border-gray-200">
             {media.map((m, i) => (
               <div key={i} className="bg-white px-8 py-7 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:bg-bg-light transition">
