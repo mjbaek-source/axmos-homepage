@@ -1,8 +1,9 @@
+import { BRAND } from '@/lib/brand';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — AXMOS',
-  description: 'AXMOS Privacy Policy. What we collect, why, how long we keep it, processors, cookies, and your rights.',
+  title: `Privacy Policy — ${BRAND.name}`,
+  description: `${BRAND.name} Privacy Policy. What we collect, why, how long we keep it, processors, cookies, and your rights.`,
   robots: 'index, follow',
 };
 
@@ -10,7 +11,7 @@ const sections = [
   {
     h: '1. Overview',
     body: [
-      'Codepresso ("we", "us") operates the AXMOS service ("Service") and protects your personal data in accordance with applicable data protection laws, including Korea’s Personal Information Protection Act (PIPA).',
+      `Codepresso ("we", "us") operates the ${BRAND.name} service ("Service") and protects your personal data in accordance with applicable data protection laws, including Korea’s Personal Information Protection Act (PIPA).`,
       'This Privacy Policy explains how personal data collected through the Service website is processed.',
     ],
   },

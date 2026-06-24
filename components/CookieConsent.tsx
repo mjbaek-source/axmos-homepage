@@ -1,4 +1,5 @@
 'use client';
+import { BRAND } from '@/lib/brand';
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -25,7 +26,7 @@ export default function CookieConsent() {
     <div className="fixed bottom-0 left-0 right-0 z-[100] bg-bg-dark-2 border-t border-border-dark">
       <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
         <p className="text-sm text-text-light leading-relaxed flex-1">
-          AXMOS uses cookies to improve and analyze the service. Non-essential (analytics) cookies are used
+          {BRAND.name} uses cookies to improve and analyze the service. Non-essential (analytics) cookies are used
           only with your consent. See our{' '}
           <Link href="/privacy" className="text-white underline hover:opacity-70 transition">
             Privacy Policy

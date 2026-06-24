@@ -1,4 +1,5 @@
 'use client';
+import { BRAND } from '@/lib/brand';
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
@@ -70,7 +71,7 @@ export default function Home() {
             <span className="text-text-light">New speed.</span>
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl mb-10 leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
-            AXMOS connects the systems you already run — Slack, Gmail, Excel, ERP, CRM — into one
+            {BRAND.name} connects the systems you already run — Slack, Gmail, Excel, ERP, CRM — into one
             execution layer, and puts AI agents to work across them. In production in weeks,
             with nothing ripped out.
           </p>
@@ -142,7 +143,7 @@ export default function Home() {
             <div className="max-w-2xl">
               <p className="section-eyebrow">Backed by a Consortium</p>
               <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                AXMOS is built by six companies across<br />AI, manufacturing, education, and investment.
+                {BRAND.name} is built by six companies across<br />AI, manufacturing, education, and investment.
               </h2>
             </div>
             <Link href="/about" className="text-white text-sm font-semibold border-b-2 border-white pb-1 hover:opacity-60 transition whitespace-nowrap">
@@ -223,7 +224,7 @@ export default function Home() {
                 AI that meets your business where it is.
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                No rip-and-replace. No data migration. AXMOS deploys directly onto the tools and
+                No rip-and-replace. No data migration. {BRAND.name} deploys directly onto the tools and
                 workflows you already operate, with AI agents executing where the work actually happens.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-10">
@@ -384,12 +385,12 @@ export default function Home() {
       <section className="bg-bg-dark text-white py-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-20">
-            <p className="section-eyebrow">Why AXMOS</p>
+            <p className="section-eyebrow">Why {BRAND.name}</p>
             <h2 className="section-title mb-6">
               Built for the way enterprises actually operate.
             </h2>
             <p className="text-lg text-text-light leading-relaxed">
-              Not generic SaaS bolted on at the edge. AXMOS runs where the real work happens —
+              Not generic SaaS bolted on at the edge. {BRAND.name} runs where the real work happens —
               engineered for the messy workflows, the security reviews, and the compliance
               requirements that come with running a real business.
             </p>
@@ -438,7 +439,7 @@ export default function Home() {
                 Not a tool — a person on the floor.
               </h2>
               <p className="text-lg text-text-light leading-relaxed">
-                Every AXMOS project is owned by a Forward Deployed Engineer (FDE).
+                Every {BRAND.name} project is owned by a Forward Deployed Engineer (FDE).
                 They go to the field, find the real problem, deploy the solution, and prove it with results.
               </p>
             </div>
@@ -499,7 +500,7 @@ export default function Home() {
             <p className="section-eyebrow text-bg-dark/60">Results</p>
             <h2 className="section-title text-bg-dark">Measured operational outcomes</h2>
             <p className="text-lg text-gray-700 leading-relaxed mt-4">
-              Production results from enterprises operating on AXMOS.
+              Production results from enterprises operating on {BRAND.name}.
             </p>
           </div>
 
@@ -569,7 +570,7 @@ export default function Home() {
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-text-muted mb-6">For Speed</p>
               <h3 className="text-3xl font-bold mb-4">AX Build</h3>
               <p className="text-text-light mb-8 leading-relaxed">
-                AXMOS builds it for you. The fastest path.
+                {BRAND.name} builds it for you. The fastest path.
               </p>
               <div className="space-y-3 mb-10">
                 <div className="flex justify-between text-sm border-b border-border-dark pb-3">
@@ -658,11 +659,11 @@ export default function Home() {
               },
               {
                 q: 'Do we have to replace our existing systems?',
-                a: 'No. AXMOS deploys on top of your existing infrastructure. Slack, Gmail, Excel, ERP, CRM — all retained. AI agents connect the data and execute across them as one operational layer.',
+                a: `No. ${BRAND.name} deploys on top of your existing infrastructure. Slack, Gmail, Excel, ERP, CRM — all retained. AI agents connect the data and execute across them as one operational layer.`,
               },
               {
                 q: 'Do we need our own engineering team?',
-                a: 'Not necessarily. With AX Build, the AXMOS team delivers everything end to end. With AX Grow, your team learns and builds alongside us. If you want to raise AI literacy across employees before any build project, AX Learn workshops can come first. You can ship operational results without an internal tech team.',
+                a: `Not necessarily. With AX Build, the ${BRAND.name} team delivers everything end to end. With AX Grow, your team learns and builds alongside us. If you want to raise AI literacy across employees before any build project, AX Learn workshops can come first. You can ship operational results without an internal tech team.`,
               },
               {
                 q: 'What does it cost?',
@@ -670,7 +671,7 @@ export default function Home() {
               },
               {
                 q: 'How is data security handled?',
-                a: 'AXMOS follows a strict data-sovereignty principle: customer data is processed in sovereign, region-isolated cloud infrastructure — never pooled or shared. We operate to each enterprise’s security and compliance requirements, and execute NDAs and data-processing agreements as part of onboarding.',
+                a: `${BRAND.name} follows a strict data-sovereignty principle: customer data is processed in sovereign, region-isolated cloud infrastructure — never pooled or shared. We operate to each enterprise’s security and compliance requirements, and execute NDAs and data-processing agreements as part of onboarding.`,
               },
               {
                 q: 'What about post-launch support?',

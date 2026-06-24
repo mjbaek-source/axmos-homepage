@@ -1,3 +1,4 @@
+import { BRAND } from '@/lib/brand';
 import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
@@ -7,24 +8,24 @@ import CookieConsent from '@/components/CookieConsent';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://axmos-en.vercel.app'),
-  title: 'AXMOS — The Enterprise AI Operating System',
-  description: 'AXMOS connects your existing systems, data, and workflows into a single operational intelligence layer. Deploy production-ready AI agents in weeks.',
+  title: `${BRAND.name} — The Enterprise AI Operating System`,
+  description: `${BRAND.name} connects your existing systems, data, and workflows into a single operational intelligence layer. Deploy production-ready AI agents in weeks.`,
   keywords: ['AI automation', 'enterprise AI', 'AI Agent', 'AI Operating System', 'AI agents for enterprise', 'workflow automation'],
-  authors: [{ name: 'AXMOS' }],
-  creator: 'AXMOS',
-  publisher: 'AXMOS',
+  authors: [{ name: BRAND.name }],
+  creator: BRAND.name,
+  publisher: BRAND.name,
   robots: 'index, follow',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://axmos-en.vercel.app',
-    siteName: 'AXMOS',
-    title: 'AXMOS — The Enterprise AI Operating System',
-    description: 'AXMOS connects your systems, data, and workflows into one operational intelligence layer. Production-ready AI agents in weeks.',
+    siteName: BRAND.name,
+    title: `${BRAND.name} — The Enterprise AI Operating System`,
+    description: `${BRAND.name} connects your systems, data, and workflows into one operational intelligence layer. Production-ready AI agents in weeks.`,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AXMOS — The Enterprise AI Operating System',
+    title: `${BRAND.name} — The Enterprise AI Operating System`,
     description: 'The operational intelligence layer for enterprise execution. Production AI agents, deployed onto your existing infrastructure.',
   },
 };

@@ -1,3 +1,4 @@
+import { BRAND } from '@/lib/brand';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -8,8 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
             <Image
-              src="/logo.png"
-              alt="AXMOS"
+              src={BRAND.logo}
+              alt={BRAND.name}
               width={140}
               height={47}
               className="brightness-0 invert mb-6"
@@ -42,7 +43,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border-dark pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-3 text-xs text-text-muted">
-          <p>&copy; 2026 AXMOS. All rights reserved.</p>
+          <p>&copy; 2026 {BRAND.name}. All rights reserved.</p>
           <div className="flex items-center gap-5">
             <Link href="/privacy" className="hover:text-white transition">Privacy Policy</Link>
             <span>Built for the enterprise. Powered by Codepresso.</span>

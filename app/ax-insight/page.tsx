@@ -1,10 +1,11 @@
+import { BRAND } from '@/lib/brand';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'AX Insight — From the Field',
   description: 'Insights drawn from the front lines of enterprise AI adoption. Case studies, non-developer guides, tool reviews, AX perspective.',
-  keywords: ['AX Insight', 'AI blog', 'AI adoption case studies', 'AI for non-developers', 'AX perspective', 'AXMOS blog'],
+  keywords: ['AX Insight', 'AI blog', 'AI adoption case studies', 'AI for non-developers', 'AX perspective', `${BRAND.name} blog`],
 };
 
 const TOPICS = [

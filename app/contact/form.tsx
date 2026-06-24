@@ -1,4 +1,5 @@
 'use client';
+import { BRAND } from '@/lib/brand';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -27,7 +28,7 @@ const TRACK_QUESTIONS: Record<string, TQ[]> = {
 };
 
 const TRACKS = [
-  { value: 'AX Build', title: 'AX Build', desc: 'AXMOS builds it for you' },
+  { value: 'AX Build', title: 'AX Build', desc: `${BRAND.name} builds it for you` },
   { value: 'AX Grow', title: 'AX Grow', desc: 'Build alongside your team' },
   { value: 'AX Learn', title: 'AX Learn', desc: 'AI workshops for non-developers' },
   { value: 'Not sure yet', title: 'Not sure yet', desc: 'Decide after consultation' },

@@ -1,4 +1,5 @@
 'use client';
+import { BRAND } from '@/lib/brand';
 
 import Link from 'next/link';
 import Cursor from '@/components/Cursor';
@@ -56,13 +57,13 @@ export default function About() {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 py-32 md:py-44">
-          <p className="section-eyebrow animate-slideUp">About AXMOS — The Consortium</p>
+          <p className="section-eyebrow animate-slideUp">About {BRAND.name} — The Consortium</p>
           <h1 className="text-5xl md:text-7xl font-black leading-[0.95] tracking-tight mb-8 max-w-4xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
             Planting AI on the floor,<br />
             <span className="text-text-light">changing how work gets done.</span>
           </h1>
           <p className="text-lg md:text-xl text-text-light max-w-2xl leading-relaxed animate-slideUp" style={{ animationDelay: '0.2s' }}>
-            AXMOS is a consortium of six companies spanning AI, manufacturing, education, and investment.
+            {BRAND.name} is a consortium of six companies spanning AI, manufacturing, education, and investment.
             We pool manufacturing-ready AI capabilities to change the execution speed of Korean industry.
           </p>
         </div>
@@ -77,7 +78,7 @@ export default function About() {
             of regional industry and cultivate local talent — at the same time.”
           </blockquote>
           <p className="text-text-light leading-relaxed max-w-3xl">
-            AXMOS is not a single product. It is an alliance of companies, each the best at what they do —
+            {BRAND.name} is not a single product. It is an alliance of companies, each the best at what they do —
             from core AI technology to factory-floor validation, talent education, and global expansion.
             One team owns the entire value chain.
           </p>
@@ -89,7 +90,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-16">
             <p className="section-eyebrow text-bg-dark/60">The Consortium</p>
-            <h2 className="section-title text-bg-dark mb-6">The six companies behind AXMOS</h2>
+            <h2 className="section-title text-bg-dark mb-6">The six companies behind {BRAND.name}</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               From lead to core technology, manufacturing pilots, education, and investment —
               each strength converges into a single unit of execution.
@@ -117,7 +118,7 @@ export default function About() {
             <p className="text-lg text-text-light leading-relaxed">
               A Forward Deployed Engineer (FDE) goes directly into the field to diagnose the problem,
               then designs, builds, and makes the AI solution work.
-              Every AXMOS project is owned end to end by an FDE.
+              Every {BRAND.name} project is owned end to end by an FDE.
             </p>
           </div>
 
@@ -158,7 +159,7 @@ export default function About() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="mb-12">
             <p className="section-eyebrow text-bg-dark/60">In the Media</p>
-            <h2 className="section-title text-bg-dark">AXMOS in the press</h2>
+            <h2 className="section-title text-bg-dark">{BRAND.name} in the press</h2>
           </div>
 
           <div className="space-y-px bg-gray-200 border border-gray-200">

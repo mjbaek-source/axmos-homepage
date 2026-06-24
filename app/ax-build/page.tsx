@@ -1,9 +1,10 @@
+import { BRAND } from '@/lib/brand';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AX Build — Built by AXMOS, for Speed',
-  description: 'Get a custom AI Agent built in 20 days. The fastest path: AXMOS designs, develops, and deploys end to end.',
+  title: `AX Build — Built by ${BRAND.name}, for Speed`,
+  description: `Get a custom AI Agent built in 20 days. The fastest path: ${BRAND.name} designs, develops, and deploys end to end.`,
   keywords: ['AX Build', 'AI build', 'custom AI solution', 'workflow automation', 'AI Agent'],
 };
 
@@ -28,7 +29,7 @@ export default function AXBuild() {
             AX Build
           </h1>
           <p className="text-xl md:text-2xl text-text-light max-w-3xl leading-relaxed mb-10">
-            AXMOS designs, builds, and deploys — end to end.<br />
+            {BRAND.name} designs, builds, and deploys — end to end.<br />
             The fastest path to a mission-critical AI agent in production.
           </p>
 
