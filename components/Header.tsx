@@ -16,7 +16,7 @@ const navLinks = [
 ];
 
 // 언어 토글: 이 사이트(EN) → 한글판(axmos-legacy)의 같은 경로로 이동
-const ALT_LANG = { base: 'https://axmos-legacy.vercel.app', label: '한국어', aria: '한국어로 보기' };
+const ALT_LANG = { base: BRAND.krUrl, label: '한국어', aria: '한국어로 보기' };
 
 function GlobeIcon() {
   return (
